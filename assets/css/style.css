@@ -43,3 +43,32 @@ header {
 header span {
     font-weight: bold;
 }
+
+/* Styling of criteria section */
+
+#criteria-section {
+    width: 40%;
+    padding: 10px;
+}
+
+label {
+    display: inline-block;
+    width: 30%;
+    text-align: right;
+    margin-right: 10px;
+}
+
+input {
+    border: #1858b3 solid 3px;
+    float: right;
+    width: 60%;
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+input::placeholder {
+color: #1859b39c;
+}

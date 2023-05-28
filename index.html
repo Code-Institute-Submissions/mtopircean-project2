@@ -6,76 +6,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="Undecided choice selector">
-    <meta name="keywords"
-        content="option selector, choice selector, undecided support, selection support">
+    <meta name="keywords" content="option selector, choice selector, undecided support, selection support">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Undecided choice selector</title>
     <link rel="icon" type="image/x-icon" href="favicon.ico">
 </head>
+
 <body>
     <header>
-    <a href="index.html" id="logo">
-        <img src="/assets/images/undecided-logo.png" alt="Logo representing a robot with a question mark and an exclamation mark">
-    </a>
-    <div  id="header-about">
-    <h1>About the selector:</h1>
-    <br>
-    <p>Selectors main mission is to provide a basic, simple, and fun support to help you on your last mile decission making process
-        <br>
-        It doesn`t aim to remove your judgement from a decission making process, but it aims to offer an informed proposal based on your values.
-        <br>
-        The assumption is that you have already run through an initial process of filtering your option and now you are down to your last 2.
-        <br>
-        If you have more than 2 options, then probably you have too many ;) and you need to understand what else can reduce your options.
-        <br>
-        <br>
-        I hope you enjoy it!
-    </p>
-</div>
-<div id="header-how">
-    <h1>How to use the selector:</h1>
-    <br>
-    <p>
-        1. Write your criteria: ex. car body colour, engine power, etc.
-        <br>
-        2. Select from 1-5 how important the criteria is for you. You can select a value only for a criteria and once it is selected, <span>you can`t select same values for the others</span>.
-        <br>
-        3. Select on each OPTION how it scores on each criteria based on a 1 to 10 ranking, <span>1 being the worst, 10 being the best</span>. Here you can choose the same value for multiple criteria and options.
-        <br>
-        4. <span>All fields must be completed</span>.
-        <br>
-        5. Click on <span>CALCULATE</span> and it will return the result to help you decide.
-        <br>
-        6. Still can`t make up your mind, use the <span>RANDOM</span> generator and take a chance.
-    </p>
-</div>
+        <a href="index.html" id="logo">
+            <img src="/assets/images/undecided-logo.png"
+                alt="Logo representing a robot with a question mark and an exclamation mark">
+        </a>
+        <div id="header-about">
+            <h1>About the selector:</h1>
+            <br>
+            <p>Selectors main mission is to provide a basic, simple, and fun support to help you on your last mile
+                decission making process
+                <br>
+                It doesn`t aim to remove your judgement from a decission making process, but it aims to offer an
+                informed proposal based on your values.
+                <br>
+                The assumption is that you have already run through an initial process of filtering your option and now
+                you are down to your last 2.
+                <br>
+                If you have more than 2 options, then probably you have too many ;) and you need to understand what else
+                can reduce your options.
+                <br>
+                <br>
+                I hope you enjoy it!
+            </p>
+        </div>
+        <div id="header-how">
+            <h1>How to use the selector:</h1>
+            <br>
+            <p>
+                1. Write your criteria: ex. car body colour, engine power, etc.
+                <br>
+                2. Select from 1-5 how important the criteria is for you. You can select a value only for a criteria and
+                once it is selected, <span>you can`t select same values for the others</span>.
+                <br>
+                3. Select on each OPTION how it scores on each criteria based on a 1 to 10 ranking, <span>1 being the
+                    worst, 10 being the best</span>. Here you can choose the same value for multiple criteria and
+                options.
+                <br>
+                4. <span>All fields must be completed</span>.
+                <br>
+                5. Click on <span>CALCULATE</span> and it will return the result to help you decide.
+                <br>
+                6. Still can`t make up your mind, use the <span>RANDOM</span> generator and take a chance.
+            </p>
+        </div>
     </header>
-<section>
-    Table header
-</section>
-<section>
-    Criteria line 1
-</section>
-<section>
-    Criteria line 2
-</section>
-<section>
-    Criteria line 3
-</section>
-<section>
-    Criteria line 4
-</section>
-<section>
-    Criteria line 5
-</section>
-<section>
-    Reset area
-</section>
-<section>
-    Generate result area
-</section>
-<section>
-    Share comparison area
-</section>
+    <div id="user-input-area">
+
+        <div id="criteria-section">
+            <h2>What is important for you?</h2>
+            <label for="fcriteria">1. </label>
+            <input id="fcriteria" name="first-criteria" type="text" class="text-input" required
+                placeholder="Add your criteria here">
+            <label for="scriteria">2. </label>
+            <input id="scriteria" name="second-criteria" type="text" class="text-input" required
+                placeholder="Add your criteria here">
+            <label for="tcriteria">3. </label>
+            <input id="tcriteria" name="third-criteria" type="text" class="text-input" required
+                placeholder="Add your criteria here">
+            <label for="focriteria">4. </label>
+            <input id="focriteria" name="fourth-criteria" type="text" class="text-input" required
+                placeholder="Add your criteria here">
+            <label for="ficriteria">5. </label>
+            <input id="ficriteria" name="fifth-criteria" type="text" class="text-input" required
+                placeholder="Add your criteria here">
+        </div>
+        <div id="user-importance">
+
+        </div>
+        <div id="option-one">
+
+        </div>
+        <div id="option-two">
+
+        </div>
+    </div>
+    <section>
+        Reset area
+    </section>
+    <section>
+        Generate result area
+    </section>
+    <section>
+        Share comparison area
+    </section>
+
 </body>
+
 </html>
