@@ -72,3 +72,12 @@ input {
 input::placeholder {
 color: #1859b39c;
 }
+
+#user-importance {
+    width: 40%;
+    padding: 10px;
+}
+
+#user-importance input {
+    width: 60%;
+}
