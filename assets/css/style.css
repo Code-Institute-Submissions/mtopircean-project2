@@ -96,3 +96,48 @@ color: #1859b39c;
     padding: 10px;
 }
 
+#reset-option1 {
+    border: #1858b3 solid 3px;
+    color: #1858b3;
+    float: right;
+    width: 60%;
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#print {
+    border: #dedede solid 3px;
+    color: #ffffff;
+    background-color: #585858;
+    float: right;
+    width: 10%;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    margin-right: 40px;
+}
+#calculate {
+    border: #9dc4b2 solid 3px;
+    color: #ffffff;
+    background-color: #55b379;
+    float: left;
+    width: 15%;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.05rem;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+
+
+

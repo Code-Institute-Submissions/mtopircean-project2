@@ -118,7 +118,7 @@
             <i class="fa-solid fa-circle-plus"></i>
             <input id="fivalue1" name="fifth-value1" type="text" class="text-input" required placeholder="1 worst - 10 best">
             <i class="fa-solid fa-circle-minus"></i>
-            <input id="reset-option2" type="reset" value="Reset Form">
+            <button id="reset-option1" type="reset" value="Reset Form">
         </div>
         <div id="option-two">
             <label for="option2"></label>
@@ -143,17 +143,20 @@
             <i class="fa-solid fa-circle-plus"></i>
             <input id="fivalue2" name="fifth-value2" type="text" class="text-input" required placeholder="1 worst - 10 best">
             <i class="fa-solid fa-circle-minus"></i>
-            <input id="reset-option2" type="reset" value="Reset Form">
+            <button id="reset-option2" type="reset" value="Reset Form">
         </div>
     </div>
-    <section>
-        Reset area
-    </section>
-    <section>
-        Generate result area
-    </section>
-    <section>
-        Share comparison area
+    <div id="calculate-area">
+        <button data-type="submit" id="calculate">Calculate Answer</button>
+    </div>
+    <div id="print-pdf">
+        <button onclick="printPageAsPDF()" id="print">Print as PDF</button>
+        <script>
+            function printPageAsPDF() {
+                window.print();
+            }
+        </script>
+    </div>
     </section>
 
 </body>
