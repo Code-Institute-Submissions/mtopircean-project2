@@ -13,3 +13,20 @@ body {
     font-weight: 400;
     color: #1858b3;
 }
+
+header {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+#logo {
+    width: 30%;
+    height: auto;
+    padding-top: 20px;
+    justify-content: center;
+    display: flex;
+    padding-bottom: 20px;
+}
