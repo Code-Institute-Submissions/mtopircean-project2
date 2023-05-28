@@ -46,8 +46,12 @@ header span {
 
 /* Styling of criteria section */
 
+#user-input-area {
+    display: flex;
+}
+
 #criteria-section {
-    width: 40%;
+    width: 30%;
     padding: 10px;
 }
 
@@ -74,10 +78,21 @@ color: #1859b39c;
 }
 
 #user-importance {
-    width: 40%;
+    width: 30%;
     padding: 10px;
 }
 
-#user-importance input {
+#user-importance > input {
     width: 60%;
 }
+
+#option-one{
+    width: 20%;
+    padding: 10px;
+}
+
+#option-two{
+    width: 20%;
+    padding: 10px;
+}
+
