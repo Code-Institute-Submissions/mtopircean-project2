@@ -204,3 +204,11 @@ header span {
         margin-top: 40px;
         margin-left: 40px;
     }
+
+    .table-headers {
+        height: 120px;
+    }
+    #buttons-area {
+        display: flex;
+  flex-wrap: wrap;
+    }
