@@ -142,6 +142,7 @@ header span {
 
     #option-three {
         width: 15%;
+        display:contents;
     }
 
 
@@ -208,7 +209,7 @@ header span {
     .table-headers {
         height: 120px;
     }
-    #buttons-area {
-        display: flex;
-  flex-wrap: wrap;
-    }
+   .user-options {
+    height: 120px;
+   }
+   

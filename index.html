@@ -63,7 +63,7 @@
 
         <div id="criteria-section">
             <div class="table-headers">
-            <h3>WHAT IS IMPORTANT FOR YOU?</h3>
+                <h3>WHAT IS IMPORTANT FOR YOU?</h3>
                 <br>
                 <br>
                 <h4>List 5 attributes/criteria that will help you make a decission.</h4>
@@ -86,11 +86,11 @@
         </div>
         <div id="user-importance">
             <div class="table-headers">
-            <h3 id="table-headers">HOW IMPORTANT ARE THE CRITERIAS FOR YOU?</h3>
+                <h3 id="table-headers">HOW IMPORTANT ARE THE CRITERIAS FOR YOU?</h3>
                 <br>
                 <br>
                 <h4>1-less important to 5-very important.
-                Once a number used, it can`t be used on another criteria when establishing importance.</h4>
+                    Once a number used, it can`t be used on another criteria when establishing importance.</h4>
             </div>
             <label for="fimportance"></label>
             <input id="fimportance" name="first-importance" type="text" class="text-input" required
@@ -110,9 +110,9 @@
         </div>
         <div id="option-one">
             <div class="user-options">
-            <label for="option1"></label>
-            <input id="option1" name="option-one" type="text" class="text-input" required
-                placeholder="Write the name of your first option">
+                <label for="option1"></label>
+                <input id="option1" name="option-one" type="text" class="text-input" required
+                    placeholder="Write the name of your first option">
             </div>
             <label for="fvalue1"></label>
             <input id="fvalue1" name="first-value1" type="text" class="text-input" required
@@ -135,7 +135,7 @@
                 <label for="option2"></label>
                 <input id="option2" name="option-two" type="text" class="text-input" required
                     placeholder="Write the name of your second option">
-                </div>
+            </div>
             <label for="fvalue2"></label>
             <input id="fvalue2" name="first-value2" type="text" class="text-input" required
                 placeholder="1 worst - 10 best">
@@ -158,40 +158,42 @@
                     <label for="option3"></label>
                     <input id="option3" name="option-three" type="text" class="text-input" required
                         placeholder="Write the name of your third option">
-                    </div>
-            <label for="fvalue3"></label>
-            <input id="fvalue3" name="first-value3" type="text" class="text-input" required
-                placeholder="1 worst - 10 best">
-            <label for="svalue3"></label>
-            <input id="svalue3" name="second-value3" type="text" class="text-input" required
-                placeholder="1 worst - 10 best">
-            <label for="tvalue3"></label>
-            <input id="tvalue3" name="third-value3" type="text" class="text-input" required
-                placeholder="1 worst - 10 best">
-            <label for="fovalue3"></label>
-            <input id="fovalue3" name="fourth-value3" type="text" class="text-input" required
-                placeholder="1 worst - 10 best">
-            <label for="fivalue3"></label>
-            <input id="fivalue3" name="fifth-value3" type="text" class="text-input" required
-                placeholder="1 worst - 10 best">
+                </div>
+                <label for="fvalue3"></label>
+                <input id="fvalue3" name="first-value3" type="text" class="text-input" required
+                    placeholder="1 worst - 10 best">
+                <label for="svalue3"></label>
+                <input id="svalue3" name="second-value3" type="text" class="text-input" required
+                    placeholder="1 worst - 10 best">
+                <label for="tvalue3"></label>
+                <input id="tvalue3" name="third-value3" type="text" class="text-input" required
+                    placeholder="1 worst - 10 best">
+                <label for="fovalue3"></label>
+                <input id="fovalue3" name="fourth-value3" type="text" class="text-input" required
+                    placeholder="1 worst - 10 best">
+                <label for="fivalue3"></label>
+                <input id="fivalue3" name="fifth-value3" type="text" class="text-input" required
+                    placeholder="1 worst - 10 best">
+            </div>
         </div>
     </div>
-    <div id="buttons-area">
-        <div id="calculate-area">
-            <button data-type="submit" id="calculate">Calculate Answer</button>
+        <div id="buttons-area">
+            <div id="calculate-area">
+                <button data-type="submit" id="calculate">Calculate Answer</button>
+            </div>
+            <div id="print-pdf">
+                <button onclick="printPageAsPDF()" id="print"><i class="fa-solid fa-print"></i> Print as PDF</button>
+                <script>
+                    function printPageAsPDF() {
+                        window.print();
+                    }
+                </script>
+            </div>
+            <div id="random-area">
+                <button data-type="submit" id="random">Generate random selection</button>
+            </div>
         </div>
-        <div id="print-pdf">
-            <button onclick="printPageAsPDF()" id="print"><i class="fa-solid fa-print"></i> Print as PDF</button>
-            <script>
-                function printPageAsPDF() {
-                    window.print();
-                }
-            </script>
-        </div>
-        <div id="random-area">
-            <button data-type="submit" id="random">Generate random selection</button>
-        </div>
-    </div>
+   
 </body>
 
 </html>
