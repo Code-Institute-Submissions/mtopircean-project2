@@ -40,6 +40,7 @@ header {
     text-align: left;
     line-height: 25px;
 }
+
 header span {
     font-weight: bold;
 }
@@ -50,8 +51,8 @@ header span {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 10px;
     text-align: center;
+    width: 100%;
 }
 
 #criteria-section {
@@ -59,10 +60,18 @@ header span {
     padding: 10px;
     display: inline-grid;
 }
-
-input {
+#criteria-section input {
     border: #1858b3 solid 3px;
-    width: 100%%;
+    width: 95%;
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+#user-importance input {
+    border: #1858b3 solid 3px;
+    width: 90%;
     height: 20px;
     border-radius: 5px;
     text-align: center;
@@ -70,32 +79,10 @@ input {
     margin-bottom: 10px;
 }
 
-input::placeholder {
-color: #1859b39c;
-}
-
-#user-importance {
-    width: 30%;
-}
-
-#option-one{
-    width: 25%;
-}
-
-#option-two{
-    width: 25%;
-}
-
-#option-three{
-    width: 25%;
-}
-
-
-#reset-option1 {
-    border: #1858b3 solid 3px;
-    color: #1858b3;
-    float: right;
-    width: 60%;
+#option-one input {
+    border: #4f8c8f solid 3px;
+    background-color:#4f8c8f;
+    width: 85%;
     height: 20px;
     border-radius: 5px;
     text-align: center;
@@ -103,52 +90,117 @@ color: #1859b39c;
     margin-bottom: 10px;
 }
 
-#print {
-    border: #dedede solid 3px;
+#option-one input::placeholder {
     color: #ffffff;
-    background-color: #585858;
-    float: right;
-    width: 10%;
-    height: 40px;
+}
+
+#option-two input {
+    border: #905353 solid 3px;
+    background-color:#905353;
+    width: 85%;
+    height: 20px;
     border-radius: 5px;
     text-align: center;
     padding: 10px;
     margin-bottom: 10px;
-    margin-top: 40px;
-    margin-right: 40px;
 }
-#calculate {
-    border: #9dc4b2 solid 3px;
+
+#option-two input::placeholder {
     color: #ffffff;
-    background-color: #55b379;
-    float: left;
-    width: 15%;
-    height: 40px;
+}
+
+#option-three input {
+    border: #045365 solid 3px;
+    background-color:#045365;
+    width: 85%;
+    height: 20px;
     border-radius: 5px;
     text-align: center;
-    text-transform: uppercase;
-    font-size: 1.05rem;
-    padding: 5px;
+    padding: 10px;
     margin-bottom: 10px;
-    margin-top: 40px;
-    margin-left: 40px;
 }
 
-#random {
-    border: #d7846d solid 3px;
+#option-three input::placeholder {
     color: #ffffff;
-    background-color: #a94b57;
-    width: 15%;
-    height: 40px;
-    border-radius: 5px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 1.05rem;
-    padding: 5px;
-    margin-bottom: 10px;
-    margin-top: 40px;
-    margin-left: 40px;
 }
 
+    input::placeholder {
+        color: #1859b39c;
+    }
+
+    #user-importance {
+        width: 25%;
+    }
+
+    #option-one {
+        width: 15%;
+    }
+
+    #option-two {
+        width: 15%;
+    }
+
+    #option-three {
+        width: 15%;
+    }
 
 
+    #reset-option1 {
+        border: #1858b3 solid 3px;
+        color: #1858b3;
+        float: right;
+        width: 60%;
+        height: 20px;
+        border-radius: 5px;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    #print {
+        border: #dedede solid 3px;
+        color: #ffffff;
+        background-color: #585858;
+        float: right;
+        width: 10%;
+        height: 40px;
+        border-radius: 5px;
+        text-align: center;
+        padding: 10px;
+        margin-bottom: 10px;
+        margin-top: 40px;
+        margin-right: 40px;
+    }
+
+    #calculate {
+        border: #9dc4b2 solid 3px;
+        color: #ffffff;
+        background-color: #55b379;
+        float: left;
+        width: 15%;
+        height: 40px;
+        border-radius: 5px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.05rem;
+        padding: 5px;
+        margin-bottom: 10px;
+        margin-top: 40px;
+        margin-left: 40px;
+    }
+
+    #random {
+        border: #d7846d solid 3px;
+        color: #ffffff;
+        background-color: #a94b57;
+        width: 15%;
+        height: 40px;
+        border-radius: 5px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 1.05rem;
+        padding: 5px;
+        margin-bottom: 10px;
+        margin-top: 40px;
+        margin-left: 40px;
+    }
