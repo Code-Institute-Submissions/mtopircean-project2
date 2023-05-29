@@ -80,8 +80,8 @@ header span {
 }
 
 #option-one input {
-    border: #4f8c8f solid 3px;
-    background-color:#4f8c8f;
+    border: #059ca4 solid 3px;
+    background-color:#059ca4;
     width: 85%;
     height: 20px;
     border-radius: 5px;
@@ -95,8 +95,8 @@ header span {
 }
 
 #option-two input {
-    border: #905353 solid 3px;
-    background-color:#905353;
+    border: #de5a22 solid 3px;
+    background-color:#de5a22;
     width: 85%;
     height: 20px;
     border-radius: 5px;
@@ -110,8 +110,8 @@ header span {
 }
 
 #option-three input {
-    border: #045365 solid 3px;
-    background-color:#045365;
+    border: #1a8812 solid 3px;
+    background-color:#1a8812;
     width: 85%;
     height: 20px;
     border-radius: 5px;
@@ -158,9 +158,9 @@ header span {
     }
 
     #print {
-        border: #dedede solid 3px;
+        border: #c2d5f6 solid 3px;
         color: #ffffff;
-        background-color: #585858;
+        background-color: #526291;
         float: right;
         width: 10%;
         height: 40px;
@@ -173,9 +173,9 @@ header span {
     }
 
     #calculate {
-        border: #9dc4b2 solid 3px;
+        border: #1858b3 solid 3px;
         color: #ffffff;
-        background-color: #55b379;
+        background-color: #1858b3;
         float: left;
         width: 15%;
         height: 40px;
@@ -190,9 +190,9 @@ header span {
     }
 
     #random {
-        border: #d7846d solid 3px;
+        border: #474747 solid 3px;
         color: #ffffff;
-        background-color: #a94b57;
+        background-color: #474747;
         width: 15%;
         height: 40px;
         border-radius: 5px;
