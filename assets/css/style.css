@@ -60,6 +60,7 @@ header span {
     padding: 10px;
     display: inline-grid;
 }
+
 #criteria-section input {
     border: #1858b3 solid 3px;
     width: 95%;
@@ -69,6 +70,7 @@ header span {
     padding: 10px;
     margin-bottom: 10px;
 }
+
 #user-importance input {
     border: #1858b3 solid 3px;
     width: 90%;
@@ -79,9 +81,9 @@ header span {
     margin-bottom: 10px;
 }
 
-#option-one input {
+#data-one input {
     border: #059ca4 solid 3px;
-    background-color:#059ca4;
+    background-color: #059ca4;
     width: 85%;
     height: 20px;
     border-radius: 5px;
@@ -90,13 +92,13 @@ header span {
     margin-bottom: 10px;
 }
 
-#option-one input::placeholder {
+#data-one input::placeholder {
     color: #ffffff;
 }
 
-#option-two input {
+#data-two input {
     border: #de5a22 solid 3px;
-    background-color:#de5a22;
+    background-color: #de5a22;
     width: 85%;
     height: 20px;
     border-radius: 5px;
@@ -105,13 +107,13 @@ header span {
     margin-bottom: 10px;
 }
 
-#option-two input::placeholder {
+#data-two input::placeholder {
     color: #ffffff;
 }
 
-#option-three input {
+#data-three input {
     border: #1a8812 solid 3px;
-    background-color:#1a8812;
+    background-color: #1a8812;
     width: 85%;
     height: 20px;
     border-radius: 5px;
@@ -120,96 +122,135 @@ header span {
     margin-bottom: 10px;
 }
 
-#option-three input::placeholder {
+#data-three input::placeholder {
     color: #ffffff;
 }
 
-    input::placeholder {
-        color: #1859b39c;
-    }
+input::placeholder {
+    color: #1859b39c;
+}
 
-    #user-importance {
-        width: 25%;
-    }
+#user-importance {
+    width: 25%;
+}
 
-    #option-one {
-        width: 15%;
-    }
+#option-one {
+    width: 15%;
+}
 
-    #option-two {
-        width: 15%;
-    }
+#option-two {
+    width: 15%;
+}
 
-    #option-three {
-        width: 15%;
-        display:contents;
-    }
+#option-three {
+    width: 15%;
+    display: contents;
+}
 
 
-    #reset-option1 {
-        border: #1858b3 solid 3px;
-        color: #1858b3;
-        float: right;
-        width: 60%;
-        height: 20px;
-        border-radius: 5px;
-        text-align: center;
-        padding: 10px;
-        margin-bottom: 10px;
-    }
+#reset-option1 {
+    border: #1858b3 solid 3px;
+    color: #1858b3;
+    float: right;
+    width: 60%;
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
 
-    #print {
-        border: #c2d5f6 solid 3px;
-        color: #ffffff;
-        background-color: #526291;
-        float: right;
-        width: 10%;
-        height: 40px;
-        border-radius: 5px;
-        text-align: center;
-        padding: 10px;
-        margin-bottom: 10px;
-        margin-top: 40px;
-        margin-right: 40px;
-    }
+#print {
+    border: #c2d5f6 solid 3px;
+    color: #ffffff;
+    background-color: #526291;
+    float: right;
+    width: 10%;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    margin-right: 40px;
+}
 
-    #calculate {
-        border: #1858b3 solid 3px;
-        color: #ffffff;
-        background-color: #1858b3;
-        float: left;
-        width: 15%;
-        height: 40px;
-        border-radius: 5px;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 1.05rem;
-        padding: 5px;
-        margin-bottom: 10px;
-        margin-top: 40px;
-        margin-left: 40px;
-    }
+#calculate {
+    border: #1858b3 solid 3px;
+    color: #ffffff;
+    background-color: #1858b3;
+    float: left;
+    width: 15%;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.05rem;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
 
-    #random {
-        border: #474747 solid 3px;
-        color: #ffffff;
-        background-color: #474747;
-        width: 15%;
-        height: 40px;
-        border-radius: 5px;
-        text-align: center;
-        text-transform: uppercase;
-        font-size: 1.05rem;
-        padding: 5px;
-        margin-bottom: 10px;
-        margin-top: 40px;
-        margin-left: 40px;
-    }
+#random {
+    border: #474747 solid 3px;
+    color: #ffffff;
+    background-color: #474747;
+    width: 15%;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1.05rem;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 40px;
+    margin-left: 40px;
+}
 
-    .table-headers {
-        height: 120px;
-    }
-   .user-options {
+.table-headers {
     height: 120px;
-   }
-   
+}
+
+.user-options {
+    height: 120px;
+}
+
+.user-options-one input {
+    border: none;
+    width: 85%;
+    height: 50px;
+    text-align: center;
+    height: 120px;
+}
+
+.user-options-one input::placeholder {
+    color: #059ca4;
+    text-decoration: underline;
+}
+
+.user-options-two input {
+    border: none;
+    width: 85%;
+    height: 50px;
+    text-align: center;
+    height: 120px;
+}
+
+.user-options-two input::placeholder {
+    color: #de5a22;
+    text-decoration: underline;
+}
+
+.user-options-three input {
+    border: none;
+    width: 85%;
+    height: 50px;
+    text-align: center;
+    height: 120px;
+}
+
+.user-options-three input::placeholder {
+    color: #1a8812;
+    text-decoration: underline;
+}
