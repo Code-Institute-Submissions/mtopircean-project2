@@ -162,6 +162,12 @@ input::placeholder {
     margin-right: 40px;
 }
 
+#print:hover {
+    border: #c2d5f6 solid 3px;
+    color: #526291;
+    background-color: #ffffff;
+}
+
 #calculate {
     border: #1858b3 solid 3px;
     color: #ffffff;
@@ -179,6 +185,12 @@ input::placeholder {
     margin-left: 40px;
 }
 
+#calculate:hover {
+    border: #1858b3 solid 3px;
+    color: #1858b3;
+    background-color: #ffffff;
+}
+
 #random {
     border: #474747 solid 3px;
     color: #ffffff;
@@ -194,6 +206,13 @@ input::placeholder {
     margin-top: 40px;
     margin-left: 40px;
 }
+
+#random:hover {
+    border: #474747 solid 3px;
+    color: #474747;
+    background-color: #ffffff;
+}
+
 #reset {
     text-transform: uppercase;
     border: #fa0000 solid 3px;
@@ -210,6 +229,11 @@ input::placeholder {
     float: right;
 }
 
+#reset:hover {
+    background-color: #ff0000;
+    border: #fa0000 solid 3px;
+    color: #ffffff;
+}
 .table-headers {
     height: 120px;
 }
