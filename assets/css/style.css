@@ -13,6 +13,7 @@ body {
     font-family: 'Inconsolata', sans-serif;
     font-weight: 400;
     color: #1858b3;
+    display: inline-block;
 }
 
 /* styling for header and  logo section */
@@ -251,7 +252,7 @@ input::placeholder {
 
 #option-three {
     width: 15%;
-    display: contents;
+    display: initial;
 }
 
 .user-options {
