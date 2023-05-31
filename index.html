@@ -19,6 +19,7 @@
             <img src="/assets/images/undecided-logo.png"
                 alt="Logo representing a robot with a question mark and an exclamation mark">
         </a>
+        <!-- Area designated to explain website purpose -->
         <div id="header-about">
             <h1>About the selector:</h1>
             <br>
@@ -38,6 +39,7 @@
                 I hope you enjoy it!
             </p>
         </div>
+        <!-- Area designated to explain how to use the website -->
         <div id="header-how">
             <h1>How to use the selector:</h1>
             <br>
@@ -59,9 +61,11 @@
             </p>
         </div>
     </header>
+    <!-- Area containing all the required user input section in order to collect data for analyisis-->
     <div id="user-input-area">
-
+        <!-- Area where user defines his criteria of importance on option selection-->
         <div id="criteria-section">
+            <!-- Contains table header for criteria of importance-->
             <div class="table-headers">
                 <h3>WHAT IS IMPORTANT FOR YOU?</h3>
                 <br>
@@ -84,7 +88,9 @@
             <input id="ficriteria" name="fifth-criteria" type="text" class="text-input" required
                 placeholder="5. Add your criteria here">
         </div>
+        <!-- Area where user defines the level of importance for each criteria-->
         <div id="user-importance">
+            <!-- Contains table header for criteria of importance-->
             <div class="table-headers">
                 <h3 id="table-headers">HOW IMPORTANT ARE THE CRITERIAS FOR YOU?</h3>
                 <br>
@@ -108,12 +114,15 @@
             <input id="fiimportance" name="fifth-importance" type="text" class="text-input" required
                 placeholder="Input number from 1 to 5">
         </div>
+        <!-- Area where user defines his first option he wants to compare including scoring data-->
         <div id="option-one">
+            <!-- Area where user defines the name of his first option-->
             <div class="user-options-one">
                 <label for="selection-one"></label>
                 <input id="selection-one" name="selection-one" type="text" class="text-input" required
                     placeholder="Write the name of your first option">
             </div>
+            <!-- Area where user defines the scores/ratings for his first option-->
             <div id="data-one">
                 <label for="fvalue1"></label>
                 <input id="fvalue1" name="first-value1" type="text" class="text-input" required
@@ -132,12 +141,15 @@
                     placeholder="1 worst - 10 best">
             </div>
         </div>
+        <!-- Area where user defines his second option he wants to compare including scoring data-->
         <div id="option-two">
+            <!-- Area where user defines the name of his second option-->
             <div class="user-options-two">
                 <label for="option2"></label>
                 <input id="option2" name="option-two" type="text" class="text-input" required
                     placeholder="Write the name of your second option">
             </div>
+            <!-- Area where user defines the scores/ratings for his first option-->
             <div id="data-two">
                 <label for="fvalue2"></label>
                 <input id="fvalue2" name="first-value2" type="text" class="text-input" required
@@ -156,13 +168,16 @@
                     placeholder="1 worst - 10 best">
             </div>
         </div>
+        <!-- Area where user defines his third option he wants to compare including scoring data-->
         <div id="option-three">
-            <div id="option-two">
+            <!-- Area where user defines the name of his first option-->
+            <div id="option-three">
                 <div class="user-options-three">
                     <label for="option3"></label>
                     <input id="option3" name="option-three" type="text" class="text-input" required
                         placeholder="Write the name of your third option">
                 </div>
+                <!-- Area where user defines the scores/ratings for his first option-->
                 <div id="data-three">
                     <label for="fvalue3"></label>
                     <input id="fvalue3" name="first-value3" type="text" class="text-input" required
@@ -183,10 +198,13 @@
             </div>
         </div>
     </div>
+    <!-- Area including all form buttons-->
     <div id="buttons-area">
+        <!-- Button that calculates the option evaluation and returns the recommended option-->
         <div id="calculate-area">
             <button data-type="submit" id="calculate">Calculate Answer</button>
         </div>
+        <!-- Button that prints the page in PDF. Area includes it`s Java code-->
         <div id="print-pdf">
             <button onclick="printPageAsPDF()" id="print"><i class="fa-solid fa-print"></i> Print as PDF</button>
             <script>
@@ -195,14 +213,17 @@
                 }
             </script>
         </div>
+        <!-- Button that generates a random solution for user if he is undecided and does not want to use a calculation-->
         <div id="random-area">
             <button data-type="submit" id="random">Generate random selection</button>
         </div>
+        <!-- Button that resets the rating/scoring in all 3 user option sections-->
         <div id="reset area">
             <button type="button" onclick="resetFields()" id="reset">Reset option values</button>
         </div>
 
     </div>
+    <!-- Area established to return in a text format a result for the user based on both calculated or random choice-->
     <div id="result-area">
         Placeholder for result
     </div>
