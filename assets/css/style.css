@@ -2,6 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
+/* general page code */
 * {
     margin: 0;
     padding: 0;
@@ -14,17 +15,12 @@ body {
     color: #1858b3;
 }
 
+/* styling for header and  logo section */
+
 header {
     display: flex;
     width: 100%;
     height: auto;
-}
-
-#logo {
-    width: 20%;
-    height: auto;
-    justify-content: center;
-    padding-bottom: 10px;
 }
 
 #header-about {
@@ -45,7 +41,14 @@ header span {
     font-weight: bold;
 }
 
-/* Styling of criteria section */
+#logo {
+    width: 20%;
+    height: auto;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+
+/* Styling for whole area where user input is collected */
 
 #user-input-area {
     display: flex;
@@ -54,6 +57,7 @@ header span {
     text-align: center;
     width: 100%;
 }
+/* Styling of criteria section */
 
 #criteria-section {
     width: 35%;
@@ -71,6 +75,8 @@ header span {
     margin-bottom: 10px;
 }
 
+/*styling for criteria importance section */
+
 #user-importance input {
     border: #1858b3 solid 3px;
     width: 90%;
@@ -81,70 +87,14 @@ header span {
     margin-bottom: 10px;
 }
 
-#data-one input {
-    border: #059ca4 solid 3px;
-    background-color: #059ca4;
-    width: 85%;
-    height: 20px;
-    border-radius: 5px;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-#data-one input::placeholder {
-    color: #ffffff;
-}
-
-#data-two input {
-    border: #de5a22 solid 3px;
-    background-color: #de5a22;
-    width: 85%;
-    height: 20px;
-    border-radius: 5px;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-#data-two input::placeholder {
-    color: #ffffff;
-}
-
-#data-three input {
-    border: #1a8812 solid 3px;
-    background-color: #1a8812;
-    width: 85%;
-    height: 20px;
-    border-radius: 5px;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 10px;
-}
-
-#data-three input::placeholder {
-    color: #ffffff;
-}
-
-input::placeholder {
-    color: #1859b39c;
-}
-
 #user-importance {
     width: 25%;
 }
 
-#option-one {
-    width: 15%;
-}
+/* styling for buttons and buttons area */
 
-#option-two {
-    width: 15%;
-}
-
-#option-three {
-    width: 15%;
-    display: contents;
+#buttons-area {
+    width: 100%;
 }
 
 #print {
@@ -234,8 +184,74 @@ input::placeholder {
     border: #fa0000 solid 3px;
     color: #ffffff;
 }
+/* styling for tables header area */
+
 .table-headers {
     height: 120px;
+}
+
+/* styling for user option area */
+
+#data-one input {
+    border: #059ca4 solid 3px;
+    background-color: #059ca4;
+    width: 85%;
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#data-one input::placeholder {
+    color: #ffffff;
+}
+
+#data-two input {
+    border: #de5a22 solid 3px;
+    background-color: #de5a22;
+    width: 85%;
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#data-two input::placeholder {
+    color: #ffffff;
+}
+
+#data-three input {
+    border: #1a8812 solid 3px;
+    background-color: #1a8812;
+    width: 85%;
+    height: 20px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+#data-three input::placeholder {
+    color: #ffffff;
+}
+
+input::placeholder {
+    color: #1859b39c;
+}
+
+#option-one {
+    width: 15%;
+}
+
+#option-two {
+    width: 15%;
+}
+
+#option-three {
+    width: 15%;
+    display: contents;
 }
 
 .user-options {
@@ -281,9 +297,7 @@ input::placeholder {
     text-decoration: underline;
 }
 
-#buttons-area {
-    width: 100%;
-}
+/* styling for results area */
 
 #result-area {
     width: 100%;
