@@ -1,22 +1,18 @@
 //Wait for DOM to finish loading before running form
 //Get button and input areas and add event listeners to them
 
-document.addEventListener("DOMContentLoaded", function () {
-    let buttons = document.getElementsByTagName("button");
+let buttons = document.getElementsByTagName("button");
     for (let button of buttons) {
-        this.addEventListener("click", function ()) {
+        button.addEventListener("click", function () {
             if (this.getAttribute("data-type") === "submit") {
-                calculateAnswer()
+                calculateAnswer();
+            } else if (this.getAttribute("data-type") === "print") {
+                printPageAsPDF();
+            } else if (this.getAttribute("data-type") === "reset") {
+                resetUserArea();
             }
-        } else if (this.getAttribute("data-type") === "print") {
-            printPageAsPDF();
-        } else if (this.getAttribute("data-type") === "reset") {
-            resetUserArea();
-
-        }
-        let inputs = document.getElementsByTagName("input");
+        });
     }
-
     function calculateAnswer() {
 
     }
@@ -36,6 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         for (let inputOption of userInputOptions) {
             inputOption.value = "";
     }
+}
 
     function printPageAsPDF() {
         window.print();
