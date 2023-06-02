@@ -204,12 +204,12 @@ header span {
 .drop-option-one {
     border: #059ca4 solid 3px;
     background-color: #059ca4;
-    height: 20px;
     border-radius: 5px;
     text-align: center;
-    padding: 20px;
-    margin-bottom: 10px;
-}
+    padding: 11px;
+    margin-bottom: 11px;
+    color: #fff;
+  }
 
 #data-two {
     width: 30%;
@@ -219,11 +219,11 @@ header span {
 .drop-option-two {
     border: #de5a22 solid 3px;
     background-color: #de5a22;
-    height: 20px;
     border-radius: 5px;
     text-align: center;
-    padding: 20px;
-    margin-bottom: 10px;
+    padding: 11px;
+    margin-bottom: 11px;
+    color: #fff;
 }
 
 #data-three {
@@ -233,11 +233,11 @@ header span {
 .drop-option-three {
     border: #1a8812 solid 3px;
     background-color: #1a8812;
-    height: 20px;
     border-radius: 5px;
     text-align: center;
-    padding: 20px;
-    margin-bottom: 10px;
+    padding: 11px;
+    margin-bottom: 11px;
+    color: #fff;
 }
 
 input::placeholder {
