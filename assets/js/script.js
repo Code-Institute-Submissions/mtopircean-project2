@@ -2,38 +2,39 @@
 //Get button and input areas and add event listeners to them
 
 let buttons = document.getElementsByTagName("button");
-    for (let button of buttons) {
-        button.addEventListener("click", function () {
-            if (this.getAttribute("data-type") === "submit") {
-                calculateAnswer();
-            } else if (this.getAttribute("data-type") === "print") {
-                printPageAsPDF();
-            } else if (this.getAttribute("data-type") === "reset") {
-                resetUserArea();
-            }
-        });
-    }
-    function calculateAnswer() {
+for (let button of buttons) {
+    button.addEventListener("click", function () {
+        if (this.getAttribute("data-type") === "submit") {
+            calculateAnswer();
+        } else if (this.getAttribute("data-type") === "print") {
+            printPageAsPDF();
+        } else if (this.getAttribute("data-type") === "reset") {
+            resetUserArea();
+        }
+    });
+}
+function calculateAnswer() {
 
-    }
+}
 
-    function generateRandom() {
+function generateRandom() {
 
 
-    }
+}
 
-    function generateTextAnswer() {
+function generateTextAnswer() {
 
-    }
+}
 //** reset the values in the area where user inputs rating values for each option
 
-    function resetUserArea() {
-        let userInputOptions = document.getElementsByClassName("text-input-option");
-        for (let inputOption of userInputOptions) {
-            inputOption.value = "";
+function resetUserArea() {
+    //** used a querySelectorAll to be able to select multiple classes for mass reset
+    let dropOptions = document.querySelectorAll(".drop-option-one, .drop-option-two, .drop-option-three");
+    for (let dropOption of dropOptions) {
+        dropOption.selectedIndex = 0;
     }
 }
 
-    function printPageAsPDF() {
-        window.print();
-    }
+function printPageAsPDF() {
+    window.print();
+}
