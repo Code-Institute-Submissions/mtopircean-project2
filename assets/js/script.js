@@ -18,9 +18,77 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 });
 
+let dropdowns = document.querySelectorAll(".importance-drop, .drop-option-one, .drop-option-two, .drop-option-three");
+  for (let dropdown of dropdowns) {
+    dropdown.addEventListener("change", calculateAnswer);
+  };
+
 function calculateAnswer() {
-    // Your calculateAnswer function implementation
-}
+    let dropdownCriteriaOne = document.getElementById("fimportance")
+    let dropdownCriteriaTwo = document.getElementById("simportance")
+    let dropdownCriteriaThree = document.getElementById("timportance")
+    let dropdownCriteriaFour = document.getElementById("foimportance")
+    let dropdownCriteriaFive = document.getElementById("fiimportance")
+
+    let criteriaValueOne = dropdownCriteriaOne.value;
+    let criteriaValueTwo = dropdownCriteriaTwo.value;
+    let criteriaValueThree = dropdownCriteriaThree.value;
+    let criteriaValueFour = dropdownCriteriaFour.value;
+    let criteriaValueFive = dropdownCriteriaFive.value;
+
+    let dropdownOptionOneOne = document.getElementById("fvalue1")
+    let dropdownOptionOneTwo = document.getElementById("svalue1")
+    let dropdownOptionOneThree = document.getElementById("tvalue1")
+    let dropdownOptionOneFour = document.getElementById("fovalue1")
+    let dropdownOptionOneFive = document.getElementById("fivalue1")
+
+    let optionOneValueOne = dropdownOptionOneOne.value;
+    let optionOneValueTwo = dropdownOptionOneTwo.value;
+    let optionOneValueThree = dropdownOptionOneThree.value;
+    let optionOneValueFour = dropdownOptionOneFour.value;
+    let optionOneValueFive = dropdownOptionOneFive.value;
+
+    let dropdownOptionTwoOne = document.getElementById("fvalue2")
+    let dropdownOptionTwoTwo = document.getElementById("svalue2")
+    let dropdownOptionTwoThree = document.getElementById("tvalue2")
+    let dropdownOptionTwoFour = document.getElementById("fovalue2")
+    let dropdownOptionTwoFive = document.getElementById("fivalue2")
+
+    let optionTwoValueOne = dropdownOptionTwoOne.value;
+    let optionTwoValueTwo = dropdownOptionTwoTwo.value;
+    let optionTwoValueThree = dropdownOptionTwoThree.value;
+    let optionTwoValueFour = dropdownOptionTwoFour.value;
+    let optionTwoValueFive = dropdownOptionTwoFive.value;
+
+    let dropdownOptionThreeOne = document.getElementById("fvalue3")
+    let dropdownOptionThreeTwo = document.getElementById("svalue3")
+    let dropdownOptionThreeThree = document.getElementById("tvalue3")
+    let dropdownOptionThreeFour = document.getElementById("fovalue3")
+    let dropdownOptionThreeFive = document.getElementById("fivalue3")
+
+    let optionThreeValueOne = dropdownOptionThreeOne.value;
+    let optionThreeValueTwo = dropdownOptionThreeTwo.value;
+    let optionThreeValueThree = dropdownOptionThreeThree.value;
+    let optionThreeValueFour = dropdownOptionThreeFour.value;
+    let optionThreeValueFive = dropdownOptionThreeFive.value;
+
+    let scoreOptionOne = (criteriaValueOne * dropdownOptionOneOne + criteriaValueTwo * dropdownOptionOneTwo + criteriaValueTwo * dropdownOptionOneThree + criteriaValueFour * dropdownOptionOneFour + criteriaValueFive * dropdownOptionOneFive) / 5;
+    let scoreOptionTwo = (criteriaValueOne * dropdownOptionTwoOne + criteriaValueTwo * dropdownOptionTwoTwo + criteriaValueTwo * dropdownOptionTwoThree + criteriaValueFour * dropdownOptionTwoFour + criteriaValueFive * dropdownOptionTwoFive) / 5;
+    let scoreOptionThree=(criteriaValueOne * dropdownOptionThreeOne + criteriaValueTwo * dropdownOptionThreeTwo + criteriaValueTwo * dropdownOptionThreeThree + criteriaValueFour * dropdownOptionThreeFour + criteriaValueFive * dropdownOptionThreeFive) / 5;
+
+    let resultArea = document.getElementById("result-area");
+    let recommendation = "";
+    if (scoreOptionOne > scoreOptionTwo && scoreOptionOne > scoreOptionThree) {
+      recommendation = "Option One";
+    } else if (scoreOptionTwo > scoreOptionOne && scoreOptionTwo > scoreOptionThree) {
+      recommendation = "Option Two";
+    } else if (scoreOptionThree > scoreOptionOne && scoreOptionThree > scoreOptionTwo) {
+      recommendation = "Option Three";
+    } else {
+      recommendation = "Options have equal scores";
+    }
+    resultArea.textContent = "Based on the information you have provided, the recommendation is to proceed with " + recommendation;
+  }
 
 function generateRandom() {
     let resultArea = document.getElementById("result-area");
