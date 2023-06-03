@@ -163,10 +163,10 @@ input::placeholder {
 .user-options-two input,
 .user-options-three input {
     border: none;
-    width: 145%;
+    width: 100%;
     height: 50px;
     text-align: center;
-    height: 120px;
+    height: 102px;
 }
 
 .user-options-one input::placeholder {
