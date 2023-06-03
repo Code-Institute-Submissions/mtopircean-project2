@@ -153,14 +153,17 @@ input::placeholder {
 #option-two,
 #option-three {
     width: 33%;
-    display: inline-grid;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
 }
 
 .user-options-one input,
 .user-options-two input,
 .user-options-three input {
     border: none;
-    width: 100%;
+    width: 145%;
     height: 50px;
     text-align: center;
     height: 120px;
