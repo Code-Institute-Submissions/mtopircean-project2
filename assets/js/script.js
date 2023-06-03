@@ -33,8 +33,10 @@ function resetUserArea() {
     for (let dropOption of dropOptions) {
         dropOption.selectedIndex = 0;
     }
+    console.log("User reseted the score for his options")
 }
 
 function printPageAsPDF() {
     window.print();
+    console.log("User has printed the page")
 }
