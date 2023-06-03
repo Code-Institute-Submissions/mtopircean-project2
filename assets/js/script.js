@@ -1,16 +1,17 @@
 //Wait for DOM to finish loading before running form
 //Get button and input areas and add event listeners to them
 
-let options = document.querySelectorAlldocument.querySelectorAll('text-input-option);
 let buttons = document.getElementsByTagName("button");
 for (let button of buttons) {
     button.addEventListener("click", function () {
-        if (this.getAttribute("data-type") === "submit") {
+        if (this.getAttribute("id") === "calculate") {
             calculateAnswer();
-        } else if (this.getAttribute("data-type") === "print") {
+        } else if (this.getAttribute("id") === "print") {
             printPageAsPDF();
-        } else if (this.getAttribute("data-type") === "reset") {
+        } else if (this.getAttribute("id") === "reset") {
             resetUserArea();
+        } else if (this.getAttribute("id") === "random") {
+            generateRandom();
         }
     });
 }
@@ -21,11 +22,6 @@ function calculateAnswer() {
 
 function generateRandom() {
     
-
-}
-
-function generateTextAnswer() {
-
 }
 //** reset the values in the area where user inputs rating values for each option
 
@@ -33,7 +29,7 @@ function resetUserArea() {
     //** used a querySelectorAll to be able to select multiple classes for mass reset
     let dropOptions = document.querySelectorAll(".drop-option-one, .drop-option-two, .drop-option-three");
     for (let dropOption of dropOptions) {
-        dropOption.selectedIndex = 0;
+        dropOption.selectedIndex = "";
     }
     console.log("User reseted the score for his options")
 }
