@@ -1,6 +1,7 @@
 //Wait for DOM to finish loading before running form
 //Get button and input areas and add event listeners to them
 
+let options = document.querySelectorAlldocument.querySelectorAll('text-input-option);
 let buttons = document.getElementsByTagName("button");
 for (let button of buttons) {
     button.addEventListener("click", function () {
@@ -19,6 +20,7 @@ function calculateAnswer() {
 }
 
 function generateRandom() {
+    
 
 }
 
