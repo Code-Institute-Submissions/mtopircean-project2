@@ -57,6 +57,7 @@ header span {
     align-items: center;
     text-align: center;
     width: 100%;
+    flex-wrap: nowrap;
 }
 /* Styling of criteria section */
 
@@ -91,6 +92,98 @@ header span {
 #user-importance {
     width: 25%;
 }
+
+/* styling for user option area */
+#user-options {
+    display: flex;
+    width: 39%;
+}
+#data-one,
+#data-two,
+#data-three {
+    display: inline-block;
+    width: 30%;
+}
+
+.drop-option-one,
+.drop-option-two,
+.drop-option-three {
+    width: 300%;
+
+}
+
+.drop-option-one {
+    border: #059ca4 solid 3px;
+    background-color: #059ca4;
+    border-radius: 5px;
+    text-align: center;
+    padding: 11px;
+    margin-bottom: 11px;
+    color: #fff;
+  }
+
+
+
+.drop-option-two {
+    border: #de5a22 solid 3px;
+    background-color: #de5a22;
+    border-radius: 5px;
+    text-align: center;
+    padding: 11px;
+    margin-bottom: 11px;
+    color: #fff;
+}
+
+
+.drop-option-three {
+    border: #1a8812 solid 3px;
+    background-color: #1a8812;
+    border-radius: 5px;
+    text-align: center;
+    padding: 11px;
+    margin-bottom: 11px;
+    color: #fff;
+}
+
+input::placeholder {
+    color: #1859b39c;
+}
+
+#option-one,
+#option-two,
+#option-three {
+    width: 33%;
+    display: inline-grid;
+}
+
+.user-options-one input,
+.user-options-two input,
+.user-options-three input {
+    border: none;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    height: 120px;
+}
+
+.user-options-one input::placeholder {
+    color: #059ca4;
+    text-decoration: underline;
+    content: "First line \A Second line"
+}
+
+.user-options-two input::placeholder {
+    color: #de5a22;
+    text-decoration: underline;
+    content: "First line \A Second line"
+}
+
+.user-options-three input::placeholder {
+    color: #1a8812;
+    text-decoration: underline;
+    content: "First line \A Second line"
+}
+
 
 /* styling for buttons and buttons area */
 
@@ -191,119 +284,10 @@ header span {
     height: 120px;
 }
 
-/* styling for user option area */
-#user-options {
-    display: flex;
-    width: 50%;
-}
-
-#data-one {
-    width: 30%;
-}
-
-.drop-option-one {
-    border: #059ca4 solid 3px;
-    background-color: #059ca4;
-    border-radius: 5px;
-    text-align: center;
-    padding: 11px;
-    margin-bottom: 11px;
-    color: #fff;
-  }
-
-#data-two {
-    width: 30%;
-}
-
-
-.drop-option-two {
-    border: #de5a22 solid 3px;
-    background-color: #de5a22;
-    border-radius: 5px;
-    text-align: center;
-    padding: 11px;
-    margin-bottom: 11px;
-    color: #fff;
-}
-
-#data-three {
-    width: 30%;
-}
-
-.drop-option-three {
-    border: #1a8812 solid 3px;
-    background-color: #1a8812;
-    border-radius: 5px;
-    text-align: center;
-    padding: 11px;
-    margin-bottom: 11px;
-    color: #fff;
-}
-
-input::placeholder {
-    color: #1859b39c;
-}
-
-#option-one {
-    width: 15%;
-}
-
-#option-two {
-    width: 15%;
-}
-
-#option-three {
-    width: 15%;
-    display: initial;
-}
-
-.user-options {
-    height: 120px;
-}
-
-.user-options-one input {
-    border: none;
-    width: 85%;
-    height: 50px;
-    text-align: center;
-    height: 120px;
-}
-
-.user-options-one input::placeholder {
-    color: #059ca4;
-    text-decoration: underline;
-}
-
-.user-options-two input {
-    border: none;
-    width: 85%;
-    height: 50px;
-    text-align: center;
-    height: 120px;
-}
-
-.user-options-two input::placeholder {
-    color: #de5a22;
-    text-decoration: underline;
-}
-
-.user-options-three input {
-    border: none;
-    width: 85%;
-    height: 50px;
-    text-align: center;
-    height: 120px;
-}
-
-.user-options-three input::placeholder {
-    color: #1a8812;
-    text-decoration: underline;
-}
 
 /* styling for results area */
 
 #result-area {
     width: 100%;
-    padding: 10px;
     display: flex;
 }

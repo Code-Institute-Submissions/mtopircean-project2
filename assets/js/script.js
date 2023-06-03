@@ -11,6 +11,9 @@ for (let button of buttons) {
         } else if (this.getAttribute("data-type") === "reset") {
             resetUserArea();
         }
+        else if (this.getAttribute("data-type") === "random") {
+            generateRandom();
+        }
     });
 }
 function calculateAnswer() {
@@ -18,9 +21,11 @@ function calculateAnswer() {
 }
 
 function generateRandom() {
-
-
-}
+    let randomOptions = document.querySelectorAll("#option1, #option2, #option3");
+    
+    for (let randomOption of randomOptions) {
+        getRandomElement(randomOptions);
+    }
 
 function generateTextAnswer() {
 

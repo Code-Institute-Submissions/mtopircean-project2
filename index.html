@@ -106,7 +106,7 @@
             <label for="timportance"></label>
             <input id="timportance" name="third-importance" type="text" class="text-input" required
                 placeholder="Input number from 1 to 5">
-            <label for="fomportance"></label>
+            <label for="foimportance"></label>
             <input id="foimportance" name="fourth-importance" type="text" class="text-input" required
                 placeholder="Input number from 1 to 5">
             <label for="fiimportance"></label>
@@ -196,174 +196,170 @@
                     </select>
                 </div>
             </div>
-        </div>
-        <!-- Area where user defines his second option he wants to compare including scoring data-->
-        <div id="option-two">
-            <!-- Area where user defines the name of his second option-->
-            <div class="user-options-two">
-                <label for="option2"></label>
-                <input id="option2" name="option-two" type="text" class="text-input" required
-                    placeholder="Write the name of your second option">
+            <!-- Area where user defines his second option he wants to compare including scoring data-->
+            <div id="option-two">
+                <!-- Area where user defines the name of his second option-->
+                <div class="user-options-two">
+                    <label for="option2"></label>
+                    <input id="option2" name="option-two" type="text" class="text-input" required
+                        placeholder="Write the name of your second option">
+                </div>
+                <!-- Area where user defines the scores/ratings for his first option-->
+                <div id="data-two">
+                    <label for="fvalue2"></label>
+                    <select id="fvalue2" name="first-value2" class="drop-option-two">
+                        <option value="" disabled selected>1 to 10 where 1 is worst and 10 is best</option>
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                        <option value="six">6</option>
+                        <option value="seven">7</option>
+                        <option value="eight">8</option>
+                        <option value="nine">9</option>
+                        <option value="ten">10</option>
+                    </select>
+                    <label for="svalue2"></label>
+                    <select id="svalue2" name="second-value2" class="drop-option-two">
+                        <option value="" disabled selected>1 to 10 where 1 is worst and 10 is best</option>
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                        <option value="six">6</option>
+                        <option value="seven">7</option>
+                        <option value="eight">8</option>
+                        <option value="nine">9</option>
+                        <option value="ten">10</option>
+                    </select>
+                    <label for="tvalue2"></label>
+                    <select id="tvalue2" name="third-value2" class="drop-option-two">
+                        <option value="" disabled selected>1 to 10 where 1 is worst and 10 is best</option>
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                        <option value="six">6</option>
+                        <option value="seven">7</option>
+                        <option value="eight">8</option>
+                        <option value="nine">9</option>
+                        <option value="ten">10</option>
+                    </select>
+                    <label for="fovalue2"></label>
+                    <select id="fovalue2" name="fourth-value3" class="drop-option-two">
+                        <option value="" disabled selected>1 to 10 where 1 is worst and 10 is best</option>
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                        <option value="six">6</option>
+                        <option value="seven">7</option>
+                        <option value="eight">8</option>
+                        <option value="nine">9</option>
+                        <option value="ten">10</option>
+                    </select>
+                    <label for="fivalue2"></label>
+                    <select id="fivalue2" name="fifth-value2" class="drop-option-two">
+                        <option value="" disabled selected>1 to 10 where 1 is worst and 10 is best</option>
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                        <option value="six">6</option>
+                        <option value="seven">7</option>
+                        <option value="eight">8</option>
+                        <option value="nine">9</option>
+                        <option value="ten">10</option>
+                    </select>
+                </div>
             </div>
-            <!-- Area where user defines the scores/ratings for his first option-->
-            <div id="data-two">
-                <label for="fvalue2"></label>
-                <select id="fvalue2" name="first-value2" class="drop-option-two">
-                    <option value="" disabled selected>1 to 10 where 1 is worst and 10 is best</option>
-                    <option value="one">1</option>
-                    <option value="two">2</option>
-                    <option value="three">3</option>
-                    <option value="four">4</option>
-                    <option value="five">5</option>
-                    <option value="six">6</option>
-                    <option value="seven">7</option>
-                    <option value="eight">8</option>
-                    <option value="nine">9</option>
-                    <option value="ten">10</option>
-                </select>
-                <label for="svalue2"></label>
-                <select id="svalue2" name="second-value2" class="drop-option-two">
-                    <option value="" disabled selected>1 to 10 where 1 is worst and 10 is best</option>
-                    <option value="one">1</option>
-                    <option value="two">2</option>
-                    <option value="three">3</option>
-                    <option value="four">4</option>
-                    <option value="five">5</option>
-                    <option value="six">6</option>
-                    <option value="seven">7</option>
-                    <option value="eight">8</option>
-                    <option value="nine">9</option>
-                    <option value="ten">10</option>
-                </select>
-                <label for="tvalue2"></label>
-                <select id="tvalue2" name="third-value2" class="drop-option-two">
-                    <option value="" disabled selected>1 to 10 where 1 is worst and 10 is best</option>
-                    <option value="one">1</option>
-                    <option value="two">2</option>
-                    <option value="three">3</option>
-                    <option value="four">4</option>
-                    <option value="five">5</option>
-                    <option value="six">6</option>
-                    <option value="seven">7</option>
-                    <option value="eight">8</option>
-                    <option value="nine">9</option>
-                    <option value="ten">10</option>
-                </select>
-                <label for="fovalue2"></label>
-                <select id="fovalue2" name="fourth-value3" class="drop-option-two">
-                    <option value="" disabled selected>1 to 10 where 1 is worst and 10 is best</option>
-                    <option value="one">1</option>
-                    <option value="two">2</option>
-                    <option value="three">3</option>
-                    <option value="four">4</option>
-                    <option value="five">5</option>
-                    <option value="six">6</option>
-                    <option value="seven">7</option>
-                    <option value="eight">8</option>
-                    <option value="nine">9</option>
-                    <option value="ten">10</option>
-                </select>
-                <label for="fivalue2"></label>
-                <select id="fivalue2" name="fifth-value2" class="drop-option-two">
-                    <option value="" disabled selected>1 to 10 where 1 is worst and 10 is best</option>
-                    <option value="one">1</option>
-                    <option value="two">2</option>
-                    <option value="three">3</option>
-                    <option value="four">4</option>
-                    <option value="five">5</option>
-                    <option value="six">6</option>
-                    <option value="seven">7</option>
-                    <option value="eight">8</option>
-                    <option value="nine">9</option>
-                    <option value="ten">10</option>
-                </select>
-            </div>
-        </div>
-    </div>
-    <!-- Area where user defines his third option he wants to compare including scoring data-->
-    <div id="option-three">
-        <!-- Area where user defines the name of his first option-->
-        <div id="option-three">
-            <div class="user-options-three">
-                <label for="option3"></label>
-                <input id="option3" name="option-three" type="text" class="text-input" required
-                    placeholder="Write the name of your third option">
-            </div>
-            <!-- Area where user defines the scores/ratings for his first option-->
-            <div id="data-three">
-                <label for="fvalue3"></label>
-                <select id="fvalue3" name="first-value3" class="drop-option-three">
-                    <option value="" disabled selected>1 to 10 where 1 is worst and 10 is best</option>
-                    <option value="one">1</option>
-                    <option value="two">2</option>
-                    <option value="three">3</option>
-                    <option value="four">4</option>
-                    <option value="five">5</option>
-                    <option value="six">6</option>
-                    <option value="seven">7</option>
-                    <option value="eight">8</option>
-                    <option value="nine">9</option>
-                    <option value="ten">10</option>
-                </select>
-                <label for="svalue3"></label>
-                <select id="svalue3" name="second-value3" class="drop-option-three">
-                    <option value="" disabled selected>1 to 10 where 1 is worst and 10 is best</option>
-                    <option value="one">1</option>
-                    <option value="two">2</option>
-                    <option value="three">3</option>
-                    <option value="four">4</option>
-                    <option value="five">5</option>
-                    <option value="six">6</option>
-                    <option value="seven">7</option>
-                    <option value="eight">8</option>
-                    <option value="nine">9</option>
-                    <option value="ten">10</option>
-                </select>
-                <label for="tvalue3"></label>
-                <select id="tvalue3" name="third-value3" class="drop-option-three">
-                    <option value="" disabled selected>1 to 10 where 1 is worst and 10 is best</option>
-                    <option value="one">1</option>
-                    <option value="two">2</option>
-                    <option value="three">3</option>
-                    <option value="four">4</option>
-                    <option value="five">5</option>
-                    <option value="six">6</option>
-                    <option value="seven">7</option>
-                    <option value="eight">8</option>
-                    <option value="nine">9</option>
-                    <option value="ten">10</option>
-                </select>
-                <label for="fovalue3"></label>
-                <select id="fovalue3" name="fourth-value3" class="drop-option-three">
-                    <option value="" disabled selected>1 to 10 where 1 is worst and 10 is best</option>
-                    <option value="one">1</option>
-                    <option value="two">2</option>
-                    <option value="three">3</option>
-                    <option value="four">4</option>
-                    <option value="five">5</option>
-                    <option value="six">6</option>
-                    <option value="seven">7</option>
-                    <option value="eight">8</option>
-                    <option value="nine">9</option>
-                    <option value="ten">10</option>
-                </select>
-                <label for="fivalue3"></label>
-                <select id="fivalue3" name="fifth-value3" class="drop-option-three">
-                    <option value="" disabled selected>1 to 10 where 1 is worst and 10 is best</option>
-                    <option value="one">1</option>
-                    <option value="two">2</option>
-                    <option value="three">3</option>
-                    <option value="four">4</option>
-                    <option value="five">5</option>
-                    <option value="six">6</option>
-                    <option value="seven">7</option>
-                    <option value="eight">8</option>
-                    <option value="nine">9</option>
-                    <option value="ten">10</option>
-                </select>
+            <!-- Area where user defines the name of his first option-->
+            <div id="option-three">
+                <div class="user-options-three">
+                    <label for="option3"></label>
+                    <input id="option3" name="option-three" type="text" class="text-input" required
+                        placeholder="Write the name of your third option">
+                </div>
+                <!-- Area where user defines the scores/ratings for his first option-->
+                <div id="data-three">
+                    <label for="fvalue3"></label>
+                    <select id="fvalue3" name="first-value3" class="drop-option-three">
+                        <option value="" disabled selected>1 to 10 where 1 is worst and 10 is best</option>
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                        <option value="six">6</option>
+                        <option value="seven">7</option>
+                        <option value="eight">8</option>
+                        <option value="nine">9</option>
+                        <option value="ten">10</option>
+                    </select>
+                    <label for="svalue3"></label>
+                    <select id="svalue3" name="second-value3" class="drop-option-three">
+                        <option value="" disabled selected>1 to 10 where 1 is worst and 10 is best</option>
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                        <option value="six">6</option>
+                        <option value="seven">7</option>
+                        <option value="eight">8</option>
+                        <option value="nine">9</option>
+                        <option value="ten">10</option>
+                    </select>
+                    <label for="tvalue3"></label>
+                    <select id="tvalue3" name="third-value3" class="drop-option-three">
+                        <option value="" disabled selected>1 to 10 where 1 is worst and 10 is best</option>
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                        <option value="six">6</option>
+                        <option value="seven">7</option>
+                        <option value="eight">8</option>
+                        <option value="nine">9</option>
+                        <option value="ten">10</option>
+                    </select>
+                    <label for="fovalue3"></label>
+                    <select id="fovalue3" name="fourth-value3" class="drop-option-three">
+                        <option value="" disabled selected>1 to 10 where 1 is worst and 10 is best</option>
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                        <option value="six">6</option>
+                        <option value="seven">7</option>
+                        <option value="eight">8</option>
+                        <option value="nine">9</option>
+                        <option value="ten">10</option>
+                    </select>
+                    <label for="fivalue3"></label>
+                    <select id="fivalue3" name="fifth-value3" class="drop-option-three">
+                        <option value="" disabled selected>1 to 10 where 1 is worst and 10 is best</option>
+                        <option value="one">1</option>
+                        <option value="two">2</option>
+                        <option value="three">3</option>
+                        <option value="four">4</option>
+                        <option value="five">5</option>
+                        <option value="six">6</option>
+                        <option value="seven">7</option>
+                        <option value="eight">8</option>
+                        <option value="nine">9</option>
+                        <option value="ten">10</option>
+                    </select>
+                </div>
             </div>
         </div>
-    </div>
     </div>
     <!-- Area including all form buttons-->
     <div id="buttons-area">
@@ -380,7 +376,7 @@
             <button data-type="submit" id="random">Generate random selection</button>
         </div>
         <!-- Button that resets the rating/scoring in all 3 user option sections-->
-        <div id="reset area">
+        <div id="reset-area">
             <button type="button" onclick="resetFields()" id="reset" data-type="reset">Reset option values</button>
         </div>
 
