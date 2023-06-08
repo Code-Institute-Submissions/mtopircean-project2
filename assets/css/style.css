@@ -456,7 +456,7 @@ input::placeholder {
         font-size: 75%;
     }
 
-    @media screen and (max-width: 1025px) {
+    @media screen and (max-width: 1000px) {
 
         #criteria-section,
         #user-importance {
@@ -467,9 +467,6 @@ input::placeholder {
             width: 100%;
             clear: both;
         }
-    }
-
-    @media screen and (max-width: 769px) {
 
         #user-input-area {
             flex-wrap: wrap;
@@ -484,10 +481,45 @@ input::placeholder {
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
-            margin-top: -40px;
+            margin-top: -20px;
+            max-width: 90%;
+            flex-direction: column;
           }
+          #buttons-area {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: -20px;
+ 
+        }
+        #print {
+            margin-top: 10px;
+            margin-right: 0px;
         }
 
-    @media screen and (max-width: 481px) {}
+        #reset {
+            margin-top: 10px;
+        }
+    }
 
-    @media screen and (max-width: 320px) {}
+    @media screen and (max-width: 640px) {
+        h4 {
+            height: 50px;
+        }
+        #criteria-section input {
+            width: 90%
+        }
+        .table-headers {
+            font-size: 0.85rem;
+        }
+
+        .drop-option-one, .drop-option-two, .drop-option-three {
+            width: 270%;
+        }
+
+    }
+
+    @media screen and (max-width: 510px) {
+
+    }
