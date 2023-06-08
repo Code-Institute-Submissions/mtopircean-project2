@@ -118,8 +118,9 @@ header {
     width: 100%;
     flex-wrap: nowrap;
     max-width: 90%;
-    margin:0 auto;
+    margin: 0 auto;
 }
+
 h4 {
     max-width: 85%;
     margin: 0;
@@ -134,8 +135,8 @@ h4 {
 #criteria-section,
 #user-importance,
 #user-options {
-  width: 30%;
-  float: left;
+    width: 30%;
+    float: left;
 }
 
 #criteria-section {
@@ -186,21 +187,21 @@ h4 {
     text-transform: uppercase;
     font-size: 1.17em;
     font-weight: bold;
-    color:#059ca4;
+    color: #059ca4;
 }
 
 .user-options-two .option-label {
     text-transform: uppercase;
     font-size: 1.17em;
     font-weight: bold;
-    color:#de5a22;
+    color: #de5a22;
 }
 
 .user-options-three .option-label {
     text-transform: uppercase;
     font-size: 1.17em;
     font-weight: bold;
-    color:#1a8812;
+    color: #1a8812;
 }
 
 #user-options {
@@ -317,7 +318,7 @@ input::placeholder {
     color: #ffffff;
     background-color: #526291;
     float: right;
-    width: 10%;
+    width: 15%;
     height: 40px;
     border-radius: 5px;
     text-align: center;
@@ -325,7 +326,8 @@ input::placeholder {
     margin-bottom: 10px;
     margin-top: 40px;
     margin-right: 40px;
-    font-size: 95%;
+    font-size: 82%;
+    font-weight: bold;
 }
 
 #print:hover {
@@ -344,10 +346,11 @@ input::placeholder {
     border-radius: 5px;
     text-align: center;
     text-transform: uppercase;
-    font-size: 95%;
+    font-size: 82%;
     padding: 5px;
     margin-bottom: 10px;
     margin-top: 40px;
+    font-weight: bold;
 }
 
 #calculate:hover {
@@ -365,11 +368,12 @@ input::placeholder {
     border-radius: 5px;
     text-align: center;
     text-transform: uppercase;
-    font-size: 95%;
+    font-size: 82%;
     padding: 5px;
     margin-bottom: 10px;
     margin-top: 40px;
     margin-left: 40px;
+    font-weight: bold;
 }
 
 #random:hover {
@@ -383,7 +387,7 @@ input::placeholder {
     border: #fa0000 solid 3px;
     color: #ff0000;
     background-color: #ffff;
-    width: 10%;
+    width: 15%;
     height: 40px;
     border-radius: 5px;
     text-align: center;
@@ -392,7 +396,8 @@ input::placeholder {
     margin-top: 20px;
     margin-right: 40px;
     float: right;
-    font-size: 95%;
+    font-size: 82%;
+    font-weight: bold;
 }
 
 #reset:hover {
@@ -424,22 +429,12 @@ input::placeholder {
 
 /* Display size optimization */
 
-@media screen and (max-width: 1201px){
+@media screen and (max-width: 1201px) {
 
-} 
+@media screen and (max-width: 1025px) {}
 
-@media screen and (max-width: 1025px){
+@media screen and (max-width: 769px) {}
 
-} 
+@media screen and (max-width: 481px) {}
 
-@media screen and (max-width: 769px){
-
-} 
-
-@media screen and (max-width: 481px){
-
-} 
-
-@media screen and (max-width: 320px){
-
-} 
+@media screen and (max-width: 320px) {}
