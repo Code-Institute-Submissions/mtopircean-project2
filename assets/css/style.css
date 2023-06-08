@@ -278,6 +278,7 @@ input::placeholder {
     height: 50px;
     text-align: center;
     height: 79px;
+    outline: none;
 }
 
 .user-options-one input::placeholder {
