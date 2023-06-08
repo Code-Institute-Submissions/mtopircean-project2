@@ -116,21 +116,42 @@ function printPageAsPDF() {
     console.log("User has printed the page");
 }
 
-//*About and how to use modals
-let modal=document.getElementById("header-about-modal");
-let modalTrigger=document.getElementById("header-about");
-let modalClose = document.getElementById("modal-close");
+//*About modal
 
-modalTrigger.onclick = function() {
-  modal.style.display = "block"
-}
+let modalAbout = document.getElementById("header-about-modal");
+let modalTriggerAbout = document.getElementById("header-about");
+let modalCloseAbout = document.getElementById("modal-close-about");
 
-modalClose.onclick = function () { // Added
-  modal.style.display = "none";
+modalTriggerAbout.onclick = function() {
+  modalAbout.style.display = "block";
+};
+
+modalCloseAbout.onclick = function() {
+  modalAbout.style.display = "none";
 };
 
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == modalAbout) {
+    modalAbout.style.display = "none";
   }
-}
+};
+
+//*How to modal
+
+let modalHow = document.getElementById("header-how-modal");
+let modalTriggerHow = document.getElementById("header-how");
+let modalCloseHow = document.getElementById("modal-close-how");
+
+modalTriggerHow.onclick = function() {
+  modalHow.style.display = "block";
+};
+
+modalCloseHow.onclick = function() {
+  modalHow.style.display = "none";
+};
+
+window.onclick = function(event) {
+  if (event.target == modalHow) {
+    modalHow.style.display = "none";
+  }
+};
