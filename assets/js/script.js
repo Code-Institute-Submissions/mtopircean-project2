@@ -115,3 +115,22 @@ function printPageAsPDF() {
     window.print();
     console.log("User has printed the page");
 }
+
+//*About and how to use modals
+let modal=document.getElementById("header-about-modal");
+let modalTrigger=document.getElementById("header-about");
+let modalClose = document.getElementById("modal-close");
+
+modalTrigger.onclick = function() {
+  modal.style.display = "block"
+}
+
+modalClose.onclick = function () { // Added
+  modal.style.display = "none";
+};
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}

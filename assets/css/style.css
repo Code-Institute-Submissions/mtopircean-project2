@@ -24,11 +24,49 @@ header {
     height: auto;
 }
 
+.about-modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    max-width: 80%;
+    max-height: 80%;
+    overflow: hidden;
+    background-color: #ffffff;
+    border-radius: 10px;
+}
+
+#about-modal-content {
+    background-color: #1858b3;
+    width: auto;
+    max-width: 100%;
+    border: #7ea7df solid 3px;
+    color: #fff;
+    position: relative;
+    font-size: 1.5rem;
+    padding: 20px;
+    border-radius: 10px;
+    word-wrap: break-word;
+    white-space: normal;
+    overflow: visible;
+}
+
+#modal-close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
 #header-about {
-    width: 40%;
-    padding-top: 40px;
-    text-align: left;
-    line-height: 25px;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 #header-how {
@@ -59,6 +97,7 @@ header span {
     width: 100%;
     flex-wrap: nowrap;
 }
+
 /* Styling of criteria section */
 
 #criteria-section {
@@ -100,6 +139,7 @@ header span {
     display: flex;
     width: 39%;
 }
+
 #data-one,
 #data-two,
 #data-three {
@@ -122,7 +162,7 @@ header span {
     padding: 11px;
     margin-bottom: 11px;
     color: #fff;
-  }
+}
 
 
 
@@ -283,6 +323,7 @@ input::placeholder {
     border: #fa0000 solid 3px;
     color: #ffffff;
 }
+
 /* styling for tables header area */
 
 .table-headers {
