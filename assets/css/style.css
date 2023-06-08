@@ -128,6 +128,7 @@ h4 {
     justify-content: center;
     height: 25px;
     padding-top: 5px;
+    font-size: 0.9rem;
 }
 
 /* Styling of criteria section */
@@ -306,42 +307,22 @@ input::placeholder {
 /* styling for buttons and buttons area */
 
 #buttons-area {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 40px;
-    width: 100%;
-    max-width: 90%;
+    margin-bottom: 40px;
+    width: 60%;
     margin-left: auto;
     margin-right: auto;
-}
+  }
 
-#print {
-    border: #c2d5f6 solid 3px;
-    color: #ffffff;
-    background-color: #526291;
-    float: right;
-    width: 15%;
-    height: 40px;
-    border-radius: 5px;
-    text-align: center;
-    padding: 10px;
-    margin-bottom: 10px;
-    margin-top: 40px;
-    margin-right: 40px;
-    font-size: 82%;
-    font-weight: bold;
-}
-
-#print:hover {
-    border: #c2d5f6 solid 3px;
-    color: #526291;
-    background-color: #ffffff;
-}
-
-#calculate {
+  #calculate {
     border: #1858b3 solid 3px;
     color: #ffffff;
     background-color: #1858b3;
     float: left;
-    width: 15%;
+    width: 175px;
     height: 40px;
     border-radius: 5px;
     text-align: center;
@@ -363,7 +344,7 @@ input::placeholder {
     border: #474747 solid 3px;
     color: #ffffff;
     background-color: #474747;
-    width: 15%;
+    width: 175px;
     height: 40px;
     border-radius: 5px;
     text-align: center;
@@ -382,18 +363,41 @@ input::placeholder {
     background-color: #ffffff;
 }
 
-#reset {
-    text-transform: uppercase;
-    border: #fa0000 solid 3px;
-    color: #ff0000;
-    background-color: #ffff;
-    width: 15%;
+#print {
+    border: #c2d5f6 solid 3px;
+    color: #ffffff;
+    background-color: #526291;
+    float: right;
+    width: 175px;
     height: 40px;
     border-radius: 5px;
     text-align: center;
     padding: 10px;
     margin-bottom: 10px;
-    margin-top: 20px;
+    margin-top: 40px;
+    margin-right: 40px;
+    font-size: 82%;
+    font-weight: bold;
+}
+
+#print:hover {
+    border: #c2d5f6 solid 3px;
+    color: #526291;
+    background-color: #ffffff;
+}
+
+#reset {
+    text-transform: uppercase;
+    border: #fa0000 solid 3px;
+    color: #ff0000;
+    background-color: #ffff;
+    width: 175px;
+    height: 40px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 10px;
+    margin-top: 40px;
     margin-right: 40px;
     float: right;
     font-size: 82%;
@@ -410,8 +414,9 @@ input::placeholder {
 
 .table-headers {
     height: 30px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     margin-top: 57px;
+    max-width: 99%;
 }
 
 
@@ -430,7 +435,12 @@ input::placeholder {
 /* Display size optimization */
 
 @media screen and (max-width: 1201px) {
-
+    #calculate,
+    #random,
+    #print,
+    #reset {
+        font-size: 75%;
+    }
 @media screen and (max-width: 1025px) {}
 
 @media screen and (max-width: 769px) {}

@@ -22,7 +22,7 @@
         <!-- Area designated to explain website purpose -->
         <!-- Use of modal to display information-->
         <div id="menu">
-            <div id="header-about"><i class="fa-solid fa-robot"></i></i> ABOUT</div>
+            <div id="header-about"><i class="fa-solid fa-robot"></i> ABOUT</div>
             <div id="header-about-modal" class="about-modal">
                 <div id="about-modal-content">
                     <span id="modal-close-about">&times;</span>
@@ -409,31 +409,28 @@
     </div>
     <!-- Area including all form buttons-->
     <div id="buttons-area">
-        <!-- Button that calculates the option evaluation and returns the recommended option-->
+        <!-- Button that calculates the option evaluation and returns the recommended option -->
         <div id="calculate-area">
-            <button data-type="submit" id="calculate">Calculate Answer</button>
+          <button data-type="submit" id="calculate">Calculate Answer</button>
         </div>
-    </div>
-    
+      
+        <!-- Button that generates a random solution for the user if they are undecided and do not want to use a calculation -->
+        <div id="random-area">
+          <button data-type="submit" id="random">Generate random selection</button>
+        </div>
 
-    </div>
-    <!-- Button that prints the page in PDF. Area includes it`s Java code-->
-    <div id="print-pdf">
-        <button onclick="printPageAsPDF()" id="print"><i class="fa-solid fa-print"></i> Print as PDF</button>
-    </div>
-    <!-- Button that generates a random solution for user if he is undecided and does not want to use a calculation-->
-    <div id="random-area">
-        <button data-type="submit" id="random">Generate random selection</button>
-    </div>
-    <!-- Button that resets the rating/scoring in all 3 user option sections-->
-    <div id="reset-area">
-        <button type="button" onclick="resetFields()" id="reset" data-type="reset">Reset option values</button>
-    </div>
-    </div>
-    <!-- Area established to return in a text format a result for the user based on both calculated or random choice-->
-    <div id="result-area">
-    </div>
-    <script src="assets/js/script.js"></script>
+        <!-- Button that resets the rating/scoring in all 3 user option sections -->
+        <div id="reset-area">
+            <button type="button" onclick="resetFields()" id="reset" data-type="reset">Reset option values</button>
+          </div>
+
+        <!-- Button that prints the page in PDF. Area includes its Java code -->
+        <div id="print-pdf">
+            <button onclick="printPageAsPDF()" id="print"><i class="fa-solid fa-print"></i> Print as PDF</button>
+          </div>
+      </div>
+</body>
+<script src="assets/js/script.js"></script>
 </body>
 
 </html>
