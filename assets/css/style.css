@@ -347,7 +347,7 @@ input::placeholder {
     background-color: #474747;
     width: 175px;
     height: 40px;
-    border-radius: 5px;
+    border-radius: 4px;
     text-align: center;
     text-transform: uppercase;
     font-size: 82%;
@@ -409,6 +409,18 @@ input::placeholder {
     background-color: #ff0000;
     border: #fa0000 solid 3px;
     color: #ffffff;
+}
+
+#calculate-random {
+    display:inline-flex;
+    width: 50%;
+    justify-content: space-evenly;
+}
+
+#reset-print {
+    display:inline-flex;
+    width: 50%;
+    justify-content: space-evenly;
 }
 
 /* styling for tables header area */
