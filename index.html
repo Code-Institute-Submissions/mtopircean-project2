@@ -99,9 +99,10 @@
             <label for="ficriteria"></label>
             <input id="ficriteria" name="fifth-criteria" type="text" class="text-input" required
                 placeholder="5. Add your criteria here">
-                <div class="scoring-criteria">
-                    <h4>List 5 attributes/criteria that will help you make a decission. Think about them carefully and make sure you select the essential</h4>
-                </div>
+            <div class="scoring-criteria">
+                <h4>List 5 attributes/criteria that will help you make a decission. Think about them carefully and make
+                    sure you select the essential</h4>
+            </div>
         </div>
         <!-- Area where user defines the level of importance for each criteria-->
         <div id="user-importance">
@@ -149,14 +150,14 @@
                 <option value="four">4</option>
                 <option value="five">5</option>
             </select>
-            <div  class="scoring-criteria">
+            <div class="scoring-criteria">
                 <h4>1-less important to 5-very important.
                     Once a number used, it can`t be used on another criteria when establishing importance.</h4>
             </div>
         </div>
         <!-- Area where user defines his first option he wants to compare including scoring data-->
         <div id="user-options">
-            
+
             <div id="option-one">
                 <!-- Area where user defines the name of his first option-->
                 <div class="user-options-one">
@@ -401,7 +402,9 @@
                     </select>
                 </div>
             </div>
-            <div class="scoring-criteria"><h4>1-low score to 5-high score. You can use same score value for multiple options/criteria.</h4></div>
+            <div class="scoring-criteria">
+                <h4>1-low score to 5-high score. You can use same score value for multiple options/criteria.</h4>
+            </div>
         </div>
     </div>
     <!-- Area including all form buttons-->
@@ -409,6 +412,14 @@
         <!-- Button that calculates the option evaluation and returns the recommended option-->
         <div id="calculate-area">
             <button data-type="submit" id="calculate">Calculate Answer</button>
+            <div id="calculate-modal" class="s-modal">
+                <div class="calculate-modal-content">
+                    <span id="modal-close-calculate">&times;</span>
+                    <div id="result-area">
+                    </div>
+                </div>
+            </div>
+
         </div>
         <!-- Button that prints the page in PDF. Area includes it`s Java code-->
         <div id="print-pdf">
@@ -424,8 +435,6 @@
         </div>
     </div>
     <!-- Area established to return in a text format a result for the user based on both calculated or random choice-->
-    <div id="result-area">
-    </div>
     <script src="assets/js/script.js"></script>
 </body>
 
