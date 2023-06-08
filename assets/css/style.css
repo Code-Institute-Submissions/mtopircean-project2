@@ -315,9 +315,9 @@ input::placeholder {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-  }
+}
 
-  #calculate {
+#calculate {
     border: #1858b3 solid 3px;
     color: #ffffff;
     background-color: #1858b3;
@@ -435,16 +435,46 @@ input::placeholder {
 /* Display size optimization */
 
 @media screen and (max-width: 1201px) {
+
     #calculate,
     #random,
     #print,
     #reset {
         font-size: 75%;
     }
-@media screen and (max-width: 1025px) {}
 
-@media screen and (max-width: 769px) {}
+    @media screen and (max-width: 1025px) {
 
-@media screen and (max-width: 481px) {}
+        #criteria-section,
+        #user-importance {
+            width: 50%;
+            clear: both;
+        }
+        #user-options {
+            width: 100%;
+            clear: both;
+        }
+    }
 
-@media screen and (max-width: 320px) {}
+    @media screen and (max-width: 769px) {
+
+        #user-input-area {
+            flex-wrap: wrap;
+          }
+          
+          h4 {
+            margin-bottom: 52px;
+          }
+          
+          #buttons-area {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin-top: -40px;
+          }
+        }
+
+    @media screen and (max-width: 481px) {}
+
+    @media screen and (max-width: 320px) {}
