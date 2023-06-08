@@ -218,12 +218,13 @@ h4 {
 #data-three {
     display: inline-block;
     width: 30%;
+    box-sizing: border-box;
 }
 
 .drop-option-one,
 .drop-option-two,
 .drop-option-three {
-    width: 300%;
+    width: 330%;
 
 }
 
