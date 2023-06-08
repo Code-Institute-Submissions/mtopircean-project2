@@ -421,3 +421,25 @@ input::placeholder {
     font-size: large;
     font-weight: bold;
 }
+
+/* Display size optimization */
+
+@media screen and (max-width: 1201px){
+
+} 
+
+@media screen and (max-width: 1025px){
+
+} 
+
+@media screen and (max-width: 769px){
+
+} 
+
+@media screen and (max-width: 481px){
+
+} 
+
+@media screen and (max-width: 320px){
+
+} 
