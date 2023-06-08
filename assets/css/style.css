@@ -24,11 +24,14 @@ header {
     flex-direction: column;
     width: 100%;
     height: auto;
+    justify-content: center;
 }
 
 #logo {
-    width: 10%;
+    width: 30%;
     height: auto;
+    display: flex;
+    justify-content: center;
 }
 
 #logo img {
@@ -44,7 +47,7 @@ header {
 
 #header-about,
 #header-how {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: bold;
     margin: 10px 40px 0px 0px;
     cursor: pointer;
@@ -112,13 +115,28 @@ header {
     text-align: center;
     width: 100%;
     flex-wrap: nowrap;
+    max-width: 90%;
+    margin:0 auto;
+}
+h4 {
+    max-width: 85%;
+    margin: 0;
+    text-align: center;
+    justify-content: center;
+    height: 25px;
+    padding-top: 5px;
 }
 
 /* Styling of criteria section */
 
+#criteria-section,
+#user-importance,
+#user-options {
+  width: 30%;
+  float: left;
+}
+
 #criteria-section {
-    width: 35%;
-    padding: 10px;
     display: inline-grid;
 }
 
@@ -147,13 +165,48 @@ header {
 }
 
 #user-importance {
-    width: 25%;
+    width: 30%;
 }
 
 /* styling for user option area */
+
+.scoring-criteria {
+    width: 100%;
+    display: flex;
+    text-align: center;
+    align-content: stretch;
+    flex-wrap: nowrap;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+.user-options-one .option-label {
+    text-transform: uppercase;
+    font-size: 1.17em;
+    font-weight: bold;
+    color:#059ca4;
+}
+
+.user-options-two .option-label {
+    text-transform: uppercase;
+    font-size: 1.17em;
+    font-weight: bold;
+    color:#de5a22;
+}
+
+.user-options-three .option-label {
+    text-transform: uppercase;
+    font-size: 1.17em;
+    font-weight: bold;
+    color:#1a8812;
+}
+
 #user-options {
     display: flex;
-    width: 39%;
+    width: 40%;
+    flex-direction: row;
+    align-content: space-around;
+    flex-wrap: wrap;
 }
 
 #data-one,
@@ -224,7 +277,7 @@ input::placeholder {
     width: 100%;
     height: 50px;
     text-align: center;
-    height: 102px;
+    height: 79px;
 }
 
 .user-options-one input::placeholder {
@@ -249,6 +302,7 @@ input::placeholder {
 /* styling for buttons and buttons area */
 
 #buttons-area {
+    margin-top: 20px;
     width: 100%;
 }
 
@@ -343,7 +397,9 @@ input::placeholder {
 /* styling for tables header area */
 
 .table-headers {
-    height: 120px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-top: 57px;
 }
 
 
