@@ -416,26 +416,34 @@
             <!-- Button that calculates the option evaluation and returns the recommended option -->
             <div id="calculate-area">
                 <button data-type="submit" id="calculate">Calculate Answer</button>
+                <div id="submit-modal" class="s-modal">
+                  <div class="s-modal-content">
+                    <span class="submit-close">&times;</span>
+                    <p></p>
+                  </div>
+                </div>
+              </div>
+
+                <!-- Button that generates a random solution for the user if they are undecided and do not want to use a calculation -->
+                <div id="random-area">
+                    <button data-type="submit" id="random">Generate random selection</button>
+                </div>
             </div>
 
-            <!-- Button that generates a random solution for the user if they are undecided and do not want to use a calculation -->
-            <div id="random-area">
-                <button data-type="submit" id="random">Generate random selection</button>
+            <div id="reset-print">
+                <!-- Button that resets the rating/scoring in all 3 user option sections -->
+                <div id="reset-area">
+                    <button type="button" onclick="resetFields()" id="reset" data-type="reset">Reset option
+                        values</button>
+                </div>
+
+                <!-- Button that prints the page in PDF. Area includes its Java code -->
+                <div id="print-pdf">
+                    <button onclick="printPageAsPDF()" id="print"><i class="fa-solid fa-print"></i> Print as
+                        PDF</button>
+                </div>
             </div>
         </div>
-
-        <div id="reset-print">
-            <!-- Button that resets the rating/scoring in all 3 user option sections -->
-            <div id="reset-area">
-                <button type="button" onclick="resetFields()" id="reset" data-type="reset">Reset option values</button>
-            </div>
-
-            <!-- Button that prints the page in PDF. Area includes its Java code -->
-            <div id="print-pdf">
-                <button onclick="printPageAsPDF()" id="print"><i class="fa-solid fa-print"></i> Print as PDF</button>
-            </div>
-        </div>
-    </div>
 </body>
 <script src="assets/js/script.js"></script>
 </body>

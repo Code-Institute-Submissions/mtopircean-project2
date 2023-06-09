@@ -130,12 +130,6 @@ modalCloseAbout.onclick = function() {
 modalAbout.style.display = "none";
 };
 
-window.onclick = function(event) {
-if (event.target == modalAbout) {
-  modalAbout.style.display = "none";
-}
-};
-
 //*How to modal
 
 let modalHow = document.getElementById("header-how-modal");
@@ -150,8 +144,28 @@ modalCloseHow.onclick = function() {
 modalHow.style.display = "none";
 };
 
-window.onclick = function(event) {
-if (event.target == modalHow) {
-  modalHow.style.display = "none";
+//*Generate answer in modal for Calculate
+
+let submitModal = document.getElementById("submit-modal");
+let buttonSubmit = document.getElementById("calculate");
+let closeSubmit = document.querySelector(".submit-close");
+
+buttonSubmit.onclick = function() {
+  submitModal.style.display = "block";
 }
-};
+
+closeSubmit.onclick = function() {
+  submitModal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modalAbout) {
+    modalAbout.style.display = "none";
+  }
+  if (event.target == modalHow) {
+    modalHow.style.display = "none";
+  }
+  if (event.target == submitModal) {
+    submitModal.style.display = "none";
+  }
+}

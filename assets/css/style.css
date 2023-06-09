@@ -73,7 +73,8 @@ header {
 }
 
 #about-modal-content,
-#how-modal-content {
+#how-modal-content,
+#s-modal-content {
     background-color: #1858b3;
     width: auto;
     max-width: 100%;
