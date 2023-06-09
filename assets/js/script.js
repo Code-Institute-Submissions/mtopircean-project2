@@ -188,6 +188,20 @@ closeSubmit.onclick = function() {
   submitModal.style.display = "none";
 }
 
+//*Generate answer in modal for Random
+
+let randomModal = document.getElementById("random-modal");
+let buttonRandom = document.getElementById("random");
+let closeRandom = document.querySelector(".random-close");
+
+buttonRandom.onclick = function() {
+  randomModal.style.display = "block";
+}
+
+closeRandom.onclick = function() {
+  randomModal.style.display = "none";
+}
+
 window.onclick = function(event) {
   if (event.target == modalAbout) {
     modalAbout.style.display = "none";
@@ -197,5 +211,8 @@ window.onclick = function(event) {
   }
   if (event.target == submitModal) {
     submitModal.style.display = "none";
+  }
+  if (event.target == randomModal) {
+    randomModal.style.display = "none";
   }
 }
