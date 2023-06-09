@@ -271,7 +271,7 @@ input::placeholder {
     width: 33%;
     display: flex;
     flex-flow: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: flex-start;
 }
 
@@ -412,13 +412,13 @@ input::placeholder {
 }
 
 #calculate-random {
-    display:inline-flex;
+    display: inline-flex;
     width: 50%;
     justify-content: space-evenly;
 }
 
 #reset-print {
-    display:inline-flex;
+    display: inline-flex;
     width: 50%;
     justify-content: space-evenly;
 }
@@ -458,11 +458,16 @@ input::placeholder {
 
     @media screen and (max-width: 1000px) {
 
+        #menu {
+            margin-bottom: 10px;
+        }
+
         #criteria-section,
         #user-importance {
             width: 50%;
             clear: both;
         }
+
         #user-options {
             width: 100%;
             clear: both;
@@ -470,13 +475,13 @@ input::placeholder {
 
         #user-input-area {
             flex-wrap: wrap;
-          }
-          
-          h4 {
+        }
+
+        h4 {
             margin-bottom: 52px;
-          }
-          
-          #buttons-area {
+        }
+
+        #buttons-area {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -484,15 +489,17 @@ input::placeholder {
             margin-top: -20px;
             max-width: 90%;
             flex-direction: column;
-          }
-          #buttons-area {
+        }
+
+        #buttons-area {
             display: flex;
             justify-content: center;
             align-items: center;
             flex-wrap: wrap;
             margin-top: -20px;
- 
+
         }
+
         #print {
             margin-top: 10px;
             margin-right: 0px;
@@ -507,19 +514,77 @@ input::placeholder {
         h4 {
             height: 50px;
         }
+
         #criteria-section input {
             width: 90%
         }
+
         .table-headers {
             font-size: 0.85rem;
         }
 
-        .drop-option-one, .drop-option-two, .drop-option-three {
+        .drop-option-one,
+        .drop-option-two,
+        .drop-option-three {
             width: 270%;
         }
 
     }
 
     @media screen and (max-width: 510px) {
+        h4 {
+            font-size: 0.8rem;
+        }
 
+        #user-options select {
+            font-size: 0.8rem;
+            white-space: pre-wrap;
+            height: 41px;
+            padding: 0;
+        }
+    }
+
+    .user-options-one input, .user-options-two input, .user-options-three input {
+        height: 70px;
+    }
+
+    @media screen and (max-width: 435px) {
+        h4 {
+            font-size: 0.8rem;
+            padding-bottom: 20px;
+        }
+
+        #user-options select {
+            font-size: 0.8rem;
+            white-space: pre-wrap;
+            height: 41px;
+            padding: 0;
+        }
+
+        .importance-drop {
+            width: 80%;
+        }
+
+        h3 {
+            font-size: 0.9rem;
+        }
+        .user-options-one .option-label {
+            font-size: 0.9rem;
+        }
+        .user-options-two .option-label {
+            font-size: 0.9rem;
+        }
+        .user-options-three .option-label {
+            font-size: 0.9rem;
+        }
+        #calculate,
+        #reset,
+        #random,
+        #print {
+            width: 150px;
+            font-size: 60%;
+        }
+        #buttons-area {
+        margin-top: -60px;
+        }
     }
