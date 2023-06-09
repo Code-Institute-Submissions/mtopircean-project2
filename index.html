@@ -79,80 +79,83 @@
     <!-- Area containing all the required user input section in order to collect data for analyisis-->
     <div id="user-input-area">
         <!-- Area where user defines his criteria of importance on option selection-->
-        <div id="criteria-section">
-            <!-- Contains table header for criteria of importance-->
-            <div class="table-headers">
-                <h3>WHAT IS IMPORTANT FOR YOU?</h3>
+        <div id="criteria-w-importance">
+            <div id="criteria-section">
+                <!-- Contains table header for criteria of importance-->
+                <div class="table-headers">
+                    <h3>WHAT IS IMPORTANT FOR YOU?</h3>
+                </div>
+                <label for="fcriteria"></label>
+                <input id="fcriteria" name="first-criteria" type="text" class="text-input" required
+                    placeholder="1. Add your criteria here">
+                <label for="scriteria"></label>
+                <input id="scriteria" name="second-criteria" type="text" class="text-input" required
+                    placeholder="2. Add your criteria here">
+                <label for="tcriteria"></label>
+                <input id="tcriteria" name="third-criteria" type="text" class="text-input" required
+                    placeholder="3. Add your criteria here">
+                <label for="focriteria"></label>
+                <input id="focriteria" name="fourth-criteria" type="text" class="text-input" required
+                    placeholder="4. Add your criteria here">
+                <label for="ficriteria"></label>
+                <input id="ficriteria" name="fifth-criteria" type="text" class="text-input" required
+                    placeholder="5. Add your criteria here">
+                <div class="scoring-criteria">
+                    <h4>List 5 attributes/criteria that will help you make a decission. Think about them carefully and
+                        make
+                        sure you select the essential</h4>
+                </div>
             </div>
-            <label for="fcriteria"></label>
-            <input id="fcriteria" name="first-criteria" type="text" class="text-input" required
-                placeholder="1. Add your criteria here">
-            <label for="scriteria"></label>
-            <input id="scriteria" name="second-criteria" type="text" class="text-input" required
-                placeholder="2. Add your criteria here">
-            <label for="tcriteria"></label>
-            <input id="tcriteria" name="third-criteria" type="text" class="text-input" required
-                placeholder="3. Add your criteria here">
-            <label for="focriteria"></label>
-            <input id="focriteria" name="fourth-criteria" type="text" class="text-input" required
-                placeholder="4. Add your criteria here">
-            <label for="ficriteria"></label>
-            <input id="ficriteria" name="fifth-criteria" type="text" class="text-input" required
-                placeholder="5. Add your criteria here">
-            <div class="scoring-criteria">
-                <h4>List 5 attributes/criteria that will help you make a decission. Think about them carefully and make
-                    sure you select the essential</h4>
-            </div>
-        </div>
-        <!-- Area where user defines the level of importance for each criteria-->
-        <div id="user-importance">
-            <!-- Contains table header for criteria of importance-->
-            <div class="table-headers">
-                <h3 id="table-headers">HOW IMPORTANT ARE THE CRITERIAS FOR YOU?</h3>
-            </div>
-            <select id="fimportance" name="first-importance" class="importance-drop">
-                <option value="" disabled selected>Select</option>
-                <option value="one">1</option>
-                <option value="two">2</option>
-                <option value="three">3</option>
-                <option value="four">4</option>
-                <option value="five">5</option>
-            </select>
-            <select id="simportance" name="second-importance" class="importance-drop">
-                <option value="" disabled selected>Select</option>
-                <option value="one">1</option>
-                <option value="two">2</option>
-                <option value="three">3</option>
-                <option value="four">4</option>
-                <option value="five">5</option>
-            </select>
-            <select id="timportance" name="third-importance" class="importance-drop">
-                <option value="" disabled selected>Select</option>
-                <option value="one">1</option>
-                <option value="two">2</option>
-                <option value="three">3</option>
-                <option value="four">4</option>
-                <option value="five">5</option>
-            </select>
-            <select id="foimportance" name="fourth-importance" class="importance-drop">
-                <option value="" disabled selected>Select</option>
-                <option value="one">1</option>
-                <option value="two">2</option>
-                <option value="three">3</option>
-                <option value="four">4</option>
-                <option value="five">5</option>
-            </select>
-            <select id="fiimportance" name="fifth-importance" class="importance-drop">
-                <option value="" disabled selected>Select</option>
-                <option value="one">1</option>
-                <option value="two">2</option>
-                <option value="three">3</option>
-                <option value="four">4</option>
-                <option value="five">5</option>
-            </select>
-            <div class="scoring-criteria">
-                <h4>1-less important to 5-very important.
-                    Once a number used, it can`t be used on another criteria when establishing importance.</h4>
+            <!-- Area where user defines the level of importance for each criteria-->
+            <div id="user-importance">
+                <!-- Contains table header for criteria of importance-->
+                <div class="table-headers">
+                    <h3 id="table-headers">HOW IMPORTANT ARE THE CRITERIAS FOR YOU?</h3>
+                </div>
+                <select id="fimportance" name="first-importance" class="importance-drop">
+                    <option value="" disabled selected>Select</option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                </select>
+                <select id="simportance" name="second-importance" class="importance-drop">
+                    <option value="" disabled selected>Select</option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                </select>
+                <select id="timportance" name="third-importance" class="importance-drop">
+                    <option value="" disabled selected>Select</option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                </select>
+                <select id="foimportance" name="fourth-importance" class="importance-drop">
+                    <option value="" disabled selected>Select</option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                </select>
+                <select id="fiimportance" name="fifth-importance" class="importance-drop">
+                    <option value="" disabled selected>Select</option>
+                    <option value="one">1</option>
+                    <option value="two">2</option>
+                    <option value="three">3</option>
+                    <option value="four">4</option>
+                    <option value="five">5</option>
+                </select>
+                <div class="scoring-criteria">
+                    <h4>1-less important to 5-very important.
+                        Once a number used, it can`t be used on another criteria when establishing importance.</h4>
+                </div>
             </div>
         </div>
         <!-- Area where user defines his first option he wants to compare including scoring data-->

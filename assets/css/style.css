@@ -172,6 +172,12 @@ h4 {
     width: 30%;
 }
 
+/* Styling for combined criteria definition and importance */
+#criteria-w-importance {
+    width: 100%;
+    display: contents;
+}
+
 /* styling for user option area */
 
 .scoring-criteria {
@@ -455,136 +461,144 @@ input::placeholder {
     #reset {
         font-size: 75%;
     }
+}
 
-    @media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
 
-        #menu {
-            margin-bottom: 10px;
-        }
-
-        #criteria-section,
-        #user-importance {
-            width: 50%;
-            clear: both;
-        }
-
-        #user-options {
-            width: 100%;
-            clear: both;
-        }
-
-        #user-input-area {
-            flex-wrap: wrap;
-        }
-
-        h4 {
-            margin-bottom: 52px;
-        }
-
-        #buttons-area {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            margin-top: -20px;
-            max-width: 90%;
-            flex-direction: column;
-        }
-
-        #buttons-area {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: wrap;
-            margin-top: -20px;
-
-        }
-
-        #print {
-            margin-top: 10px;
-            margin-right: 0px;
-        }
-
-        #reset {
-            margin-top: 10px;
-        }
+    #menu {
+        margin-bottom: 10px;
     }
 
-    @media screen and (max-width: 640px) {
-        h4 {
-            height: 50px;
-        }
+    #criteria-section,
+    #user-importance {
+        width: 50%;
+        clear: both;
+    }
 
-        #criteria-section input {
-            width: 90%
-        }
+    #user-options {
+        width: 100%;
+        clear: both;
+    }
 
-        .table-headers {
-            font-size: 0.85rem;
-        }
+    #user-input-area {
+        flex-wrap: wrap;
+    }
 
-        .drop-option-one,
-        .drop-option-two,
-        .drop-option-three {
-            width: 270%;
-        }
+    h4 {
+        margin-bottom: 52px;
+    }
+
+    #buttons-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: -20px;
+        max-width: 90%;
+        flex-direction: column;
+    }
+
+    #buttons-area {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin-top: -20px;
 
     }
 
-    @media screen and (max-width: 510px) {
-        h4 {
-            font-size: 0.8rem;
-        }
-
-        #user-options select {
-            font-size: 0.8rem;
-            white-space: pre-wrap;
-            height: 41px;
-            padding: 0;
-        }
+    #print {
+        margin-top: 10px;
+        margin-right: 0px;
     }
 
-    .user-options-one input, .user-options-two input, .user-options-three input {
-        height: 70px;
+    #reset {
+        margin-top: 10px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    h4 {
+        height: 50px;
     }
 
-    @media screen and (max-width: 435px) {
-        h4 {
-            font-size: 0.8rem;
-            padding-bottom: 20px;
-        }
+    #criteria-section input {
+        width: 90%
+    }
 
-        #user-options select {
-            font-size: 0.8rem;
-            white-space: pre-wrap;
-            height: 41px;
-            padding: 0;
-        }
+    .table-headers {
+        font-size: 0.85rem;
+    }
 
-        .importance-drop {
-            width: 80%;
-        }
+    .drop-option-one,
+    .drop-option-two,
+    .drop-option-three {
+        width: 270%;
+    }
 
-        h3 {
-            font-size: 0.9rem;
-        }
-        .user-options-one .option-label {
-            font-size: 0.9rem;
-        }
-        .user-options-two .option-label {
-            font-size: 0.9rem;
-        }
-        .user-options-three .option-label {
-            font-size: 0.9rem;
-        }
-        #calculate,
-        #reset,
-        #random,
-        #print {
-            width: 150px;
-            font-size: 60%;
-        }
-        #buttons-area {
+}
+
+@media screen and (max-width: 510px) {
+    h4 {
+        font-size: 0.8rem;
+    }
+
+    #user-options select {
+        font-size: 0.8rem;
+        white-space: pre-wrap;
+        height: 41px;
+        padding: 0;
+    }
+
+.user-options-one input,
+.user-options-two input,
+.user-options-three input {
+    height: 70px;
+}
+}
+
+@media screen and (max-width: 435px) {
+    h4 {
+        font-size: 0.8rem;
+        padding-bottom: 20px;
+    }
+
+    #user-options select {
+        font-size: 0.8rem;
+        white-space: pre-wrap;
+        height: 41px;
+        padding: 0;
+    }
+
+    .importance-drop {
+        width: 80%;
+    }
+
+    h3 {
+        font-size: 0.9rem;
+    }
+
+    .user-options-one .option-label {
+        font-size: 0.9rem;
+    }
+
+    .user-options-two .option-label {
+        font-size: 0.9rem;
+    }
+
+    .user-options-three .option-label {
+        font-size: 0.9rem;
+    }
+
+    #calculate,
+    #reset,
+    #random,
+    #print {
+        width: 150px;
+        font-size: 60%;
+    }
+
+    #buttons-area {
         margin-top: -60px;
-        }
     }
+}
