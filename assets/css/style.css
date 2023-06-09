@@ -479,19 +479,6 @@ input::placeholder {
     max-width: 99%;
 }
 
-
-/* styling for results area */
-
-#result-area {
-    width: 93%;
-    display: flex;
-    color: #1858b3;
-    margin-bottom: 50px;
-    margin-left: 50px;
-    font-size: large;
-    font-weight: bold;
-}
-
 /* Display size optimization */
 
 @media screen and (max-width: 1201px) {
