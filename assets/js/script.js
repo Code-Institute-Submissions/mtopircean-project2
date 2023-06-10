@@ -121,7 +121,7 @@ function calculateAnswer() {
 }
 
 function generateRandom() {
-  let resultArea = document.getElementById("result-area");
+  let resultArea = document.getElementById("random-result-area");
   let options = document.querySelectorAll(".option-label");
   console.log(options); // Log the retrieved options
   let randomIndex = Math.floor(Math.random() * options.length);

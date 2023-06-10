@@ -91,13 +91,14 @@ header {
 }
 
 #modal-close-about,
-#modal-close-how, {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 1.5rem;
-    cursor: pointer;
-    color: #fff;
+#modal-close-how,
+{
+position: absolute;
+top: 10px;
+right: 10px;
+font-size: 1.5rem;
+cursor: pointer;
+color: #fff;
 }
 
 #header-about-modal {
@@ -524,6 +525,12 @@ input::placeholder {
 
 @media screen and (max-width: 1201px) {
 
+    .user-options-one,
+    .user-options-two,
+    .user-options-three {
+        width: 100%;
+    }
+
     #calculate,
     #random,
     #print,
@@ -587,6 +594,13 @@ input::placeholder {
 }
 
 @media screen and (max-width: 640px) {
+
+    .user-options-one,
+    .user-options-two,
+    .user-options-three {
+        width: 80%;
+    }
+
     h4 {
         height: 50px;
     }
@@ -619,14 +633,21 @@ input::placeholder {
         padding: 0;
     }
 
-.user-options-one input,
-.user-options-two input,
-.user-options-three input {
-    height: 70px;
-}
+    .user-options-one input,
+    .user-options-two input,
+    .user-options-three input {
+        height: 70px;
+    }
 }
 
-@media screen and (max-width: 435px) {
+@media screen and (max-width: 461px) {
+
+    .user-options-one input,
+    .user-options-two input,
+    .user-options-three input {
+        font-size: 0.7rem;
+    }
+
     h4 {
         font-size: 0.8rem;
         padding-bottom: 20px;
@@ -669,5 +690,9 @@ input::placeholder {
 
     #buttons-area {
         margin-top: -60px;
+    }
+
+    #user-options select {
+        font-size: 0.7rem;
     }
 }
