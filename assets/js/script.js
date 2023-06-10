@@ -2,19 +2,25 @@
 //Get button and input areas and add event listeners to them
 
 document.addEventListener("DOMContentLoaded", function () {
+
+  console.log("DOM content loaded.");
+
   let buttons = document.getElementsByTagName("button");
   for (let button of buttons) {
-      button.addEventListener("click", function () {
-          if (this.getAttribute("id") === "calculate") {
-              calculateAnswer();
-          } else if (this.getAttribute("id") === "print") {
-              printPageAsPDF();
-          } else if (this.getAttribute("id") === "reset") {
-              resetUserArea();
-          } else if (this.getAttribute("id") === "random") {
-              generateRandom();
-          }
-      });
+    button.addEventListener("click", function () {
+
+      console.log("Button clicked: " + this.getAttribute("id"));
+
+      if (this.getAttribute("id") === "calculate") {
+        calculateAnswer();
+      } else if (this.getAttribute("id") === "print") {
+        printPageAsPDF();
+      } else if (this.getAttribute("id") === "reset") {
+        resetUserArea();
+      } else if (this.getAttribute("id") === "random") {
+        generateRandom();
+      }
+    });
   }
 });
 
@@ -24,6 +30,8 @@ for (let dropdown of dropdowns) {
 };
 
 function calculateAnswer() {
+
+  console.log("Calculating answer.");
 
   let inputFirstCriteriaName = document.getElementById("fcriteria").value;
   let inputSecondCriteriaName = document.getElementById("scriteria").value;
@@ -110,7 +118,7 @@ function calculateAnswer() {
       dropdownCriteriaThree * dropdownOptionThreeThree +
       dropdownCriteriaFour * dropdownOptionThreeFour +
       dropdownCriteriaFive * dropdownOptionThreeFive) /
-     5;
+    5;
 
   let resultArea = document.getElementById("result-area");
   let recommendation = "";
@@ -130,9 +138,14 @@ function calculateAnswer() {
   resultArea.textContent =
     "Based on the information you have provided, the recommendation is to proceed with " +
     recommendation;
+
+    console.log("Answer calculated.");
 }
 
 function generateRandom() {
+
+  console.log("Generating random.");
+
   let resultArea = document.getElementById("random-result-area");
   let options = document.querySelectorAll(".option-label");
   console.log(options); // Log the retrieved options
@@ -140,96 +153,126 @@ function generateRandom() {
   let randomOption = options[randomIndex].textContent;
   console.log(randomOption); // Log the random option
   resultArea.textContent = "This is the option returned by your random selection: " + randomOption;
+
+  console.log("Random generated.");
+
 }
 
 
 function resetUserArea() {
+
+  console.log("Resetting user area.");
+
   let dropOptions = document.querySelectorAll(
-      ".drop-option-one, .drop-option-two, .drop-option-three"
+    ".drop-option-one, .drop-option-two, .drop-option-three"
   );
   for (let dropOption of dropOptions) {
-      dropOption.selectedIndex = "";
+    dropOption.selectedIndex = "";
   }
-  console.log("User resetted the score for his options");
+
+  console.log("User area resetted.");
+
 }
 
 function printPageAsPDF() {
+
+  console.log("Printing page as PDF.");
+
   window.onafterprint = window.close;
   window.print();
   console.log("User has printed the page");
+
+  console.log("Page printed.");
+
 }
 
-//*About modal
+//* About modal
 
 let modalAbout = document.getElementById("header-about-modal");
 let modalTriggerAbout = document.getElementById("header-about");
 let modalCloseAbout = document.getElementById("modal-close-about");
 
-modalTriggerAbout.onclick = function() {
+modalTriggerAbout.onclick = function () {
+  console.log("Opening modal: modalAbout");
   closeModal();
-modalAbout.style.display = "block";
+  modalAbout.style.display = "block";
 };
 
-modalCloseAbout.onclick = function() {
-modalAbout.style.display = "none";
+modalCloseAbout.onclick = function () {
+  console.log("Closing modal: modalAbout");
+  modalAbout.style.display = "none";
 };
 
-//*How to modal
+//* How to modal
 
 let modalHow = document.getElementById("header-how-modal");
 let modalTriggerHow = document.getElementById("header-how");
 let modalCloseHow = document.getElementById("modal-close-how");
 
-modalTriggerHow.onclick = function() {
+modalTriggerHow.onclick = function () {
+  console.log("Opening modal: modalHow");
   closeModal();
-modalHow.style.display = "block";
+  modalHow.style.display = "block";
 };
 
-modalCloseHow.onclick = function() {
-modalHow.style.display = "none";
+modalCloseHow.onclick = function () {
+  console.log("Closing modal: modalHow");
+  modalHow.style.display = "none";
 };
 
-//*Generate answer in modal for Calculate
+//* Generate answer in modal for Calculate
 
 let submitModal = document.getElementById("submit-modal");
 let buttonSubmit = document.getElementById("calculate");
 let closeSubmit = document.querySelector(".submit-close");
 
-buttonSubmit.onclick = function() {
+buttonSubmit.onclick = function () {
+  console.log("Opening modal: submitModal");
   closeModal();
   submitModal.style.display = "block";
-}
+};
 
-closeSubmit.onclick = function() {
+closeSubmit.onclick = function () {
+  console.log("Closing modal: submitModal");
   submitModal.style.display = "none";
-}
+};
 
-//*Generate answer in modal for Random
+//* Generate answer in modal for Random
 
 let randomModal = document.getElementById("random-modal");
 let buttonRandom = document.getElementById("random");
 let closeRandom = document.querySelector(".random-close");
 
-buttonRandom.onclick = function() {
+buttonRandom.onclick = function () {
+  console.log("Opening modal: randomModal");
   closeModal();
   randomModal.style.display = "block";
-}
+};
 
-closeRandom.onclick = function() {
+closeRandom.onclick = function () {
+  console.log("Closing modal: randomModal");
   randomModal.style.display = "none";
-}
+};
 
-window.onclick = function(event) {
+console.log("Script loaded successfully.");
+
+window.onclick = function (event) {
+  console.log("Window clicked.");
+
   if (event.target == modalAbout) {
+    console.log("Clicked on modalAbout");
     modalAbout.style.display = "none";
   }
   if (event.target == modalHow) {
+    console.log("Clicked on modalHow");
     modalHow.style.display = "none";
   }
   if (event.target == submitModal) {
+    console.log("Clicked on submitModal");
     submitModal.style.display = "none";
   }
   if (event.target == randomModal) {
+    console.log("Clicked on randomModal");
     randomModal.style.display = "none";
   }
 };
