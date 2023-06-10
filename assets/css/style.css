@@ -223,8 +223,7 @@ h4 {
 #criteria-section,
 #user-importance,
 #user-options {
-    width: 30%;
-    float: left;
+    width: 50%;
 }
 
 #criteria-section {
@@ -247,7 +246,7 @@ h4 {
     border: #1858b3 solid 3px;
     color: #fff;
     background-color: #1858b3;
-    width: 90%;
+    width: 95%;
     border-radius: 5px;
     text-align: center;
     padding: 11px;
@@ -256,13 +255,16 @@ h4 {
 }
 
 #user-importance {
-    width: 30%;
+    width: 50%;
 }
 
 /* Styling for combined criteria definition and importance */
 #criteria-w-importance {
     width: 100%;
-    display: contents;
+    display: inline-flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
 }
 
 /* styling for user option area */
@@ -676,10 +678,6 @@ input::placeholder {
         white-space: pre-wrap;
         height: 41px;
         padding: 0;
-    }
-
-    .importance-drop {
-        width: 80%;
     }
 
     h3 {
