@@ -154,6 +154,7 @@ function resetUserArea() {
 }
 
 function printPageAsPDF() {
+  window.onafterprint = window.close;
   window.print();
   console.log("User has printed the page");
 }
