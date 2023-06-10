@@ -633,11 +633,15 @@ input::placeholder {
     }
 
     .importance-drop {
-        width: 85%;
+        width: 97%;
     }
 
+    #criteria-section input {
+    width: 85%;
+}
+
     .drop-option-one, .drop-option-two, .drop-option-three {
-        width: 320%;
+        width: 331%;
     }
 
     #user-options select {
