@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 let dropdowns = document.querySelectorAll(".importance-drop, .drop-option-one, .drop-option-two, .drop-option-three");
 for (let dropdown of dropdowns) {
   dropdown.addEventListener("change", calculateAnswer);
-};
+}
 
 function calculateAnswer() {
 
