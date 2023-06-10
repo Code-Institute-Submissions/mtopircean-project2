@@ -93,9 +93,9 @@ header {
 #modal-close-about,
 #modal-close-how {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 1.5rem;
+    top: 1px;
+    right: 3px;
+    font-size: 1.7rem;
     cursor: pointer;
     color: #fff;
 }
@@ -143,9 +143,9 @@ header {
 
 .submit-close {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 1.5rem;
+    top: 1px;
+    right: 3px;
+    font-size: 1.7rem;
     cursor: pointer;
     color: #fff;
 }
@@ -185,9 +185,9 @@ header {
 
 .random-close {
     position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 1.5rem;
+    top: 1px;
+    right: 3px;
+    font-size: 1.7rem;
     cursor: pointer;
     color: #fff;
 }
