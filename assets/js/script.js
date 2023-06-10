@@ -153,6 +153,7 @@ let modalTriggerAbout = document.getElementById("header-about");
 let modalCloseAbout = document.getElementById("modal-close-about");
 
 modalTriggerAbout.onclick = function() {
+  closeModal();
 modalAbout.style.display = "block";
 };
 
@@ -167,6 +168,7 @@ let modalTriggerHow = document.getElementById("header-how");
 let modalCloseHow = document.getElementById("modal-close-how");
 
 modalTriggerHow.onclick = function() {
+  closeModal();
 modalHow.style.display = "block";
 };
 
@@ -181,6 +183,7 @@ let buttonSubmit = document.getElementById("calculate");
 let closeSubmit = document.querySelector(".submit-close");
 
 buttonSubmit.onclick = function() {
+  closeModal();
   submitModal.style.display = "block";
 }
 
@@ -195,6 +198,7 @@ let buttonRandom = document.getElementById("random");
 let closeRandom = document.querySelector(".random-close");
 
 buttonRandom.onclick = function() {
+  closeModal();
   randomModal.style.display = "block";
 }
 
@@ -214,5 +218,12 @@ window.onclick = function(event) {
   }
   if (event.target == randomModal) {
     randomModal.style.display = "none";
+  }
+};
+
+function closeModal() {
+  let modals = document.querySelectorAll(".about-modal, .how-modal, .s-modal, .r-modal");
+  for (let i = 0; i < modals.length; i++) {
+    modals[i].style.display = "none";
   }
 }
