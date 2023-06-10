@@ -24,6 +24,13 @@ for (let dropdown of dropdowns) {
 };
 
 function calculateAnswer() {
+
+  let inputFirstCriteriaName = document.getElementById("fcriteria").value;
+  let inputSecondCriteriaName = document.getElementById("scriteria").value;
+  let inputThirdCriteriaName = document.getElementById("tcriteria").value;
+  let inputFourthCriteriaName = document.getElementById("focriteria").value;
+  let inputFifthCriteriaName = document.getElementById("ficriteria").value;
+
   let dropdownCriteriaOne = document.getElementById("fimportance").value;
   let dropdownCriteriaTwo = document.getElementById("simportance").value;
   let dropdownCriteriaThree = document.getElementById("timportance").value;
@@ -50,6 +57,11 @@ function calculateAnswer() {
 
   // Check if any dropdown is empty
   if (
+    inputFirstCriteriaName === "" ||
+    inputSecondCriteriaName === "" ||
+    inputThirdCriteriaName === "" ||
+    inputFourthCriteriaName === "" ||
+    inputFifthCriteriaName === "" ||
     dropdownCriteriaOne === "" ||
     dropdownCriteriaTwo === "" ||
     dropdownCriteriaThree === "" ||
@@ -72,7 +84,7 @@ function calculateAnswer() {
     dropdownOptionThreeFive === ""
   ) {
     let resultArea = document.getElementById("result-area");
-    resultArea.textContent = "Ups.... You forgot to fill in one of the mandatory fields. Please recheck your criteria importance values and your options scores and click on CALCULATE ANSWER";
+    resultArea.textContent = "Ups.... You forgot to fill in one of the mandatory fields. Please recheck again that you have filled in all boxes including the Criteria Name Definition and all Drop Down values, then click again on CALCULATE ANSWER";
     return;
   }
 
