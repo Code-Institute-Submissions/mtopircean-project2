@@ -544,6 +544,15 @@ input::placeholder {
 
 @media screen and (max-width: 1000px) {
 
+    .drop-option-one, .drop-option-two, .drop-option-three {
+        width: 332%;
+    }
+
+    .user-options-one, .user-options-two, .user-options-three {
+        width: 100%;
+    }
+    
+
     #menu {
         margin-bottom: 10px;
     }
@@ -596,12 +605,12 @@ input::placeholder {
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 800px) {
 
     .user-options-one,
     .user-options-two,
     .user-options-three {
-        width: 80%;
+        width: 100%;
     }
 
     h4 {
@@ -616,17 +625,19 @@ input::placeholder {
         font-size: 0.85rem;
     }
 
-    .drop-option-one,
-    .drop-option-two,
-    .drop-option-three {
-        width: 270%;
-    }
-
 }
 
 @media screen and (max-width: 510px) {
     h4 {
         font-size: 0.8rem;
+    }
+
+    .importance-drop {
+        width: 85%;
+    }
+
+    .drop-option-one, .drop-option-two, .drop-option-three {
+        width: 320%;
     }
 
     #user-options select {

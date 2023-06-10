@@ -177,14 +177,10 @@ function resetUserArea() {
 function printPageAsPDF() {
 
   console.log("Printing page as PDF.");
-
-  window.onafterprint = window.close;
   window.print();
-  console.log("User has printed the page");
-
-  console.log("Page printed.");
-
 }
+
+
 
 //* About modal
 
