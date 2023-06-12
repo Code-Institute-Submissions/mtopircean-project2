@@ -65,25 +65,25 @@ function calculateAnswer() {
   // Check if any dropdown is empty
   if (
     inputFirstCriteriaName === "" ||
-  inputSecondCriteriaName === "" ||
-  inputThirdCriteriaName === "" ||
-  inputFourthCriteriaName === "" ||
-  inputFifthCriteriaName === "" ||
-  dropdownCriteriaOne === "" ||
-  dropdownCriteriaTwo === "" ||
-  dropdownCriteriaThree === "" ||
-  dropdownCriteriaFour === "" ||
-  dropdownCriteriaFive === "" ||
-  dropdownOptionOneOne === "" ||
-  dropdownOptionOneTwo === "" ||
-  dropdownOptionOneThree === "" ||
-  dropdownOptionOneFour === "" ||
-  dropdownOptionOneFive === "" ||
-  dropdownOptionTwoOne === "" ||
-  dropdownOptionTwoTwo === "" ||
-  dropdownOptionTwoThree === "" ||
-  dropdownOptionTwoFour === "" ||
-  dropdownOptionTwoFive === "" ||
+    inputSecondCriteriaName === "" ||
+    inputThirdCriteriaName === "" ||
+    inputFourthCriteriaName === "" ||
+    inputFifthCriteriaName === "" ||
+    dropdownCriteriaOne === "" ||
+    dropdownCriteriaTwo === "" ||
+    dropdownCriteriaThree === "" ||
+    dropdownCriteriaFour === "" ||
+    dropdownCriteriaFive === "" ||
+    dropdownOptionOneOne === "" ||
+    dropdownOptionOneTwo === "" ||
+    dropdownOptionOneThree === "" ||
+    dropdownOptionOneFour === "" ||
+    dropdownOptionOneFive === "" ||
+    dropdownOptionTwoOne === "" ||
+    dropdownOptionTwoTwo === "" ||
+    dropdownOptionTwoThree === "" ||
+    dropdownOptionTwoFour === "" ||
+    dropdownOptionTwoFive === "" ||
 
   ) {
     let resultArea = document.getElementById("result-area");
@@ -107,13 +107,24 @@ function calculateAnswer() {
       dropdownCriteriaFive * dropdownOptionTwoFive) /
     5;
 
-  let scoreOptionThree =
-    (dropdownCriteriaOne * dropdownOptionThreeOne +
-      dropdownCriteriaTwo * dropdownOptionThreeTwo +
-      dropdownCriteriaThree * dropdownOptionThreeThree +
-      dropdownCriteriaFour * dropdownOptionThreeFour +
-      dropdownCriteriaFive * dropdownOptionThreeFive) /
-    5;
+    if (
+      dropdownCriteriaOne == 0 or dropdownOptionThreeOne == 0 or
+      dropdownCriteriaTwo == 0 or dropdownOptionThreeTwo == 0 or
+      dropdownCriteriaThree == 0 or dropdownOptionThreeThree == 0 or
+      dropdownCriteriaFour == 0 or dropdownOptionThreeFour == 0 or
+      dropdownCriteriaFive == 0 or dropdownOptionThreeFive == 0
+  ):
+      scoreOptionThree = 0
+      alert("At least one of the drop downs in Option C is empty!")
+  else:
+      scoreOptionThree = (
+          (dropdownCriteriaOne * dropdownOptionThreeOne +
+          dropdownCriteriaTwo * dropdownOptionThreeTwo +
+          dropdownCriteriaThree * dropdownOptionThreeThree +
+          dropdownCriteriaFour * dropdownOptionThreeFour +
+          dropdownCriteriaFive * dropdownOptionThreeFive) /
+          5
+      )
 
   let resultArea = document.getElementById("result-area");
   let recommendation = "";
