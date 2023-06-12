@@ -506,7 +506,7 @@ input::placeholder {
 
 #reset {
     text-transform: uppercase;
-    border: #fa0000 solid 3px;
+    border: #ff0000 solid 3px;
     color: #ff0000;
     background-color: #ffff;
     width: 175px;
@@ -524,7 +524,7 @@ input::placeholder {
 
 #reset:hover {
     background-color: #ff0000;
-    border: #fa0000 solid 3px;
+    border: #ff0000 solid 3px;
     color: #ffffff;
 }
 
