@@ -83,12 +83,7 @@ function calculateAnswer() {
   dropdownOptionTwoTwo === "" ||
   dropdownOptionTwoThree === "" ||
   dropdownOptionTwoFour === "" ||
-  dropdownOptionTwoFive === "" ||
-  dropdownOptionThreeOne === "" ||
-  dropdownOptionThreeTwo === "" ||
-  dropdownOptionThreeThree === "" ||
-  dropdownOptionThreeFour === "" ||
-  dropdownOptionThreeFive === ""
+  dropdownOptionTwoFive === ""
   ) {
     let resultArea = document.getElementById("result-area");
     resultArea.textContent = "Ups.... You forgot to fill in one of the mandatory fields. Please recheck again that you have filled in all boxes including the Criteria Name Definition and all Drop Down values, then click again on CALCULATE ANSWER";
@@ -110,14 +105,25 @@ function calculateAnswer() {
       dropdownCriteriaFour * dropdownOptionTwoFour +
       dropdownCriteriaFive * dropdownOptionTwoFive) /
     5;
-
-  let scoreOptionThree =
-    (dropdownCriteriaOne * dropdownOptionThreeOne +
-      dropdownCriteriaTwo * dropdownOptionThreeTwo +
-      dropdownCriteriaThree * dropdownOptionThreeThree +
-      dropdownCriteriaFour * dropdownOptionThreeFour +
-      dropdownCriteriaFive * dropdownOptionThreeFive) /
-    5;
+    let scoreOptionThree;
+    if (
+      dropdownCriteriaOne === "" || dropdownOptionThreeOne === "" ||
+      dropdownCriteriaTwo === "" || dropdownOptionThreeTwo === "" ||
+      dropdownCriteriaThree === "" || dropdownOptionThreeThree === "" ||
+      dropdownCriteriaFour === "" || dropdownOptionThreeFour === "" ||
+      dropdownCriteriaFive === "" || dropdownOptionThreeFive === ""
+    ) {
+      scoreOptionThree = 0;
+    } else {
+      scoreOptionThree = (
+        (dropdownCriteriaOne * dropdownOptionThreeOne +
+        dropdownCriteriaTwo * dropdownOptionThreeTwo +
+        dropdownCriteriaThree * dropdownOptionThreeThree +
+        dropdownCriteriaFour * dropdownOptionThreeFour +
+        dropdownCriteriaFive * dropdownOptionThreeFive) /
+        5
+      );
+    }
 
   let resultArea = document.getElementById("result-area");
   let recommendation = "";
@@ -138,13 +144,21 @@ function calculateAnswer() {
     recommendation = "All options are equal. You can use the Generate Random button for lucky guess.";
   }
 
+  if (scoreOptionThree === 0 && (
+    dropdownCriteriaOne === "" || dropdownOptionThreeOne === "" ||
+    dropdownCriteriaTwo === "" || dropdownOptionThreeTwo === "" ||
+    dropdownCriteriaThree === "" || dropdownOptionThreeThree === "" ||
+    dropdownCriteriaFour === "" || dropdownOptionThreeFour === "" ||
+    dropdownCriteriaFive === "" || dropdownOptionThreeFive === ""
+  )) {
+    resultArea.textContent = "Based on the information you have provided, the result is: " + recommendation + "\n" + "You have not filled in all of the fields in Option C dropdown area which have caused for the result of this option not to be taken into consideration.";
+  } else {
+    resultArea.textContent = "Based on the information you have provided, the result is: " + recommendation;
+  }
+
   console.log("Score Option One: " + scoreOptionOne);
   console.log("Score Option Two: " + scoreOptionTwo);
   console.log("Score Option Three: " + scoreOptionThree);
-
-  resultArea.textContent =
-    "Based on the information you have provided, the result is: " +
-    recommendation;
 
   console.log(recommendation);
 }
