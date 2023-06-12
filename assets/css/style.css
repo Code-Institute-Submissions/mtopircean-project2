@@ -193,7 +193,7 @@ header {
 }
 
 .instruction-list {
-    font-weight:bold ;
+    font-weight: bold;
 }
 
 .note {
@@ -569,14 +569,18 @@ input::placeholder {
 
 @media screen and (max-width: 1000px) {
 
-    .drop-option-one, .drop-option-two, .drop-option-three {
+    .drop-option-one,
+    .drop-option-two,
+    .drop-option-three {
         width: 332%;
     }
 
-    .user-options-one, .user-options-two, .user-options-three {
+    .user-options-one,
+    .user-options-two,
+    .user-options-three {
         width: 100%;
     }
-    
+
 
     #menu {
         margin-bottom: 10px;
@@ -662,10 +666,12 @@ input::placeholder {
     }
 
     #criteria-section input {
-    width: 85%;
-}
+        width: 85%;
+    }
 
-    .drop-option-one, .drop-option-two, .drop-option-three {
+    .drop-option-one,
+    .drop-option-two,
+    .drop-option-three {
         width: 331%;
     }
 
