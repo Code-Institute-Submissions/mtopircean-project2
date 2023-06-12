@@ -101,9 +101,7 @@
                 <input id="ficriteria" name="fifth-criteria" type="text" class="text-input" required
                     placeholder="5. Add your criteria here">
                 <div class="scoring-criteria">
-                    <h4>List 5 attributes/criteria that will help you make a decission. Think about them carefully and
-                        make
-                        sure you select the essential</h4>
+                    <h4>List 5 criterias critical for your decission making process.</h4>
                 </div>
             </div>
             <!-- Area where user defines the level of importance for each criteria-->
@@ -153,8 +151,7 @@
                     <option value="5">5</option>
                 </select>
                 <div class="scoring-criteria">
-                    <h4>1-less important to 5-very important.
-                        Once a number used, it can`t be used on another criteria when establishing importance.</h4>
+                    <h4>Choose from 1-less important to 5-very important.</h4>
                 </div>
             </div>
         </div>
@@ -164,7 +161,9 @@
             <div id="option-one">
                 <!-- Area where user defines the name of his first option-->
                 <div class="user-options-one">
-                    <label for="selection-one" class="option-label">Option A</label>
+                    <label for="selection-one" class="option-label">Option A
+                        <br>
+                        <span class="mandatory">Mandatory</span></label>
                     <input id="selection-one" name="selection-one" type="text" class="text-input-option" required
                         placeholder="Click to add option">
                 </div>
@@ -246,7 +245,9 @@
             <div id="option-two">
                 <!-- Area where user defines the name of his second option-->
                 <div class="user-options-two">
-                    <label for="option2" class="option-label">Option B</label>
+                    <label for="option2" class="option-label">Option B
+                        <br>
+                        <span class="mandatory">Mandatory</span></label>
                     <input id="option2" name="option-two" type="text" class="text-input-option" required
                         placeholder="Click to add option">
                 </div>
@@ -327,7 +328,9 @@
             <!-- Area where user defines the name of his first option-->
             <div id="option-three">
                 <div class="user-options-three">
-                    <label for="option3" class="option-label">Option C</label>
+                    <label for="option3" class="option-label">Option C
+                        <br>
+                        <span id="optional">Optional</span></label>
                     <input id="option3" name="option-three" type="text" class="text-input-option" required
                         placeholder="Click to add option">
                 </div>
@@ -405,8 +408,8 @@
                     </select>
                 </div>
             </div>
-            <div class="scoring-criteria">
-                <h4>1-low score to 10-high score. You can use same score value for multiple options/criteria.</h4>
+            <div class="scoring-criteria" id="definition-scoring">
+                <h4>Choose from 1-lowest score to 10-highest score.</h4>
             </div>
         </div>
     </div>
