@@ -65,26 +65,30 @@ function calculateAnswer() {
   // Check if any dropdown is empty
   if (
     inputFirstCriteriaName === "" ||
-    inputSecondCriteriaName === "" ||
-    inputThirdCriteriaName === "" ||
-    inputFourthCriteriaName === "" ||
-    inputFifthCriteriaName === "" ||
-    dropdownCriteriaOne === "" ||
-    dropdownCriteriaTwo === "" ||
-    dropdownCriteriaThree === "" ||
-    dropdownCriteriaFour === "" ||
-    dropdownCriteriaFive === "" ||
-    dropdownOptionOneOne === "" ||
-    dropdownOptionOneTwo === "" ||
-    dropdownOptionOneThree === "" ||
-    dropdownOptionOneFour === "" ||
-    dropdownOptionOneFive === "" ||
-    dropdownOptionTwoOne === "" ||
-    dropdownOptionTwoTwo === "" ||
-    dropdownOptionTwoThree === "" ||
-    dropdownOptionTwoFour === "" ||
-    dropdownOptionTwoFive === "" ||
-
+  inputSecondCriteriaName === "" ||
+  inputThirdCriteriaName === "" ||
+  inputFourthCriteriaName === "" ||
+  inputFifthCriteriaName === "" ||
+  dropdownCriteriaOne === "" ||
+  dropdownCriteriaTwo === "" ||
+  dropdownCriteriaThree === "" ||
+  dropdownCriteriaFour === "" ||
+  dropdownCriteriaFive === "" ||
+  dropdownOptionOneOne === "" ||
+  dropdownOptionOneTwo === "" ||
+  dropdownOptionOneThree === "" ||
+  dropdownOptionOneFour === "" ||
+  dropdownOptionOneFive === "" ||
+  dropdownOptionTwoOne === "" ||
+  dropdownOptionTwoTwo === "" ||
+  dropdownOptionTwoThree === "" ||
+  dropdownOptionTwoFour === "" ||
+  dropdownOptionTwoFive === "" ||
+  dropdownOptionThreeOne === "" ||
+  dropdownOptionThreeTwo === "" ||
+  dropdownOptionThreeThree === "" ||
+  dropdownOptionThreeFour === "" ||
+  dropdownOptionThreeFive === ""
   ) {
     let resultArea = document.getElementById("result-area");
     resultArea.textContent = "Ups.... You forgot to fill in one of the mandatory fields. Please recheck again that you have filled in all boxes including the Criteria Name Definition and all Drop Down values, then click again on CALCULATE ANSWER";
@@ -107,25 +111,13 @@ function calculateAnswer() {
       dropdownCriteriaFive * dropdownOptionTwoFive) /
     5;
 
-    if (
-      dropdownCriteriaOne === "" || dropdownOptionThreeOne === "" ||
-      dropdownCriteriaTwo === "" || dropdownOptionThreeTwo === "" ||
-      dropdownCriteriaThree === "" || dropdownOptionThreeThree === "" ||
-      dropdownCriteriaFour === "" || dropdownOptionThreeFour === "" ||
-      dropdownCriteriaFive === "" || dropdownOptionThreeFive === ""
-    ) {
-      scoreOptionThree = 0;
-      alert("At least one of the drop downs in Option C is empty!");
-    } else {
-      scoreOptionThree = (
-        (dropdownCriteriaOne * dropdownOptionThreeOne +
-        dropdownCriteriaTwo * dropdownOptionThreeTwo +
-        dropdownCriteriaThree * dropdownOptionThreeThree +
-        dropdownCriteriaFour * dropdownOptionThreeFour +
-        dropdownCriteriaFive * dropdownOptionThreeFive) /
-        5
-      );
-    }
+  let scoreOptionThree =
+    (dropdownCriteriaOne * dropdownOptionThreeOne +
+      dropdownCriteriaTwo * dropdownOptionThreeTwo +
+      dropdownCriteriaThree * dropdownOptionThreeThree +
+      dropdownCriteriaFour * dropdownOptionThreeFour +
+      dropdownCriteriaFive * dropdownOptionThreeFive) /
+    5;
 
   let resultArea = document.getElementById("result-area");
   let recommendation = "";
