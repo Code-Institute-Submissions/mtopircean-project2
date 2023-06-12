@@ -26,23 +26,20 @@
             <div id="header-about-modal" class="about-modal">
                 <div id="about-modal-content">
                     <span id="modal-close-about">&times;</span>
-                    <h1>About the selector:</h1>
+                    <h1>About The Selector:</h1>
                     <br>
                     <p>Selectors main mission is to provide a basic, simple, and fun support to help you on your last
-                        mile
-                        decision-making process.
+                        mile decision-making process.
                         <br>
-                        It doesn't aim to remove your judgment from a decision-making process, but it aims to offer an
-                        informed proposal based on your values.
+                        It doesn't aim to remove your judgment, but it`s purpose is to offer an informed recommandation
+                        based on your values.
                         <br>
-                        The assumption is that you have already run through an initial process of filtering your options
-                        and now
-                        you are down to your last 3.
+                        Comparison is limited to a minimum of 2 options, but 3 would be more recommended as it will
+                        offer a wider area of selection but still enough to take an informed decision.
+                        If you have more than 3 options, then probably you have at least one to many and you should aim
+                        to further reduce your number of choices.
                         <br>
-                        If you have more than 3 options, then probably you have too many ;)
-                        <br>
-                        <br>
-                        I hope you enjoy it!
+                        Enjoy!
                     </p>
                 </div>
             </div>
@@ -54,23 +51,26 @@
                     <h1>How to use the selector:</h1>
                     <br>
                     <p>
-                        1. Write your criteria: ex. car body colour, engine power, etc.
+                        <span class="instruction-list">1. </span>Start by defining your criteria and write them down in the first column. We have decided on 5
+                        as we believe it will determine you as the user to think hard about what is important for you.
+                        Use a very brief(ideally 1 word) descrition.
                         <br>
-                        2. Select from 1-5 how important the criteria is for you. You can select a value only for a
-                        criteria and
-                        once it is selected, <span>you can`t select same values for the others</span>.
+                        Example : colour, size, composition, etc.
                         <br>
-                        3. Select on each OPTION how it scores on each criteria based on a 1 to 10 ranking, <span>1
-                            being the
-                            worst, 10 being the best</span>. Here you can choose the same value for multiple criteria
-                        and
-                        options.
+                        <span class="instruction-list">2. </span>Select from 1-5 how important the criteria is for you by using the drop-down option. Think
+                        well and try to differentiate as much as possible between how important each criteria is.
                         <br>
-                        4. <span>All fields must be completed</span>.
+                        <span class="instruction-list">3. </span>Click in each “Click to add option” field under the 3 options(Option A, B, C) and write a
+                        short name for your option. Try to limit to a very short name, ideally limit yourself to 1 word.
                         <br>
-                        5. Click on <span>CALCULATE</span> and it will return the result to help you decide.
+                        <span class="instruction-list">4. </span>Using the drop down menu under each option select a score from 1 to 10 where 1 is lowest
+                        score and 10 is highest.
                         <br>
-                        6. Still can`t make up your mind, use the <span>RANDOM</span> generator and take a chance.
+                        <br>
+                        <span class="instruction-list">NOTE: All dropdown boxes in both the Criteria Importance area and in the Option
+                            scoring area need to be filled in. Option C scoring remains optional for users with only 2
+                            options.</span>
+
                     </p>
                 </div>
             </div>
@@ -420,39 +420,39 @@
             <div id="calculate-area">
                 <button data-type="submit" id="calculate">Calculate Answer</button>
                 <div id="submit-modal" class="s-modal">
-                  <div class="s-modal-content">
-                    <span class="submit-close">&times;</span>
-                    <p id="result-area"></p>
-                  </div>
-                </div>
-              </div>
-
-                <!-- Button that generates a random solution for the user if they are undecided and do not want to use a calculation -->
-                <div id="random-area">
-                    <button data-type="submit" id="random">Generate random selection</button>
-                    <div id="random-modal" class="r-modal">
-                        <div class="r-modal-content">
-                          <span class="random-close">&times;</span>
-                          <p id="random-result-area"></p>
-                        </div>
-                      </div>
+                    <div class="s-modal-content">
+                        <span class="submit-close">&times;</span>
+                        <p id="result-area"></p>
+                    </div>
                 </div>
             </div>
 
-            <div id="reset-print">
-                <!-- Button that resets the rating/scoring in all 3 user option sections -->
-                <div id="reset-area">
-                    <button type="button" onclick="resetFields()" id="reset" data-type="reset">Reset option
-                        values</button>
-                </div>
-
-                <!-- Button that prints the page in PDF. Area includes its Java code -->
-                <div id="print-pdf">
-                    <button onclick="printPageAsPDF()" id="print"><i class="fa-solid fa-print"></i> Print as
-                        PDF</button>
+            <!-- Button that generates a random solution for the user if they are undecided and do not want to use a calculation -->
+            <div id="random-area">
+                <button data-type="submit" id="random">Generate random selection</button>
+                <div id="random-modal" class="r-modal">
+                    <div class="r-modal-content">
+                        <span class="random-close">&times;</span>
+                        <p id="random-result-area"></p>
+                    </div>
                 </div>
             </div>
         </div>
+
+        <div id="reset-print">
+            <!-- Button that resets the rating/scoring in all 3 user option sections -->
+            <div id="reset-area">
+                <button type="button" onclick="resetFields()" id="reset" data-type="reset">Reset option
+                    values</button>
+            </div>
+
+            <!-- Button that prints the page in PDF. Area includes its Java code -->
+            <div id="print-pdf">
+                <button onclick="printPageAsPDF()" id="print"><i class="fa-solid fa-print"></i> Print as
+                    PDF</button>
+            </div>
+        </div>
+    </div>
 </body>
 <script src="assets/js/script.js"></script>
 </body>

@@ -192,6 +192,14 @@ header {
     color: #fff;
 }
 
+.instruction-list {
+    font-weight:bold ;
+}
+
+.note {
+    text-transform: uppercase;
+}
+
 /* Styling for whole area where user input is collected */
 
 #user-input-area {
