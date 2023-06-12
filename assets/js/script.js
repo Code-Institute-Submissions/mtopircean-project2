@@ -108,23 +108,24 @@ function calculateAnswer() {
     5;
 
     if (
-      dropdownCriteriaOne == 0 or dropdownOptionThreeOne == 0 or
-      dropdownCriteriaTwo == 0 or dropdownOptionThreeTwo == 0 or
-      dropdownCriteriaThree == 0 or dropdownOptionThreeThree == 0 or
-      dropdownCriteriaFour == 0 or dropdownOptionThreeFour == 0 or
-      dropdownCriteriaFive == 0 or dropdownOptionThreeFive == 0
-  ):
-      scoreOptionThree = 0
-      alert("At least one of the drop downs in Option C is empty!")
-  else:
+      dropdownCriteriaOne === "" || dropdownOptionThreeOne === "" ||
+      dropdownCriteriaTwo === "" || dropdownOptionThreeTwo === "" ||
+      dropdownCriteriaThree === "" || dropdownOptionThreeThree === "" ||
+      dropdownCriteriaFour === "" || dropdownOptionThreeFour === "" ||
+      dropdownCriteriaFive === "" || dropdownOptionThreeFive === ""
+    ) {
+      scoreOptionThree = 0;
+      alert("At least one of the drop downs in Option C is empty!");
+    } else {
       scoreOptionThree = (
-          (dropdownCriteriaOne * dropdownOptionThreeOne +
-          dropdownCriteriaTwo * dropdownOptionThreeTwo +
-          dropdownCriteriaThree * dropdownOptionThreeThree +
-          dropdownCriteriaFour * dropdownOptionThreeFour +
-          dropdownCriteriaFive * dropdownOptionThreeFive) /
-          5
-      )
+        (dropdownCriteriaOne * dropdownOptionThreeOne +
+        dropdownCriteriaTwo * dropdownOptionThreeTwo +
+        dropdownCriteriaThree * dropdownOptionThreeThree +
+        dropdownCriteriaFour * dropdownOptionThreeFour +
+        dropdownCriteriaFive * dropdownOptionThreeFive) /
+        5
+      );
+    }
 
   let resultArea = document.getElementById("result-area");
   let recommendation = "";
