@@ -274,23 +274,22 @@ closeRandom.onclick = function () {
 console.log("Script loaded successfully.");
 
 window.onclick = function (event) {
-  console.log("Window clicked.");
 
-  if (event.target == modalAbout) {
-    console.log("Clicked on modalAbout");
+  if (event.target == modalAbout) {;
     modalAbout.style.display = "none";
+    console.log("Clicked outside modal and closed modalAbout");
   }
   if (event.target == modalHow) {
-    console.log("Clicked on modalHow");
     modalHow.style.display = "none";
+    console.log("Clicked outside modal and closed modalHow");
   }
   if (event.target == submitModal) {
-    console.log("Clicked on submitModal");
     submitModal.style.display = "none";
+    console.log("Clicked outside modal and closed submitModal");
   }
   if (event.target == randomModal) {
-    console.log("Clicked on randomModal");
     randomModal.style.display = "none";
+    console.log("Clicked outside modal and closed randomModal");
   }
 };
 
