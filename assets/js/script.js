@@ -65,25 +65,25 @@ function calculateAnswer() {
   // Check if any dropdown is empty
   if (
     inputFirstCriteriaName === "" ||
-  inputSecondCriteriaName === "" ||
-  inputThirdCriteriaName === "" ||
-  inputFourthCriteriaName === "" ||
-  inputFifthCriteriaName === "" ||
-  dropdownCriteriaOne === "" ||
-  dropdownCriteriaTwo === "" ||
-  dropdownCriteriaThree === "" ||
-  dropdownCriteriaFour === "" ||
-  dropdownCriteriaFive === "" ||
-  dropdownOptionOneOne === "" ||
-  dropdownOptionOneTwo === "" ||
-  dropdownOptionOneThree === "" ||
-  dropdownOptionOneFour === "" ||
-  dropdownOptionOneFive === "" ||
-  dropdownOptionTwoOne === "" ||
-  dropdownOptionTwoTwo === "" ||
-  dropdownOptionTwoThree === "" ||
-  dropdownOptionTwoFour === "" ||
-  dropdownOptionTwoFive === ""
+    inputSecondCriteriaName === "" ||
+    inputThirdCriteriaName === "" ||
+    inputFourthCriteriaName === "" ||
+    inputFifthCriteriaName === "" ||
+    dropdownCriteriaOne === "" ||
+    dropdownCriteriaTwo === "" ||
+    dropdownCriteriaThree === "" ||
+    dropdownCriteriaFour === "" ||
+    dropdownCriteriaFive === "" ||
+    dropdownOptionOneOne === "" ||
+    dropdownOptionOneTwo === "" ||
+    dropdownOptionOneThree === "" ||
+    dropdownOptionOneFour === "" ||
+    dropdownOptionOneFive === "" ||
+    dropdownOptionTwoOne === "" ||
+    dropdownOptionTwoTwo === "" ||
+    dropdownOptionTwoThree === "" ||
+    dropdownOptionTwoFour === "" ||
+    dropdownOptionTwoFive === ""
   ) {
     let resultArea = document.getElementById("result-area");
     resultArea.textContent = "Ups.... You forgot to fill in one of the mandatory fields. Please recheck again that you have filled in all boxes including the Criteria Name Definition and all Drop Down values, then click again on CALCULATE ANSWER";
@@ -105,25 +105,25 @@ function calculateAnswer() {
       dropdownCriteriaFour * dropdownOptionTwoFour +
       dropdownCriteriaFive * dropdownOptionTwoFive) /
     5;
-    let scoreOptionThree;
-    if (
-      dropdownCriteriaOne === "" || dropdownOptionThreeOne === "" ||
-      dropdownCriteriaTwo === "" || dropdownOptionThreeTwo === "" ||
-      dropdownCriteriaThree === "" || dropdownOptionThreeThree === "" ||
-      dropdownCriteriaFour === "" || dropdownOptionThreeFour === "" ||
-      dropdownCriteriaFive === "" || dropdownOptionThreeFive === ""
-    ) {
-      scoreOptionThree = 0;
-    } else {
-      scoreOptionThree = (
-        (dropdownCriteriaOne * dropdownOptionThreeOne +
+  let scoreOptionThree;
+  if (
+    dropdownCriteriaOne === "" || dropdownOptionThreeOne === "" ||
+    dropdownCriteriaTwo === "" || dropdownOptionThreeTwo === "" ||
+    dropdownCriteriaThree === "" || dropdownOptionThreeThree === "" ||
+    dropdownCriteriaFour === "" || dropdownOptionThreeFour === "" ||
+    dropdownCriteriaFive === "" || dropdownOptionThreeFive === ""
+  ) {
+    scoreOptionThree = 0;
+  } else {
+    scoreOptionThree = (
+      (dropdownCriteriaOne * dropdownOptionThreeOne +
         dropdownCriteriaTwo * dropdownOptionThreeTwo +
         dropdownCriteriaThree * dropdownOptionThreeThree +
         dropdownCriteriaFour * dropdownOptionThreeFour +
         dropdownCriteriaFive * dropdownOptionThreeFive) /
-        5
-      );
-    }
+      5
+    );
+  }
 
   let resultArea = document.getElementById("result-area");
   let recommendation = "";
@@ -209,13 +209,13 @@ let modalAbout = document.getElementById("header-about-modal");
 let modalTriggerAbout = document.getElementById("header-about");
 let modalCloseAbout = document.getElementById("modal-close-about");
 
-modalTriggerAbout.onclick = function() {
+modalTriggerAbout.onclick = function () {
   console.log("Opening modal: modalAbout");
   closeModal();
   modalAbout.style.display = "block";
 };
 
-modalCloseAbout.onclick = function() {
+modalCloseAbout.onclick = function () {
   console.log("Closing modal: modalAbout");
   modalAbout.style.display = "none";
 };
@@ -226,13 +226,13 @@ let modalHow = document.getElementById("header-how-modal");
 let modalTriggerHow = document.getElementById("header-how");
 let modalCloseHow = document.getElementById("modal-close-how");
 
-modalTriggerHow.onclick = function() {
+modalTriggerHow.onclick = function () {
   console.log("Opening modal: modalHow");
   closeModal();
   modalHow.style.display = "block";
 };
 
-modalCloseHow.onclick = function() {
+modalCloseHow.onclick = function () {
   console.log("Closing modal: modalHow");
   modalHow.style.display = "none";
 };
@@ -243,7 +243,7 @@ let submitModal = document.getElementById("submit-modal");
 let buttonSubmit = document.getElementById("calculate");
 let closeSubmit = document.querySelector(".submit-close");
 
-buttonSubmit.onclick = function() {
+buttonSubmit.onclick = function () {
   console.log("Opening modal: submitModal");
   closeModal();
   submitModal.style.display = "block";
@@ -260,20 +260,21 @@ let randomModal = document.getElementById("random-modal");
 let buttonRandom = document.getElementById("random");
 let closeRandom = document.querySelector(".random-close");
 
-buttonRandom.onclick = function() {
+buttonRandom.onclick = function () {
   console.log("Opening modal: randomModal");
   closeModal();
   randomModal.style.display = "block";
 };
 
-closeRandom.onclick = function() {
+closeRandom.onclick = function () {
   console.log("Closing modal: randomModal");
   randomModal.style.display = "none";
 };
 
 window.onclick = function (event) {
-
-  if (event.target == modalAbout) {;
+  console.log(event)
+  if (event.target == modalAbout) {
+    ;
     modalAbout.style.display = "none";
     console.log("Clicked outside modal and closed modalAbout");
   }
