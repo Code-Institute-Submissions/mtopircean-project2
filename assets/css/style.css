@@ -783,9 +783,11 @@ input::placeholder {
         overflow: auto;
         max-height: 300px;
     }
+}
 
     @media screen and (max-height: 380px) {
 
         #how-modal-content {
             font-size: 0.82rem;
         }
+    }
