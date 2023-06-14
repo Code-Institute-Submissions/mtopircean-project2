@@ -94,9 +94,6 @@ header {
     top: 50%;
     transform: translate(-50%, -50%);
     max-width: 80%;
-    overflow: auto;
-    max-height: 400px;
-    scale: 1;
 }
 
 #modal-close-about,
@@ -778,3 +775,17 @@ input::placeholder {
         font-size: 0.7rem;
     }
 }
+
+@media screen and (max-height: 660px) {
+
+    #how-modal-content {
+        height: 80%;
+        overflow: auto;
+        max-height: 300px;
+    }
+
+    @media screen and (max-height: 380px) {
+
+        #how-modal-content {
+            font-size: 0.82rem;
+        }
