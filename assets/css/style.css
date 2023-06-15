@@ -577,6 +577,7 @@ input::placeholder {
     min-height: 100vh;
     text-align: center;
     padding: 30px;
+    font-size: 1.2rem;
 }
 
 #logo-404 img {
