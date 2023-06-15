@@ -576,11 +576,13 @@ input::placeholder {
     align-items: center;
     min-height: 100vh;
     text-align: center;
+    padding: 30px;
 }
 
 #logo-404 img {
     max-width: 100%;
     height: auto;
+    width: 250px;
 }
 
 /* Display size optimization */
