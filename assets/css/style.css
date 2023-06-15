@@ -573,16 +573,18 @@ input::placeholder {
 
 #all-404 {
     display: flex;
+    justify-content: center;
     align-items: center;
-    flex-direction: column;
-    max-width: 80%;
+    height: 100vh;
 }
 
-.404-message {
-    font-size: large;
+#all-404 {
     text-align: center;
-    width: 100%;
-    max-width: 80%;
+}
+
+#logo-404 img {
+    max-width: 100%;
+    height: auto;
 }
 
 /* Display size optimization */
