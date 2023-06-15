@@ -589,6 +589,7 @@ input::placeholder {
 .link-home {
     text-decoration: none;
     text-transform: uppercase;
+    color:#1a8812;
 }
 
 /* Display size optimization */
