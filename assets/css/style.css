@@ -571,27 +571,21 @@ input::placeholder {
 
 /*Styling for 404 page */
 
-#svg-404 {
-    display: flex;
-    flex-direction:column ;
-    font-size: xx-large;
-    text-align: center;
-    width: 100%;
-    max-width: 80%;
+#404-area {
+display: flex;
+flex-direction:column ;
+align-items: center;
 }
 
-#svg-404 {
-    display: flex;
-    flex-direction:column ;
-    font-size: xx-large;
+#img-404 {
+    font-size: 2.5 rem;
     text-align: center;
     width: 100%;
     max-width: 80%;
+    color: #ff0000;
 }
 
 .404-message {
-    display: flex;
-    flex-direction:column ;
     font-size: large;
     text-align: center;
     width: 100%;
