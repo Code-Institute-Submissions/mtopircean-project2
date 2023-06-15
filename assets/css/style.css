@@ -13,7 +13,6 @@ body {
     font-family: 'Inconsolata', sans-serif;
     font-weight: 400;
     color: #1858b3;
-    display: inline-block;
 }
 
 /* styling for header and  logo section, including modal styling for about and how to */
@@ -570,12 +569,6 @@ input::placeholder {
 }
 
 /*Styling for 404 page */
-
-#404-body {
-    font-family: 'Inconsolata', sans-serif;
-    font-weight: 400;
-    color: #1858b3;
-}
 
 #all-404 {
     display: flex;
