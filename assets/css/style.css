@@ -569,6 +569,35 @@ input::placeholder {
     max-width: 99%;
 }
 
+/*Styling for 404 page */
+
+#svg-404 {
+    display: flex;
+    flex-direction:column ;
+    font-size: xx-large;
+    text-align: center;
+    width: 100%;
+    max-width: 80%;
+}
+
+#svg-404 {
+    display: flex;
+    flex-direction:column ;
+    font-size: xx-large;
+    text-align: center;
+    width: 100%;
+    max-width: 80%;
+}
+
+.404-message {
+    display: flex;
+    flex-direction:column ;
+    font-size: large;
+    text-align: center;
+    width: 100%;
+    max-width: 80%;
+}
+
 /* Display size optimization */
 
 @media screen and (max-width: 1201px) {
