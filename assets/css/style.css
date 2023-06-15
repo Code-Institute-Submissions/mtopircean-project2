@@ -571,6 +571,13 @@ input::placeholder {
 
 /*Styling for 404 page */
 
+#all-404 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    max-width: 80%;
+}
+
 .404-message {
     font-size: large;
     text-align: center;
