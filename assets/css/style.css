@@ -586,6 +586,11 @@ input::placeholder {
     width: 250px;
 }
 
+.link-home {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
 /* Display size optimization */
 
 @media screen and (max-width: 1201px) {
