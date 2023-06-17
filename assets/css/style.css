@@ -251,11 +251,12 @@ h4 {
 
 #criteria-section {
     display: inline-grid;
+    width: 50%;
 }
 
 #criteria-section input {
     border: #1858b3 solid 3px;
-    width: 95%;
+    width: 100%;
     height: 20px;
     border-radius: 5px;
     text-align: center;
@@ -278,14 +279,14 @@ h4 {
 }
 
 #user-importance {
-    width: 50%;
+    width: 40%;
 }
 
 /* Styling for combined criteria definition and importance */
 #criteria-w-importance {
-    width: 100%;
+    width: 90%;
     display: inline-flex;
-    justify-content: center;
+    justify-content: space-around;
     flex-wrap: nowrap;
     flex-direction: row;
 }
@@ -343,7 +344,7 @@ h4 {
 
 #user-options {
     display: flex;
-    width: 40%;
+    width: 55%;
     flex-direction: row;
     align-content: space-around;
     flex-wrap: wrap;
