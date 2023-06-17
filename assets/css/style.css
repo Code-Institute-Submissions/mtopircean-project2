@@ -62,13 +62,10 @@ header {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    width: 100%;
+    width: auto;
+    height: auto;
     max-width: 100%;
     max-height: 100%;
-    overflow: hidden;
-    background-color: #ffffff00;
     border-radius: 10px;
 }
 
@@ -76,7 +73,9 @@ header {
 #how-modal-content {
     background-color: #1858b3;
     width: auto;
+    height: auto;
     max-width: 100%;
+    max-height: 100%;
     border: #7ea7df solid 3px;
     color: #fff;
     position: relative;
@@ -120,13 +119,10 @@ header {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    width: 100%;
+    width: auto;
+    height: auto;
     max-width: 100%;
     max-height: 100%;
-    overflow: hidden;
-    background-color: #ffffff00;
     border-radius: 10px;
 }
 
@@ -169,13 +165,10 @@ header {
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
-    width: 100%;
-    height: 100%;
-    width: 100%;
+    width: auto;
+    height: auto;
     max-width: 100%;
     max-height: 100%;
-    overflow: hidden;
-    background-color: #ffffff00;
     border-radius: 10px;
 }
 

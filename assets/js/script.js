@@ -271,27 +271,6 @@ closeRandom.onclick = function () {
   randomModal.style.display = "none";
 };
 
-window.onclick = function (event) {
-  console.log(event)
-  if (event.target == modalAbout) {
-    ;
-    modalAbout.style.display = "none";
-    console.log("Clicked outside modal and closed modalAbout");
-  }
-  if (event.target == modalHow) {
-    modalHow.style.display = "none";
-    console.log("Clicked outside modal and closed modalHow");
-  }
-  if (event.target == submitModal) {
-    submitModal.style.display = "none";
-    console.log("Clicked outside modal and closed submitModal");
-  }
-  if (event.target == randomModal) {
-    randomModal.style.display = "none";
-    console.log("Clicked outside modal and closed randomModal");
-  }
-};
-
 function closeModal() {
   let modals = document.querySelectorAll(".about-modal, .how-modal, .s-modal, .r-modal");
   for (let i = 0; i < modals.length; i++) {
