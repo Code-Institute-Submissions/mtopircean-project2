@@ -86,7 +86,8 @@ function calculateAnswer() {
     dropdownOptionTwoFive === ""
   ) {
     let resultArea = document.getElementById("result-area");
-    resultArea.textContent = "Ups.... You forgot to fill in one of the mandatory fields. Please recheck again that you have filled in all boxes including the Criteria Name Definition and all Drop Down values, then click again on CALCULATE ANSWER";
+    resultArea.textContent = "Ups.... You forgot to fill in one of the mandatory fields. Please recheck again " +
+    "that you have filled in all boxes including the Criteria Name Definition and all Drop Down values, then click again on CALCULATE ANSWER";
     return;
   }
 
@@ -151,7 +152,8 @@ function calculateAnswer() {
     dropdownCriteriaFour === "" || dropdownOptionThreeFour === "" ||
     dropdownCriteriaFive === "" || dropdownOptionThreeFive === ""
   )) {
-    resultArea.textContent = "Based on the information you have provided, the result is: " + recommendation + "\n" + "You have not filled in all of the fields in Option C dropdown area which have caused for the result of this option not to be taken into consideration.";
+    resultArea.textContent = "Based on the information you have provided, the result is: " + recommendation + "\n" 
+    + "You have not filled in all of the fields in Option C dropdown area which have caused for the result of this option not to be taken into consideration.";
   } else {
     resultArea.textContent = "Based on the information you have provided, the result is: " + recommendation;
   }
