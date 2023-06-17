@@ -611,7 +611,12 @@ input::placeholder {
     }
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1031px) {
+
+    #criteria-w-importance {
+        width: 100%;
+        text-align: center;
+    }
 
     .drop-option-one,
     .drop-option-two,
@@ -632,8 +637,11 @@ input::placeholder {
 
     #criteria-section,
     #user-importance {
-        width: 50%;
-        clear: both;
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     }
 
     #user-options {
@@ -757,7 +765,6 @@ input::placeholder {
 
     h4 {
         font-size: 0.8rem;
-        padding-bottom: 20px;
     }
 
     #user-options select {
