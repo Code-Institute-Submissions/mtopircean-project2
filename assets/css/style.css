@@ -59,14 +59,12 @@ header {
     display: none;
     position: fixed;
     z-index: 1;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    top: 10%;
+    bottom: 10%;
     width: auto;
     height: auto;
     max-width: 100%;
     max-height: 100%;
-    border-radius: 10px;
 }
 
 #about-modal-content,
@@ -80,12 +78,12 @@ header {
     color: #fff;
     position: relative;
     font-size: 1.5rem;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     word-wrap: break-word;
     white-space: normal;
     line-height: 1.2;
-    font-size: 1.1rem;
+    font-size: 1rem;
     display: flex;
     flex-direction: column;
     left: 50%;
@@ -99,7 +97,7 @@ header {
     position: absolute;
     top: 1px;
     right: 3px;
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     cursor: pointer;
     color: #fff;
 }
@@ -118,12 +116,12 @@ header {
     z-index: 1;
     left: 50%;
     top: 50%;
+    bottom: 10%;
     transform: translate(-50%, -50%);
     width: auto;
     height: auto;
     max-width: 100%;
     max-height: 100%;
-    border-radius: 10px;
 }
 
 .s-modal-content {
@@ -134,13 +132,13 @@ header {
     color: #fff !important;
     position: relative;
     font-size: 1.5rem;
-    padding: 20px;
+    padding: 35px;
     border-radius: 10px;
     word-wrap: break-word;
     white-space: normal;
     overflow: visible;
     line-height: 1.2;
-    font-size: 1.1rem;
+    font-size: 1rem;
     display: flex;
     flex-direction: column;
     left: 50%;
@@ -153,7 +151,7 @@ header {
     position: absolute;
     top: 1px;
     right: 3px;
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     cursor: pointer;
     color: #fff;
 }
@@ -164,12 +162,12 @@ header {
     z-index: 1;
     left: 50%;
     top: 50%;
+    bottom: 10%;
     transform: translate(-50%, -50%);
     width: auto;
     height: auto;
     max-width: 100%;
     max-height: 100%;
-    border-radius: 10px;
 }
 
 .r-modal-content {
@@ -180,13 +178,13 @@ header {
     color: #fff !important;
     position: relative;
     font-size: 1.5rem;
-    padding: 20px;
+    padding: 35px;
     border-radius: 10px;
     word-wrap: break-word;
     white-space: normal;
     overflow: visible;
     line-height: 1.2;
-    font-size: 1.1rem;
+    font-size: 1rem;
     display: flex;
     flex-direction: column;
     left: 50%;
@@ -199,7 +197,7 @@ header {
     position: absolute;
     top: 1px;
     right: 3px;
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     cursor: pointer;
     color: #fff;
 }
