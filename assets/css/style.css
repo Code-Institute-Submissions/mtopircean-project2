@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
-/* general page code */
+/* General page styling. */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +15,7 @@ body {
     color: #1858b3;
 }
 
-/* styling for header and  logo section, including modal styling for about and how to */
+/* Styling for header and  logo section, including modal styling. */
 
 header {
     display: flex;
@@ -210,7 +210,7 @@ header {
     text-transform: uppercase;
 }
 
-/* Styling for whole area where user input is collected */
+/* General styling for area where user input is collected in order to support calculations and functions. */
 
 #user-input-area {
     display: flex;
@@ -232,7 +232,7 @@ h4 {
     font-size: 0.9rem;
 }
 
-/* Styling of criteria section */
+/* Styling of criteria section. */
 
 #criteria-section,
 #user-importance,
@@ -255,7 +255,7 @@ h4 {
     margin-bottom: 10px;
 }
 
-/*styling for criteria importance section */
+/*Specific styling for criteria importance section. */
 
 .importance-drop {
     border: #1858b3 solid 3px;
@@ -273,7 +273,7 @@ h4 {
     width: 40%;
 }
 
-/* Styling for combined criteria definition and importance */
+/* Styling for combined criteria definition and importance div`s. */
 #criteria-w-importance {
     width: 90%;
     display: inline-flex;
@@ -282,7 +282,7 @@ h4 {
     flex-direction: row;
 }
 
-/* styling for user option area */
+/* styling for user option area. */
 
 #definition-scoring {
     text-align: center;
@@ -299,7 +299,6 @@ h4 {
     color: #1858b3;
     font-size: 1rem;
     text-transform: lowercase;
-}
 }
 
 .scoring-criteria {
@@ -433,7 +432,7 @@ input::placeholder {
 }
 
 
-/* styling for buttons and buttons area */
+/* styling for buttons and buttons area. */
 
 #buttons-area {
     display: flex;
@@ -450,7 +449,6 @@ input::placeholder {
     border: #1858b3 solid 3px;
     color: #ffffff;
     background-color: #1858b3;
-    float: left;
     width: 175px;
     height: 40px;
     border-radius: 5px;
@@ -496,7 +494,6 @@ input::placeholder {
     border: #c2d5f6 solid 3px;
     color: #ffffff;
     background-color: #526291;
-    float: right;
     width: 175px;
     height: 40px;
     border-radius: 5px;
@@ -528,7 +525,6 @@ input::placeholder {
     margin-bottom: 10px;
     margin-top: 40px;
     margin-right: 40px;
-    float: right;
     font-size: 82%;
     font-weight: bold;
 }
@@ -551,7 +547,7 @@ input::placeholder {
     justify-content: space-evenly;
 }
 
-/* styling for tables header area */
+/* Specific styling for tables headers. */
 
 .table-headers {
     height: 30px;
@@ -560,7 +556,7 @@ input::placeholder {
     max-width: 99%;
 }
 
-/*Styling for 404 page */
+/*Styling for 404 page. */
 
 #all-404 {
     display: flex;
@@ -584,7 +580,7 @@ input::placeholder {
     color: #1a8812;
 }
 
-/* Display size optimization */
+/* Display size optimization. */
 
 @media screen and (max-width: 1201px) {
 
