@@ -9,7 +9,9 @@
     <meta name="keywords" content="option selector, choice selector, undecided support, selection support">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>The Selector</title>
+    <!-- Link to Favicon -->
     <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <!-- Link to FontAwesome -->
     <script src="https://kit.fontawesome.com/de2ace4bf2.js" crossorigin="anonymous"></script>
 </head>
 
@@ -20,9 +22,10 @@
             <img src="assets/images/undecided-logo.png"
                 alt="Logo representing a robot with a question mark and an exclamation mark">
         </a>
-        <!-- Area designated to explain website purpose and how to use the website -->
-        <!-- Use of modal to display information-->
+        <!-- Area designated to explain website mission and how to use the tool. Information accessible through modals. 
+        Div is named menu due to it`s form factor but not from it`s construction.-->
         <div id="menu">
+            <!--Area set to explain website mission.-->
             <div id="header-about"><i class="fa-solid fa-robot"></i> ABOUT</div>
             <div id="header-about-modal" class="about-modal">
                 <div id="about-modal-content">
@@ -32,7 +35,7 @@
                     <p>Selectors main mission is to provide a basic, simple, and fun support to help you at the final
                         stage of your decision-making process.
                         <br>
-                        It doesn't aim to remove your judgment, but it`s purpose is to offer an informed recommandation
+                        It doesn't aim to remove your judgment, but it`s purpose is to offer an informed recommendation
                         based on your values.
                         <br>
                         Comparison is limited to a minimum of 2 options, but 3 would be more recommended as it will
@@ -55,7 +58,7 @@
                         <span class="instruction-list">1. </span>Start by defining your criteria and write them down in
                         the first column. We have decided on 5
                         as we believe it will determine you as the user to think hard about what is important for you.
-                        Use a very brief(ideally 1 word) descrition.
+                        Use a very brief(ideally 1 word) description.
                         <br>
                         Example : colour, size, composition, etc.
                         <br>
@@ -82,10 +85,12 @@
             </div>
         </div>
     </header>
-    <!-- Area containing all the required user input section in order to collect data for analyisis-->
+    <!-- Area containing all the required user input section in order to collect data for analysis-->
     <div id="user-input-area">
         <!-- Area where user defines his criteria of importance on option selection-->
+        <!-- Created specific div containing criteria and importance in order to allow a more efficient flex positioning.-->
         <div id="criteria-w-importance">
+            <!--Area used to store criteria of importance definition by user.-->
             <div id="criteria-section">
                 <!-- Contains table header for criteria of importance-->
                 <div class="table-headers">
@@ -107,15 +112,16 @@
                 <input id="ficriteria" name="fifth-criteria" type="text" class="text-input" required
                     placeholder="5. Add your criteria here">
                 <div class="scoring-criteria">
-                    <h4>List 5 criterias critical for your decission making process.</h4>
+                    <h4>List 5 criteria critical for your decision making process.</h4>
                 </div>
             </div>
-            <!-- Area where user defines the level of importance for each criteria-->
+            <!-- Area where user defines the level of importance for each criteria. -->
             <div id="user-importance">
                 <!-- Contains table header for criteria of importance-->
                 <div class="table-headers">
-                    <h3 id="table-headers">HOW IMPORTANT ARE THE CRITERIAS FOR YOU?</h3>
+                    <h3 id="table-headers">HOW IMPORTANT ARE THE CRITERIA FOR YOU?</h3>
                 </div>
+                <!-- Contains drop down choice for users in order to select how important is their criteria on the decision making process. -->
                 <select id="fimportance" name="first-importance" class="importance-drop">
                     <option value="" disabled selected>Select</option>
                     <option value="1">1</option>
@@ -156,16 +162,17 @@
                     <option value="4">4</option>
                     <option value="5">5</option>
                 </select>
+                <!-- Area defining the scoring mechanism.-->
                 <div class="scoring-criteria">
                     <h4>Choose from 1-less important to 5-very important.</h4>
                 </div>
             </div>
         </div>
-        <!-- Area where user defines his first option he wants to compare including scoring data-->
+        <!-- Area where user defines the options he wants to compare and scores them.-->
         <div id="user-options">
-
+            <!-- Area where user defines the first option he wants to compare.-->
             <div id="option-one">
-                <!-- Area where user defines the name of his first option-->
+                <!-- Area where user defines the name of his first option. -->
                 <div class="user-options-one">
                     <label for="selection-one"><span class="option-label">Option A</span>
                         <br>
@@ -173,7 +180,7 @@
                     <input id="selection-one" name="selection-one" type="text" class="text-input-option" required
                         placeholder="Click to add option">
                 </div>
-                <!-- Area where user defines the scores/ratings for his first option-->
+                <!-- Area where user defines the scores/ratings for his first option through a drop-down selector. -->
                 <div id="data-one">
                     <label for="fvalue1"></label>
                     <select id="fvalue1" name="first-value2" class="drop-option-one">
@@ -247,9 +254,9 @@
                     </select>
                 </div>
             </div>
-            <!-- Area where user defines his second option he wants to compare including scoring data-->
+            <!-- Area where user defines the second option he wants to compare.-->
             <div id="option-two">
-                <!-- Area where user defines the name of his second option-->
+                <!-- Area where user defines the name of his second option. -->
                 <div class="user-options-two">
                     <label for="option2"><span class="option-label">Option B</span>
                         <br>
@@ -257,7 +264,7 @@
                     <input id="option2" name="option-two" type="text" class="text-input-option" required
                         placeholder="Click to add option">
                 </div>
-                <!-- Area where user defines the scores/ratings for his first option-->
+                <!-- Area where user defines the scores/ratings for his second option through a drop-down selector. -->
                 <div id="data-two">
                     <label for="fvalue2"></label>
                     <select id="fvalue2" name="first-value2" class="drop-option-two">
@@ -331,8 +338,9 @@
                     </select>
                 </div>
             </div>
-            <!-- Area where user defines the name of his first option-->
+            <!-- Area where user defines the third option he wants to compare.-->
             <div id="option-three">
+                <!-- Area where user defines the name of his third option. -->
                 <div class="user-options-three">
                     <label for="option3"><span class="option-label">Option C</span>
                         <br>
@@ -340,7 +348,7 @@
                     <input id="option3" name="option-three" type="text" class="text-input-option" required
                         placeholder="Click to add option">
                 </div>
-                <!-- Area where user defines the scores/ratings for his first option-->
+                <!-- Area where user defines the scores/ratings for his third option through a drop-down selector. -->
                 <div id="data-three">
                     <label for="fvalue3"></label>
                     <select id="fvalue3" name="first-value3" class="drop-option-three">
@@ -414,6 +422,7 @@
                     </select>
                 </div>
             </div>
+            <!-- Area defining the scoring mechanism.-->
             <div class="scoring-criteria" id="definition-scoring">
                 <h4>Choose from 1-lowest score to 10-highest score.</h4>
             </div>
@@ -421,8 +430,9 @@
     </div>
     <!-- Area including all form buttons-->
     <div id="buttons-area">
-        <div id="calculate-random">
-            <!-- Button that calculates the option evaluation and returns the recommended option -->
+        <!-- Area containing button that offers a calculated recommendation to the user through Java Script code and returns it under the form of a modal, 
+            which uses a common paragraph format with the random selection.  -->
+        <div id="calculate-standard">
             <div id="calculate-area">
                 <button data-type="submit" id="calculate">Calculate Answer</button>
                 <div id="submit-modal" class="s-modal">
@@ -432,8 +442,8 @@
                     </div>
                 </div>
             </div>
-
-            <!-- Button that generates a random solution for the user if they are undecided and do not want to use a calculation -->
+            <!-- Area containing button that offers a random recommendation to the user through Java Script code and returns it under the form of a modal, 
+            which uses a common paragraph format with the standard calculate selection.  -->
             <div id="random-area">
                 <button data-type="submit" id="random">Generate random selection</button>
                 <div id="random-modal" class="r-modal">
@@ -444,23 +454,22 @@
                 </div>
             </div>
         </div>
-
+        <!-- Div created to better style print and reset buttons. -->
         <div id="reset-print">
-            <!-- Button that resets the rating/scoring in all 3 user option sections -->
+            <!-- Area designated for a reset button that resets the scoring for each user option, but it doesn`t reset the criteria importance scoring. -->
             <div id="reset-area">
                 <button type="button" id="reset" data-type="reset">Reset option
                     values</button>
             </div>
-
-            <!-- Button that prints the page in PDF. Area includes its Java code -->
+            <!-- Area designated for a print button that prints the page in PDF. -->
             <div id="print-pdf">
                 <button id="print"><i class="fa-solid fa-print"></i> Print as
                     PDF</button>
             </div>
         </div>
     </div>
-</body>
-<script src="assets/js/script.js"></script>
+    <!-- Link to Java Script code page. -->
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>

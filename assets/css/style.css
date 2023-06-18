@@ -539,7 +539,7 @@ input::placeholder {
     color: #ffffff;
 }
 
-#calculate-random {
+#calculate-standard {
     display: inline-flex;
     width: 50%;
     justify-content: space-evenly;
