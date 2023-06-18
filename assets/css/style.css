@@ -2,7 +2,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
 
-/* general page code */
+/* Contains the general page code */
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +15,7 @@ body {
     color: #1858b3;
 }
 
-/* styling for header and  logo section, including modal styling for about and how to */
+/* Styling for header and  logo section, including modal styling for about and how to. */
 
 header {
     display: flex;
@@ -202,6 +202,8 @@ header {
     color: #fff;
 }
 
+/* Code for instruction list in how to use section and for the footnote in the same section */
+
 .instruction-list {
     font-weight: bold;
 }
@@ -210,7 +212,7 @@ header {
     text-transform: uppercase;
 }
 
-/* Styling for whole area where user input is collected */
+/* Styling for complete area requiring user input in order to calculate and determine result. */
 
 #user-input-area {
     display: flex;
@@ -232,13 +234,13 @@ h4 {
     font-size: 0.9rem;
 }
 
-/* Styling of criteria section */
-
 #criteria-section,
 #user-importance,
 #user-options {
     width: 50%;
 }
+
+/* Styling of criteria section */
 
 #criteria-section {
     display: inline-grid;
@@ -273,7 +275,8 @@ h4 {
     width: 40%;
 }
 
-/* Styling for combined criteria definition and importance */
+/* Styling for combined criteria definition and importance with the goal to allow for a more flexible arrangement considering resizing pourposes. */
+
 #criteria-w-importance {
     width: 90%;
     display: inline-flex;
@@ -282,7 +285,7 @@ h4 {
     flex-direction: row;
 }
 
-/* styling for user option area */
+/* Styling for user option area. */
 
 #definition-scoring {
     text-align: center;
@@ -299,7 +302,6 @@ h4 {
     color: #1858b3;
     font-size: 1rem;
     text-transform: lowercase;
-}
 }
 
 .scoring-criteria {
@@ -433,7 +435,7 @@ input::placeholder {
 }
 
 
-/* styling for buttons and buttons area */
+/* Styling for buttons and buttons area. */
 
 #buttons-area {
     display: flex;
@@ -551,7 +553,7 @@ input::placeholder {
     justify-content: space-evenly;
 }
 
-/* styling for tables header area */
+/* Styling for table headers on all sections */
 
 .table-headers {
     height: 30px;
