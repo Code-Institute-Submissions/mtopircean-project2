@@ -67,7 +67,7 @@ Although a simple tool, my hope is for it to target an extremly wide audience wi
 ## Deployment and Local Development
 
 Deployment of the website was used with GitHub Pages support.
-Deployed website can be visited at the [link](https://mtopircean.github.io/project1/)
+Deployed website can be visited at the [link](https://mtopircean.github.io/project2/)
 
 #### How to Deploy:
 To deploy using GitHub pages:
@@ -85,14 +85,14 @@ To deploy using GitHub pages:
 To fork the repository:
 
 1. Log in (or sign up) to Github.
-2. Go to the repository for this project, [mtopircean/project1](https://github.com/mtopircean/project1)
+2. Go to the repository for this project, [mtopircean/project2](https://github.com/mtopircean/project2)
 3. Click the Fork button in the top right corner.
 
 #### How to Clone
 To clone the repository:
 
 1. Log in (or sign up) to GitHub.
-2. Go to the repository for this project, [mtopircean/project1](https://github.com/mtopircean/project1)
+2. Go to the repository for this project, [mtopircean/project2](https://github.com/mtopircean/project2)
 3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
 5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
