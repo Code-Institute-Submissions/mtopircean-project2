@@ -103,26 +103,29 @@ To clone the repository:
 #### Programming Languages:
 1. HTML
 2. CSS
+3. Java Script
 
 
 #### IDE:
-1. GitHub: to deploy workspace, website and store database, but used to write small pieces of code and deploy the 404 page.
+1. GitHub: to deploy workspace, website and store database, but used to write also small pieces of code
 2. CodeAnywhere: support to write code and deploy via git to GitHub.
-3. GitPod: support to write code and deploy via git to GitHub.
+3. GitPod: support to write majority of code and deploy via git to GitHub.
 
 #### Other:
-1. Pexels: support with photo data.
-2. Font Awesome: support with icon for logo and social media icon.
+1. Canva: support with logo creation.
+2. Font Awesome: support with icon for About, How to... and 404 redirect to Home link and icon.
 3. Google Font: support with font style used for website text.
-4. YouTube: video`s in media section deployed as iframes with YouTube code.
-5. Google Maps: maps in contact section deployed as iframes with Google Maps code.
-6. Balsamiq: support with wireframe creation.
-7. Google DevTools: support with CSS styling, troubleshooting and responsive design development.
+4. Balsamiq: support with wireframe creation.
+7. Google DevTools: support with CSS styling, troubleshooting and responsive design development; support with testing function exection/js functionality.
 8. Lighthouse: performance testing .
 9. W3C Spell Checker: webpage spelling checks.
 10. WAVE Web Accessibility Evaluation Tools: for accessibility evaluation.
 11. CSS Validation Service: for CSS code evaluation and troubleshooting.
 12. W3C Markup Validation Service: for HTML code evaluation and troubleshooting.
+13. JSHint JavaScript Validator: to verify and improve Java Script code.
+14. ColorSpace: to create palete of colors in README.
+15. Amiresponsive: to create a snapshot of the page responsiveness on different screen variations
+
 ## Design
 The general design idea was to: 
 * Maintain a clean direction with clearly identifiable and accessible areas even when resizing into small screen sizes.
