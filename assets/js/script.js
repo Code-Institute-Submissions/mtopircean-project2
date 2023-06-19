@@ -1,13 +1,20 @@
-//Wait for DOM to finish loading before running form
-//Get button and input areas and add event listeners to them
+//Get button and input areas and add event listeners to them and confirms DOM is loaded
 
 document.addEventListener("DOMContentLoaded", function () {
 
   console.log("DOM content loaded.");
 
+  /*Retrieves all id button from the html under a single variable buttons
+  It also defines the different functions that will run associated to various id`s under a click event*/
+
+  // Took inspiration in defining the structure from LovaMath project 
+
+
   let buttons = document.getElementsByTagName("button");
   for (let button of buttons) {
     button.addEventListener("click", function () {
+
+      //Logs a message to the console log that a specific button was clicked, when it was clicked
 
       console.log("Button clicked: " + this.getAttribute("id"));
 
@@ -24,6 +31,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+/*Pull all elements with the specific class mention in the first code line into a single variable
+Iterates over them adding an event listener to listen to a change and trigger the calculateAnswer function*/
+
 let dropdowns = document.querySelectorAll(".importance-drop, .drop-option-one, .drop-option-two, .drop-option-three");
 for (let dropdown of dropdowns) {
   dropdown.addEventListener("change", calculateAnswer);
@@ -31,7 +41,7 @@ for (let dropdown of dropdowns) {
 
 function calculateAnswer() {
   console.log("Calculating answer.");
-
+  
   let inputFirstCriteriaName = document.getElementById("fcriteria").value;
   let inputSecondCriteriaName = document.getElementById("scriteria").value;
   let inputThirdCriteriaName = document.getElementById("tcriteria").value;
@@ -87,7 +97,7 @@ function calculateAnswer() {
   ) {
     let resultArea = document.getElementById("result-area");
     resultArea.textContent = "Ups.... You forgot to fill in one of the mandatory fields. Please recheck again " +
-    "that you have filled in all boxes including the Criteria Name Definition and all Drop Down values, then click again on CALCULATE ANSWER";
+      "that you have filled in all boxes including the Criteria Name Definition and all Drop Down values, then click again on CALCULATE ANSWER";
     return;
   }
 
@@ -152,8 +162,8 @@ function calculateAnswer() {
     dropdownCriteriaFour === "" || dropdownOptionThreeFour === "" ||
     dropdownCriteriaFive === "" || dropdownOptionThreeFive === ""
   )) {
-    resultArea.textContent = "Based on the information you have provided, the result is: " + recommendation + "\n" 
-    + "You have not filled in all of the fields in Option C dropdown area which have caused for the result of this option not to be taken into consideration.";
+    resultArea.textContent = "Based on the information you have provided, the result is: " + recommendation + "\n"
+      + "You have not filled in all of the fields in Option C dropdown area which have caused for the result of this option not to be taken into consideration.";
   } else {
     resultArea.textContent = "Based on the information you have provided, the result is: " + recommendation;
   }
