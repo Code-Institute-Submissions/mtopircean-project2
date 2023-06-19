@@ -46,24 +46,23 @@ The idea originates in my own experience as a procuremenet professional and is s
 The website was created to satisfy one main requirement/objective, which is to support a decission making process.
 However, The Selector was developed in order to provide a wider area of flexibility for the user, from defining the characteristics they value, asigning them priorities, selecting between 2 and 3 options to offering them a wider range of possibility when scoring their items of interest.
 
-Although a limited application, my hope is for it to target a wide audience with it`s usability.
+Although a simple tool, my hope is for it to target an extremly wide audience with it`s usability and unlimited application area.
 
 ##  User Experience
 
 #### First Time Visitor Target:
-* Provide a source of information and support on Orthodoxy related topics.
-* Enable a point of connection with the community by providing updated information on schedule and events as well as allowing the user to connect with the community via Facebook and a contact form.
-* Provide location instructions for Church`s 2 main location.
-
+* Provide an easy to understand interface with clear instructions on what the application does and how to use.
+* Offer a solution for a decission they need to make on a wide range of applications and domains, from home to professional use.
+* Have the capability to store their data by printing the page and potentially use them at a later stage, or attaching them as supporting documentation on a report.
+* Provide a fun way to either generate an informed and calculated decission or use a "coin flip" by using the generate random section.
 
 ####  Returning Visitor Target:
-* Continue to be informed about Service-Schedule.
-* Find out more about upcoming events.
-* Continue to consume media targeted to support users religious journey.
-* Provide media content from community events.
+* Application does not represent a one time use, but a tool that can be integrated in your activity as a professional, or at home in each users personal life.
+* For professionals it can represent a standardized process and format that can be included in their reporting process.
 
 #### Frequent Visitors Target:
-* Use the website as the official tool of information about the community and the church.
+* Unlimited target audience and usability, as it clearly targets a need applicable in all areas from professionals to home use, on all demographics.
+* Users are expected to integrate the application as as a standard part of their decission making process due to it`s simplicity and still informed way of determining it`s recommandations.
 
 ## Deployment and Local Development
 
