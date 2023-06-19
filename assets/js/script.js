@@ -45,10 +45,10 @@ for (let dropdown of dropdowns) {
 * Pull the options scoring for each of the options user wants to compare in order to validate data presence and to use in calculation.
 * Returns an alert message part of a Modal if all mandatory fields are not filled in.
 * For Option C,  it will consider it`s calculated value as 0, will make it part of the comparison to A and B,
-but will highlight that data is not filled in completly, in essence always making it irelevant due to it`s 0 value.
+but will highlight that data is not filled in completely, in essence always making it irrelevant due to it`s 0 value.
 * Will operate a calculation in order to determine an average of all of the importance criteria values multiplied by each options score.
 It will then compare the 3 options, with C being optional(with the comment above)
-* Will return the result in a modal widown when Calculate Answer button is clicked.
+* Will return the result in a modal window when Calculate Answer button is clicked.
 */
 
 function calculateAnswer() {
@@ -206,12 +206,12 @@ function calculateAnswer() {
   // Logs the score of Option C
   console.log("Score Option Three: " + scoreOptionThree);
 
-  //Logs the final recommandation based on the operations performed, and the end of the function
+  //Logs the final recommendation based on the operations performed, and the end of the function
   console.log(recommendation);
 }
 
 /* 
-* Purpose of the function is to pull the labels of each of the 3 Options(A,B,C) and make a recommandation
+* Purpose of the function is to pull the labels of each of the 3 Options(A,B,C) and make a recommendation
 * Function will generate an answer even if no values are added to the user input area.
 * Result is then returned in a Modal.
 * Once closed, and retriggered, the function will restart.
@@ -252,7 +252,7 @@ function generateRandom() {
 }
 
 /*
-* Function created in order to reset the scoring values of each of the Options inputed by user in the relevant drop downs.
+* Function created in order to reset the scoring values of each of the Options inputted by user in the relevant drop downs.
 * It will not reset the criteria importance score as it is considered as firm for each option the user wants to compare.
 * The function will pull all drop down options in a single variable and when Reset button is clicked, will return them to their
 original placeholder text, which is an empty value.
@@ -270,15 +270,15 @@ function resetUserArea() {
     ".drop-option-one, .drop-option-two, .drop-option-three"
   );
 
-  // Returnes values to their initial empty state
+  // Returns values to their initial empty state
 
   for (let dropOption of dropOptions) {
     dropOption.selectedIndex = "";
   }
 
-  // Logs out a confirmation that the drop down option values are now reseted
+  // Logs out a confirmation that the drop down option values are now reset
 
-  console.log("The score of the option values was reseted.");
+  console.log("The score of the option values was reset.");
 
 }
 
@@ -301,9 +301,9 @@ function printPageAsPDF() {
 * Following section is created in order to capture the different modals opening in the page.
 * Majority of the functions will return a modal in order to capture their result or provide alerts.
 * It was established by taking inspiration in a code format found on w3schools and adapted to my code and application.
-* Decission was taken to remove the option to close modal when clicking outside of the box for the reason that we need to have
+* Decision was taken to remove the option to close modal when clicking outside of the box for the reason that we need to have
 the print option available for user to print the page. If this would have been enabled, modals would automatically close when clicking
-the pring button.
+the print button.
 */
 
 // About modal - opens the description of the page and tool created
@@ -330,7 +330,7 @@ modalTriggerAbout.onclick = function () {
   modalAbout.style.display = "block";
 };
 
-// Defines closin functionality and relevant log message to confirm operation. Console log is used for debugging purpose.
+// Defines closing functionality and relevant log message to confirm operation. Console log is used for debugging purpose.
 
 modalCloseAbout.onclick = function () {
   console.log("Closing modal: modalAbout");
@@ -360,7 +360,7 @@ modalTriggerHow.onclick = function () {
   modalHow.style.display = "block";
 };
 
-// Defines closin functionality and relevant log message to confirm operation. Console log is used for debugging purpose.
+// Defines closing functionality and relevant log message to confirm operation. Console log is used for debugging purpose.
 
 modalCloseHow.onclick = function () {
   console.log("Closing modal: modalHow");
@@ -389,7 +389,7 @@ buttonSubmit.onclick = function () {
   submitModal.style.display = "block";
 };
 
-// Defines closin functionality and relevant log message to confirm operation. Console log is used for debugging purpose.
+// Defines closing functionality and relevant log message to confirm operation. Console log is used for debugging purpose.
 
 closeSubmit.onclick = function () {
   console.log("Closing modal: submitModal");
@@ -418,7 +418,7 @@ buttonRandom.onclick = function () {
   randomModal.style.display = "block";
 };
 
-// Defines closin functionality and relevant log message to confirm operation. Console log is used for debugging purpose.
+// Defines closing functionality and relevant log message to confirm operation. Console log is used for debugging purpose.
 
 closeRandom.onclick = function () {
   console.log("Closing modal: randomModal");
