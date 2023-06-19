@@ -1,8 +1,11 @@
-# Romanian Orthodox Church Kilkenny and Waterford webpage
+# The Selector
 
 The website was create as a support tool to help users on their last step in a decission making process.
+
 It is a tool that pushes users to undestand how important certain elements are in their decission making process, how they can limit them to the essential and at the end, how they can filter their options in order to reach again, the essential.
+
 It then uses a calculation methodology to manipulate their data in order to be able too make an informed recommandation
+
 The idea originates in my own experience as a procuremenet professional and is something that I intend to use in order to support my decission making process.
 
 ## CONTENT
