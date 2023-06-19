@@ -256,6 +256,10 @@ h4 {
     font-weight: bold;
 }
 
+#criteria-section input::placeholder {
+    color: #1859b3df;
+}
+
 /*Specific styling for criteria importance section. */
 
 .importance-drop {
