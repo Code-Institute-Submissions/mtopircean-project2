@@ -15,7 +15,7 @@ body {
     color: #1858b3;
 }
 
-/* Styling for header and  logo section, including modal styling for about and how to. */
+/* Styling for header and  logo section, including modal styling. */
 
 header {
     display: flex;
@@ -202,8 +202,6 @@ header {
     color: #fff;
 }
 
-/* Code for instruction list in how to use section and for the footnote in the same section */
-
 .instruction-list {
     font-weight: bold;
 }
@@ -212,7 +210,7 @@ header {
     text-transform: uppercase;
 }
 
-/* Styling for complete area requiring user input in order to calculate and determine result. */
+/* General styling for area where user input is collected in order to support calculations and functions. */
 
 #user-input-area {
     display: flex;
@@ -234,13 +232,13 @@ h4 {
     font-size: 0.9rem;
 }
 
+/* Styling of criteria section. */
+
 #criteria-section,
 #user-importance,
 #user-options {
     width: 50%;
 }
-
-/* Styling of criteria section */
 
 #criteria-section {
     display: inline-grid;
@@ -275,8 +273,7 @@ h4 {
     width: 40%;
 }
 
-/* Styling for combined criteria definition and importance with the goal to allow for a more flexible arrangement considering resizing pourposes. */
-
+/* Styling for combined criteria definition and importance div`s. */
 #criteria-w-importance {
     width: 90%;
     display: inline-flex;
@@ -285,7 +282,7 @@ h4 {
     flex-direction: row;
 }
 
-/* Styling for user option area. */
+/* styling for user option area. */
 
 #definition-scoring {
     text-align: center;
@@ -369,7 +366,6 @@ h4 {
 }
 
 
-
 .drop-option-two {
     border: #de5a22 solid 3px;
     background-color: #de5a22;
@@ -379,7 +375,6 @@ h4 {
     margin-bottom: 11px;
     color: #fff;
 }
-
 
 .drop-option-three {
     border: #1a8812 solid 3px;
@@ -412,7 +407,7 @@ input::placeholder {
     width: 100%;
     height: 30px;
     text-align: center;
-    height: 87px;
+    height: 67px;
     outline: none;
 }
 
@@ -434,8 +429,7 @@ input::placeholder {
     content: "First line \A Second line"
 }
 
-
-/* Styling for buttons and buttons area. */
+/* styling for buttons and buttons area. */
 
 #buttons-area {
     display: flex;
@@ -550,7 +544,7 @@ input::placeholder {
     justify-content: space-evenly;
 }
 
-/* Styling for table headers on all sections */
+/* Specific styling for tables headers. */
 
 .table-headers {
     height: 30px;
@@ -619,7 +613,6 @@ input::placeholder {
     .user-options-three {
         width: 100%;
     }
-
 
     #menu {
         margin-bottom: 10px;
