@@ -128,26 +128,22 @@ To clone the repository:
 
 ## Design
 The general design idea was to: 
-* Maintain a clean direction with clearly identifiable and accessible areas even when resizing into small screen sizes.
-* Inspire a religious theme through proper use of fonts, colours and images.
-* High impactful hero image in order to highlight the size of the community and the extremely beautiful environment used for service.
-* Use a cusomizable design proposal that can resize into smaller sizes without creating a high level of complexity.
+* Give a robotic, technology, calculator feeling to the user entering the page.
+* Provide all information into one page with clear instructions, mission, easy to understand and use.
+* General direction is reflected in the logo and style selected.
+* Design focuses on flex technology and is created in a manner that allows easy resizing to different screen sizes.
 
 #### Wireframes
-In order to support development, wireframes where created for each individual page in Balsamiq.
+In order to support development, wireframes where created in Balsamiq.
 
-* Home:
-![Alt text](/readme/wireframe/home-page-wf.jpg)
-* About:
-![Alt text](/readme/wireframe/about-us-page-wf.jpg)
-* Media:
-![Alt text](/readme/wireframe/media-page-wf.jpg)
-* Contact:
-![Alt text](/readme/wireframe/contact-page-wf.jpg)
-* Form submit redirect page:
-![Alt text](/readme/wireframe/redirect-page-wf.jpg)
+* Home-without modal:
+![Alt text](/readme/wireframe/index-without-modal-wf.jpg)
+
+* Home-with modal:
+![Alt text](/readme/wireframe/index-with-modal-wf.jpg)
+
 * 404 Customized page:
-![Alt text](/readme/wireframe/404-page-wf.jpg)
+![Alt text](/readme/wireframe/404-wf.jpg)
 
 #### Theme
 Theme of the website was thought in a way that it would address:
