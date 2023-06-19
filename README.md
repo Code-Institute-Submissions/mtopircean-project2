@@ -43,12 +43,11 @@ The idea originates in my own experience as a procuremenet professional and is s
     * [Other](#other)
 * [About Author](#about-author)
 ## Scope
-Website was created with 3 main Objectives:
-1. Inform the current community about Church Schedule, Events and make available useful media content.
-2. Become a tool of support for new visitors with a desire to connect and become part of the community.
-3. Establish an online presence for the Orthodox Romanian Church in the Kilkenny and Waterford areas.
+The website was created to satisfy one main requirement/objective, which is to support a decission making process.
+However, The Selector was developed in order to provide a wider area of flexibility for the user, from defining the characteristics they value, asigning them priorities, selecting between 2 and 3 options to offering them a wider range of possibility when scoring their items of interest.
 
-All was considered to be deployed in a fully functioning manner for both desktop and mobile use.
+Although a limited application, my hope is for it to target a wide audience with it`s usability.
+
 ##  User Experience
 
 #### First Time Visitor Target:
