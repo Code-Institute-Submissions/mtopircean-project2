@@ -298,12 +298,14 @@ h4 {
     color: #ff0000;
     font-size: 1rem;
     text-transform: lowercase;
+    font-weight: bold;
 }
 
 #optional {
     color: #1858b3;
     font-size: 1rem;
     text-transform: lowercase;
+    font-weight: bold;
 }
 
 .scoring-criteria {
@@ -320,21 +322,21 @@ h4 {
     text-transform: uppercase;
     font-size: 1.17em;
     font-weight: bold;
-    color: #059ca4;
+    color: #025d62;
 }
 
 .user-options-two .option-label {
     text-transform: uppercase;
     font-size: 1.17em;
     font-weight: bold;
-    color: #de5a22;
+    color: #b93903;
 }
 
 .user-options-three .option-label {
     text-transform: uppercase;
     font-size: 1.17em;
     font-weight: bold;
-    color: #1a8812;
+    color: #14680e;
 }
 
 #user-options {
@@ -361,8 +363,8 @@ h4 {
 }
 
 .drop-option-one {
-    border: #059ca4 solid 3px;
-    background-color: #059ca4;
+    border: #025d62 solid 3px;
+    background-color: #025d62;
     border-radius: 5px;
     text-align: center;
     padding: 11px;
@@ -372,8 +374,8 @@ h4 {
 
 
 .drop-option-two {
-    border: #de5a22 solid 3px;
-    background-color: #de5a22;
+    border: #b93903 solid 3px;
+    background-color: #b93903;
     border-radius: 5px;
     text-align: center;
     padding: 11px;
@@ -382,8 +384,8 @@ h4 {
 }
 
 .drop-option-three {
-    border: #1a8812 solid 3px;
-    background-color: #1a8812;
+    border: #14680e solid 3px;
+    background-color: #14680e;
     border-radius: 5px;
     text-align: center;
     padding: 11px;
