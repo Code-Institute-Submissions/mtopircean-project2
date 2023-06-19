@@ -15,7 +15,7 @@ body {
     color: #1858b3;
 }
 
-/* Styling for header and  logo section, including modal styling. */
+/* Styling for header and  logo section, including modal styling for about and how to. */
 
 header {
     display: flex;
@@ -202,6 +202,8 @@ header {
     color: #fff;
 }
 
+/* Code for instruction list in how to use section and for the footnote in the same section */
+
 .instruction-list {
     font-weight: bold;
 }
@@ -210,7 +212,7 @@ header {
     text-transform: uppercase;
 }
 
-/* General styling for area where user input is collected in order to support calculations and functions. */
+/* Styling for complete area requiring user input in order to calculate and determine result. */
 
 #user-input-area {
     display: flex;
@@ -232,13 +234,13 @@ h4 {
     font-size: 0.9rem;
 }
 
-/* Styling of criteria section. */
-
 #criteria-section,
 #user-importance,
 #user-options {
     width: 50%;
 }
+
+/* Styling of criteria section */
 
 #criteria-section {
     display: inline-grid;
@@ -273,7 +275,8 @@ h4 {
     width: 40%;
 }
 
-/* Styling for combined criteria definition and importance div`s. */
+/* Styling for combined criteria definition and importance with the goal to allow for a more flexible arrangement considering resizing pourposes. */
+
 #criteria-w-importance {
     width: 90%;
     display: inline-flex;
@@ -282,7 +285,7 @@ h4 {
     flex-direction: row;
 }
 
-/* styling for user option area. */
+/* Styling for user option area. */
 
 #definition-scoring {
     text-align: center;
@@ -409,7 +412,7 @@ input::placeholder {
     width: 100%;
     height: 30px;
     text-align: center;
-    height: 67px;
+    height: 87px;
     outline: none;
 }
 
@@ -432,7 +435,7 @@ input::placeholder {
 }
 
 
-/* styling for buttons and buttons area. */
+/* Styling for buttons and buttons area. */
 
 #buttons-area {
     display: flex;
@@ -547,7 +550,7 @@ input::placeholder {
     justify-content: space-evenly;
 }
 
-/* Specific styling for tables headers. */
+/* Styling for table headers on all sections */
 
 .table-headers {
     height: 30px;
