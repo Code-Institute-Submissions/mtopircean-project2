@@ -162,14 +162,12 @@ List of colors used:
 #### Font and text style
 Text and font used are consistent across the website with variances in regards of decoration and size.
 Font used was selected from Google Fonts:
-![Alt text](/readme/other/bitter-font.jpg)
+![Alt text](/readme/other/font-style-used.jpg)
 
 #### Imagery
-Hero image was taken by a local photographer called [Zamfir Constantin](https://www.zamfirphoto.com/). Image was shared by him in order to support building the website.
-Other images in About page where taken from [Pexels](https://www.pexels.com/) which offers a free for commercial use collection of photography.
+Logo was designed using Canva wesite.
 
 #### Features
-
 * GENERAL:
 Website contains 6 pages from which 4 are visible and accessible from main menu and another 2 are a reaction to a users action.
 Menu and Header structure remains the same but changes in design with different screen size resolutions.
