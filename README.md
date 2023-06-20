@@ -169,56 +169,52 @@ Logo was designed using Canva wesite.
 
 #### Features
 * GENERAL:
-Website contains 6 pages from which 4 are visible and accessible from main menu and another 2 are a reaction to a users action.
-Menu and Header structure remains the same but changes in design with different screen size resolutions.
-I`ve created 2 menus:
-    * one that is used for resolution above 600px, which is the standard menu.
-    * one that is used for resolutions under 600px which transforms the HOME menu section into a font-awesome house logo.
-On both menus, the text data changes to same colour as underline when hovered over.
-![Alt text](/readme/other/header-resizing.jpg)
+Website contains:
+    * One main page which provides all of the relevant data for the user:
+        * A header section which contains a suggestive and centraly positioned logo; Under the logo 2 options are present that allow the user to to access the About and How to use information.
+        * Data input area: where user provides the relevant data that needs to be analyzed.
+        * A button area where all the relevant functions for the user can be accessed in a single location.
+        * 4 hidden modals that will return information related to:
+            * About content.
+            * How to use the website.
+            * Return a result recommandation when the CALCULATE ANSWER button is clicked.
+            * Return a random recommandation when GENERATE RANDOM SELECTION is clicked.
+    * A 404 page that allows the user to click on a return to home link.
 
-Footer information remains the same across all pages and screen resolutions and has a fixed position containing a Facebook link for community`s Facebook page.
-![Alt text](/readme/other/footer.jpg)
-
-
-* HOME: 
-Contains 4 main section:
-    * Hero image with a text section on a blured background linked to the About section.
-    * Schedule and Events which share the same height and sit side by side under Hero image; intention is that the website will allow to build additional blocks in the same format; purpose of this 2 sections is to inform on schedule and activities.
-    * Quote of the month section.
-
-* ABOUT:
-Contains 2 main sections:
-    * Information about the community with links to different sections of the website: contact, schedule, location.
-    * Image section which in desktop mode is positioned on right and in mobile moves to bottom of the page above footer.
-
-* MEDIA:
-Contains 3 main section:
-    * A timeline feature that allows for the user to select a specific month, and when selected, the webpage will move to the media info for that particular month; position of timeline remains fixed and for resoltions under 600px disappears completely due to real-estate availability.
-![Alt text](/readme/other/timeline-feature.jpg)
-
-    * Description section that details the objective of the page.
-    * Media data, structured by month and connected to the timeline feature; each media data contains a description of the presented content; media data used was implemented with iframe functionality  based on YouTube created links;
-
-* CONTACT:  
-Contains 2 main sections:
-    * Contact form which collects the main user contact data(first and last name as well as the email data), allows the user to select his interest areas for which he wants to be notified, and the submit button; submit button changes colour once hovered over.
-    * Map for Church`s 2 locations, which allow the user, if opened on a mobile device, to open in Google Maps and use tp navigate; map data was implemented through iframe functionality based on Google Maps created links
-
-* FORM REDIRECT:
-Page visible only when submit button in form page is pushed. Page acts as a temporary redirect page that will confirm form was submitted and notify user will be redirected to main page in 10 seconds.
+Looking more into detils of this 2 pages:
+* MAIN PAGE: 
+Looking into more detail, following elements/areas can be found on the page:
+    * Header containing a large logo and relevant information on the website mission and how to use details
+    * A user input area which is focused on 2 main sections:
+        * A Criteria Section in which the user is required to provide their key criterias in their decission making process and score their importance.
+        * The Options section in which the user will be required to name the options they want to compare and score how the fulfill the different characteristics on a scale from 1 to 10.
+    *Buttons area which contains 4 elements:
+        * CALCULATE ANSWER: which provides the trigger for a calculation that will return a recommended answer.
+        * GENERATE RANDOM SELECTION: which provides the trigger to provide a recommandation based on a "coin-flip" type of logic.
+        * RESET OPTION VALUE: considering that the criteria importance remains the same, allows the user to reset to the initial placeholder the scoring selected for each of the drop-downs under the 3 Options the user is allowed to compare.
+        * Print as PDF: this button allows the user to not just print as PDF, but to open the print section of the browser in order to store either a hard or soft copy of the page and it`s recommandation. I`ve named it "Print as PDF" to recommend a more envioremental friendly option to the user, and at the end an option that will be easier to store and share.
+    * Modals: which are hidden elements connected to 4 areas:
+        * About
+        * How to use
+        * CALCULATE ANSWER
+        * RANDOM SELECTION
 
 * 404 PAGE:
 Page designed in order to provide 404 customized message and experience.
 
+* JAVA SCRIPT CONNECTED FEATURES:
+    * Pourpose:
+        *
+    * Website functionality and user support:
+        *
 
 #### Accessibility
 From an accessibility perspective, my goal was to create a clean website with data easy to read, positioned in a relevant manner for the user.
 I`ve achieved this by:
 * Writing semantic HTML
-* Correct selection of text size and font in order to contrast well with the other elements of the page.
-* Selection of photos used based on high resolution, good contrast.
-* As majority of photos where implemented as background, titles where used instead of alt attributes.
+* Correct selection of text size, font and style in order to contrast well with the other elements of the page.
+* Highly visible and relevant logo
+* Use of alt attribute connected to the logo
 
 Another area I was mindful of, was that all of the consideration above where not lost when using the website in smaller screen sizes.
 
