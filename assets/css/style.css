@@ -416,19 +416,19 @@ input::placeholder {
 }
 
 .user-options-one input::placeholder {
-    color: #059ca4;
+    color: #025d62;
     text-decoration: underline;
     content: "First line \A Second line"
 }
 
 .user-options-two input::placeholder {
-    color: #de5a22;
+    color: #7b005e;
     text-decoration: underline;
     content: "First line \A Second line"
 }
 
 .user-options-three input::placeholder {
-    color: #1a8812;
+    color: #14680e;
     text-decoration: underline;
     content: "First line \A Second line"
 }
@@ -578,7 +578,7 @@ input::placeholder {
 .link-home {
     text-decoration: none;
     text-transform: uppercase;
-    color: #1a8812;
+    color: #14680E;
 }
 
 /* Display size optimization. */

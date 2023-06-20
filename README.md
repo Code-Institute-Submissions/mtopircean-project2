@@ -123,7 +123,7 @@ To clone the repository:
 11. CSS Validation Service: for CSS code evaluation and troubleshooting.
 12. W3C Markup Validation Service: for HTML code evaluation and troubleshooting.
 13. JSHint JavaScript Validator: to verify and improve Java Script code.
-14. ColorSpace: to create palete of colors in README.
+14. Coolors: to create palete of colors in README.
 15. Amiresponsive: to create a snapshot of the page responsiveness on different screen variations
 
 ## Design
@@ -146,18 +146,16 @@ In order to support development, wireframes where created in Balsamiq.
 ![Alt text](/readme/wireframe/404-wf.jpg)
 
 #### Theme
-Theme of the website was thought in a way that it would address:
-* The religious aspect through use of neutral, clear, clean fonts and style, and by using strong religious themed photos and other media content.
-* Through use of the underline on the menu items, to push also the Romanian National theme.
-* Clear and clean design in order to address all targeted users.
-* Provide a message easy to understand and easy to access.
-* Highlight key elements: schedule, events, location, media content, Facebook link.
-* Provide a direction that is easy to be followed and implemented in various screen sizes/devices.
+When considering the website theme the general idea was to provide a robotic, calculator feeling for the user, to inspire the idea of a well documented and mathematical approach to their need.
+Intention was to also create an enviorement that would be easy to understand and use.
+I`ve opted to try and limit the amount of information in the page with the use of different placeholders for the input areas and to move larger amount of information inside modals easy to access.
 
 #### Colour Selection
-Colour selection done in order to be aligned with the thematic of the website and to provide appropriate style while maintaining clarity and accessibility for all.
-A splash of colour was added by the introduction of the menu decorations representing the Romanian national colours. Choice was taken in order to again support the websites thematic.
-![Alt text](/readme/other/colour-pallete.jpg)
+Colors where selected in line with the theme, but also to offer a high level of accessibility and contrast.
+It has suffered several changes during the development process as I`ve wanted maintain clear and easy to read and print data.
+
+List of colors used:
+![Alt text](/readme/other/color-selection.jpg)
 
 
 #### Font and text style
@@ -384,6 +382,7 @@ Video sources where taken from YouTube:
 * March video: Adoration of the Cross YouTube Channel
 * February video: Greek Orthodox Metropolis of Detroit YouTube Channel
 * January video: Matt Whitman YouTube Channel
+
 #### Photography:
 * Home page Hero Image: credit to [Zamfir Constantin](https://www.zamfirphoto.com/)
 * Contact page photos: sourced from [Pexels](https://www.pexels.com/)
