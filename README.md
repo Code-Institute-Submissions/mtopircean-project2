@@ -38,8 +38,6 @@ The idea originates in my own experience as a procuremenet professional and is s
     * [Fixed bugs](#fixed-bugs)
 * [Credits](#credits)
     * [Code Used](#code-used)
-    * [Video](#video)
-    * [Photography](#photography)
     * [Other](#other)
 * [About Author](#about-author)
 ## Scope
@@ -386,16 +384,6 @@ No other known bugs or errors.
 YouTube and Google Maps iframe code used for Maps in Contact page and Videos in Media page.
 Style on submit button in the contact form was inspired from the structure of the submit button from the Love Running Project.
 
-#### Video:
-Video sources where taken from YouTube:
-* April video: GreekOrthodoxChurch YouTube Channel
-* March video: Adoration of the Cross YouTube Channel
-* February video: Greek Orthodox Metropolis of Detroit YouTube Channel
-* January video: Matt Whitman YouTube Channel
-
-#### Photography:
-* Home page Hero Image: credit to [Zamfir Constantin](https://www.zamfirphoto.com/)
-* Contact page photos: sourced from [Pexels](https://www.pexels.com/)
 
 #### Other
 * Deployment instructions in GitHub copied from kera-cudmore different repo`s and following the article written by her on how to write a readme.
