@@ -156,7 +156,7 @@ It has suffered several changes during the development process as I`ve wanted ma
 The choice was also due to the amount of options we I have in regards of functionality and the interest to create a separation, or a uniqe identifier.
 
 List of colors used:
-![Alt text](/readme/other/color-selection.jpg)
+![Alt text](/readme/other/colour-selection.jpg)
 
 
 #### Font and text style
