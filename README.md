@@ -203,10 +203,21 @@ Looking into more detail, following elements/areas can be found on the page:
 Page designed in order to provide 404 customized message and experience.
 
 * JAVA SCRIPT CONNECTED FEATURES:
-    * Pourpose:
-        *
+    * Pourpose/Objective - all accessible from a single area:
+    ![Alt text](/readme/other/buttons-area.jpg)
+        * Calculate function: 
+            * Provides the user with a mathematical/calculated approach to their decission making process.
+            * Based on the data provided, the user can calculate a minimum of two Options, third Option being optional, and in the case where not selected, when user generates the answer it will be prompted in the relevant modal that it is not taken into consideration as it has missing data.
+            * Calculation logic is based on a the average of a score for each individual criteria line, score calculated as a multiplication of the criteria importance and the score of the option for each criteria. Result is compared between each of the options compared, and the better one is returned as the recommandation.
+            * Recommandation then is returned part of a modal. In the event that the relevant fields are not complete, modal will inform the user when the relevant button is clicked.
+        * Random generation function: Will provide a "coin-flip" type of recommandation based on a basic algorithm. It will be able to generate independent of any data being provided in the user input area. It`s functionality is very basic and can be used as a pure random selector if needed.
+        * Reset option score values: it`s functionality is to allow the user to reset the score of their options with a single click of a button. It will not reset the value of the importance criteria as it is considered a key element that once set, should not change often
+        * Print function: it allows to open the browsers print window with a click of a button. It`s functionality is simple and straighforward.
+
     * Website functionality and user support:
-        *
+    ![Alt text](/readme/other/modal-functionality.jpg)
+        * Modal window: where chosen as the prefered way to return a result in order not to overload main page and to be able to provide a large amount of data into a single area.
+        * Modal open and close: modals will open based on different triggers on the page. When another modal is opened, the first one will close, so at all time, you can`t have more then 1 modal open on the page.
 
 #### Accessibility
 From an accessibility perspective, my goal was to create a clean website with data easy to read, positioned in a relevant manner for the user.
