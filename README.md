@@ -153,6 +153,7 @@ I`ve opted to try and limit the amount of information in the page with the use o
 #### Colour Selection
 Colors where selected in line with the theme, but also to offer a high level of accessibility and contrast.
 It has suffered several changes during the development process as I`ve wanted maintain clear and easy to read and print data.
+The choice was also due to the amount of options we I have in regards of functionality and the interest to create a separation, or a uniqe identifier.
 
 List of colors used:
 ![Alt text](/readme/other/color-selection.jpg)
