@@ -232,16 +232,20 @@ Another area I was mindful of, was that all of the consideration above where not
 
 #### Display size optimization
 ![Alt text](/readme/other/responsive-view.jpg)
+
 Several size options where used when developing the responsive design.
-Please see bellow a list and the main areas of impact when implemented:
+Please see bellow a list and the main areas of impact when implemented. The main consideration is the use of flex and responsive technologies in order to support easier screen size optimization.
 
-* from 1200px wide and down: Mostly resizing of different elements but without major structural changes.
-* from 954px wide and down: Elements moved into a stacked format on all pages in order to display correctly, one elements per full page width. The other change is the resizing and positioning of Menu under Logo in a central position.
-* from 800px wide and down: Mostly resizing of different elements but without other major structural changes.
-* from 600px wide and down: Home menu tab replaced with font-awesome home icon by hiding the standard menu and moving to the second variant optimized for mobile. The other major change is the removal of the timeline feature in the media page, change done due to reduced real-estate on lower screen-size devices.
-* from 425px wide and down: Mostly resizing of different elements but without other major structural changes.
-* min resolution tested was for iPhone SE, but verified that resolutions under la Galaxy Fold still behave well with major change being a shift in menu structure to a stacked version vs a side by side tab presentation.
+* under 1201px wide: mostly resizing of different elements but without major structural changes.
+* under 1031px wide: user options area moves under the criteria area. Additional styling and resizing done.
+* under 800px wide: additional styling and resizing done.
+* under 510px wide: additional styling and resizing done.
+* under 461px wide: additional styling and resizing done.
+* under 660px height: additional styling and resizing done on modals.
+* under 380px height: additional styling and resizing done on modals.
+* min resolution tested was for iPhone SE.
 
+General approach was to browse the different sizes with a step by step approach, and where needed, to operate the required changes.
 
 
 ## Testing and Validation
