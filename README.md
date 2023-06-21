@@ -451,7 +451,8 @@ closeRandom.onclick = function () {
 #### Other
 * Deployment instructions in GitHub copied from kera-cudmore different repo`s and following the article written by her on how to write a readme.
 * Inspiration on readme structure taken from kera-cudmore repo`s and following the article written by her on how to write a readme..
-* I want to also recognize Graeme Taylor for providing guidance during the development process of this website.
+* I want to also recognize Graeme Taylor - My Code Institute Mentor for providing guidance during the development process of this website.
+* Thank you also to the Tutor Team in Code Institute for spending the time with me to fix and understand different issues regarding: modals, resizing issues, and a very serios issue related to push error from gitpod to github.
 
 
 ## About Author
