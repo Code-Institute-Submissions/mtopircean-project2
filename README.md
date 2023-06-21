@@ -350,7 +350,7 @@ Link to full local functionality test: [TESTING.MD](https://github.com/mtopircea
 ## Credits
 #### Code Used:
 Modal code written was established by taking inspiration in an example found on w3schools and adapted to my code and application:
-`/*
+```JavaScript /*
 * Following section is created in order to capture the different modals opening in the page.
 * Majority of the functions will return a modal in order to capture their result or provide alerts.
 * It was established by taking inspiration in a code format found on w3schools and adapted to my code and application.
@@ -482,7 +482,7 @@ closeRandom.onclick = function () {
 * Functioned defined with the purpose to close a modal when another is triggered.
 * Function pulls all modals into 1 variable.
 * It then iterates through them and sets their display property to none
-*/`
+*/```
 
 
 
