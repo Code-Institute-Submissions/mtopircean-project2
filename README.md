@@ -253,89 +253,16 @@ and code behaviour.
 A formator was also used in order to clean and arrange code.
 
 #### HTML
-Tested all pages using W3C validator.
-Several errors identified in all pages, and corrections made, like for ex:
-* missing lang attribute and doctype in 404 page
-* duplications of containers or double used closing container commands
-
-Issues identified and corrected until bellow pass mark was reached:
-![Alt text](/readme/testing/html-test.jpg)
 
 #### CSS
-Tested CSS code using W3C validation service.
-Several errors identified, majority around using commands not valid or doubled: background-colour same as border colour for ex.
-
-Issues are fixed and corrected, the only item still open is the imported style sheet:
-![Alt text](/readme/testing/css-validator.jpg)
-
 
 #### Accessibility Test
-Accessibility test was done using Wave Report generator, for each of the pages.
-There where several issues identified which where corrected, mostly due to font colour used on Menu tabs. Media and About page initially used a white text colour on a yellow background. This was corrected with the final version currently in place and errors fixed.
-
-There are 3 errors still in place:
-* 2 impacting all pages due to icons being used with a link to a page associated. Since the icons don`t have text, errors where not fixed but they should not impact user experience as the icons used present very suggestive meaning, and generaly used in web-development.
-* 1 error impacting the form redirect page(page after submission) and this is due to the redirect function of the page.
-![Alt text](/readme/testing/accessability-test.jpg)
 
 #### Lighthouse
-Tested all pages with good overall performance results.
-
-* Home desktop  
-![Alt text](/readme/testing/home-desktop-lighthouse.jpg)
-* Home mobile  
-![Alt text](/readme/testing/home-mobile-lighthouse.jpg)
-* About desktop  
-![Alt text](/readme/testing/about-desktop-lighthouse.jpg)
-* About mobile  
-![Alt text](/readme/testing/about-mobile-lighthouse.jpg)
-* Media desktop  
-![Alt text](/readme/testing/media-desktop-lighthouse.jpg)
-* Media mobile  
-![Alt text](/readme/testing/media-mobile-lighthouse.jpg)
-* Contact desktop  
-![Alt text](/readme/testing/contact-desktop-lighthouse.jpg)
-* Contact mobile  
-![Alt text](/readme/testing/contact-mobile-lighthouse.jpg)
-* 404 desktop  
-![Alt text](/readme/testing/404-desktop-lighthouse.jpg)
-* 404 mobile  
-![Alt text](/readme/testing/404-mobile-lighthouse.jpg)
 
 #### Spellcheck
-All webpages checked for spellcheck error using the W3C Spellchecker.
-The only errors not fixed are due to specific wording that can`t be changed.
-List of errors not corrected:
-"Kilkenny"
-"NEPSIS"
-"Nepsis"
-"Vitovnica"
-"th"
-"Aegina"
-"Chryssavgis"
-"Farmington"
-"Gaitanos"
-"IFRAME"
-"Kallistos"
-"Kilkenny"
-"Nectarios"
-"Parthene"
-"Petros"
-"Theotokarion"
-"Truebenbach"
-"doron"
-"paraliturgical"
-"IFRAME" - Not showing on website
-"Kilkenny"
-"Lisduggan"
-"bd"
-"bdb"
-"dbcaacda"
-"fd"
-"sLisduggan"
-"sSaint"
-"sie"
-"xfab
+Website was checked using the W3C Spellchecker.
+The only error found relates to using "Crt." instead of "Criteria" in order to provide more data into User Options scores drop-downs when resizing the webpage.
 
 Code was also checked using the Word autocorrect function.
 
