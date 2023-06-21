@@ -353,7 +353,7 @@ Link to full local functionality test: [TESTING.MD](https://github.com/mtopircea
 * HTML and CSS similarities can be found to my first project submitted, but at a very basic and minor level.
 
 * Took inspiration in defining the structure bellow from LovaMath project and adapted it to my requirements:
-```JavaScript let buttons = document.getElementsByTagName("button");
+` let buttons = document.getElementsByTagName("button");
   for (let button of buttons) {
     button.addEventListener("click", function () {
 
@@ -372,12 +372,12 @@ Link to full local functionality test: [TESTING.MD](https://github.com/mtopircea
       }
     });
   }
-});```
+});`
 
 
 * Modal code written was established by taking inspiration in an example found on w3schools and adapted to my code and application. Bellow is my code with inspiration taken from this link:https://www.w3schools.com/howto/howto_css_modals.asp
 
-```JavaScript /*
+` /*
 * Following section is created in order to capture the different modals opening in the page.
 * Majority of the functions will return a modal in order to capture their result or provide alerts.
 * It was established by taking inspiration in a code format found on w3schools and adapted to my code and application.
@@ -509,13 +509,13 @@ closeRandom.onclick = function () {
 * Functioned defined with the purpose to close a modal when another is triggered.
 * Function pulls all modals into 1 variable.
 * It then iterates through them and sets their display property to none
-*/```
+*/`
 
 
 
 * Random generator, uses a piece of code for randomIndex that is taken from stackOverflow website and adapted to my code needs:
 
-```JavaScript let randomIndex = Math.floor(Math.random() * options.length);```
+`let randomIndex = Math.floor(Math.random() * options.length);`
 
 #### Other
 * Deployment instructions in GitHub copied from kera-cudmore different repo`s and following the article written by her on how to write a readme.
