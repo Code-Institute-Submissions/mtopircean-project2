@@ -341,49 +341,153 @@ Code was also checked using the Word autocorrect function.
 
 #### Local functionality tests
 All tests performed considered both desktop and mobile version.
-Link to full local functionality test: [TESTING.MD](https://github.com/mtopircean/project1/blob/main/TESTING.md)
+Link to full local functionality test: [TESTING.MD](https://github.com/mtopircean/project2/blob/main/TESTING.md)
 
 #### Fixed bugs
 
-Majority of bugs and errors where addressed when dealing with the development of each individual section, and where considered a step in completion of different sections.
 
-* HOME Page quote section not being displayed completly: resized the margins of the section.
-```
-#quote {
-    position: relative;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    padding: 20px;
-    font-style: italic;
-    font-size: 1rem;
-}
-```
-
-* MEDIA Page footer rising on top of the last video: resized margins of the video sections in order to create a separation against the footer.
-```
-#all-video {
-    float: right;
-    width: 84%;
-    margin-right: 20px;
-    margin-bottom: 40px;
-}
-```
-
-* MEDIA Page timeline error when clicking a specific month not visible in the video section. Error was causing the display to flicker and return to current section: error fixed by removing duplicate code added by mistake during development.
-
-* HTML W3C validator testing, highlighting error "The frameborder attribute on the iframe element is obsolete": Error fixed based on guideline from Benji_5P_cohort_lead on removing the frameborder element from iframe.
-
-*After a zoom in was spotted when opened website in desktop browser, it was identified that a padding on the header was creating a misalignment with other elements in other pages.
-Once corrected this triggered several adjustments that had to be done in order to realign elements. Corrections took place on all pages and touched mostly on size of elements, padding and margin values.
-
-No other known bugs or errors.
 
 ## Credits
 #### Code Used:
-YouTube and Google Maps iframe code used for Maps in Contact page and Videos in Media page.
-Style on submit button in the contact form was inspired from the structure of the submit button from the Love Running Project.
+Modal code written was established by taking inspiration in an example found on w3schools and adapted to my code and application:
+`/*
+* Following section is created in order to capture the different modals opening in the page.
+* Majority of the functions will return a modal in order to capture their result or provide alerts.
+* It was established by taking inspiration in a code format found on w3schools and adapted to my code and application.
+* Decision was taken to remove the option to close modal when clicking outside of the box for the reason that we need to have
+the print option available for user to print the page. If this would have been enabled, modals would automatically close when clicking
+the print button.
+*/
 
+// About modal - opens the description of the page and tool created
+
+// Pulls into variables all relevant html areas for function operation
+
+// Defines the overall About modal which contains all the text including the close element
+
+let modalAbout = document.getElementById("header-about-modal");
+
+// Defines the trigger element to open the modal
+
+let modalTriggerAbout = document.getElementById("header-about");
+
+// Defines the trigger element to close the modal
+
+let modalCloseAbout = document.getElementById("modal-close-about");
+
+// Defines opening functionality and relevant log message to confirm operation. Console log is used for debugging purpose.
+
+modalTriggerAbout.onclick = function () {
+  console.log("Opening modal: modalAbout");
+  closeModal();
+  modalAbout.style.display = "block";
+};
+
+// Defines closing functionality and relevant log message to confirm operation. Console log is used for debugging purpose.
+
+modalCloseAbout.onclick = function () {
+  console.log("Closing modal: modalAbout");
+  modalAbout.style.display = "none";
+};
+
+// How to modal
+
+// Defines the overall How to modal which contains all the text including the close element
+
+let modalHow = document.getElementById("header-how-modal");
+
+// Defines the trigger element to open the modal
+
+let modalTriggerHow = document.getElementById("header-how");
+
+// Defines the trigger element to close the modal
+
+let modalCloseHow = document.getElementById("modal-close-how");
+
+
+// Defines opening functionality and relevant log message to confirm operation. Console log is used for debugging purpose.
+
+modalTriggerHow.onclick = function () {
+  console.log("Opening modal: modalHow");
+  closeModal();
+  modalHow.style.display = "block";
+};
+
+// Defines closing functionality and relevant log message to confirm operation. Console log is used for debugging purpose.
+
+modalCloseHow.onclick = function () {
+  console.log("Closing modal: modalHow");
+  modalHow.style.display = "none";
+};
+
+// Modal for calculateAnswer function
+
+// Defines the overall How to modal which contains all the text including the close element
+
+let submitModal = document.getElementById("submit-modal");
+
+// Defines the trigger element to open the modal
+
+let buttonSubmit = document.getElementById("calculate");
+
+// Defines the trigger element to close the modal
+
+let closeSubmit = document.querySelector(".submit-close");
+
+// Defines opening functionality and relevant log message to confirm operation. Console log is used for debugging purpose.
+
+buttonSubmit.onclick = function () {
+  console.log("Opening modal: submitModal");
+  closeModal();
+  submitModal.style.display = "block";
+};
+
+// Defines closing functionality and relevant log message to confirm operation. Console log is used for debugging purpose.
+
+closeSubmit.onclick = function () {
+  console.log("Closing modal: submitModal");
+  submitModal.style.display = "none";
+};
+
+// // Modal for generateRandom function
+
+// Defines the overall How to modal which contains all the text including the close element
+
+let randomModal = document.getElementById("random-modal");
+
+// Defines the trigger element to open the modal
+
+let buttonRandom = document.getElementById("random");
+
+// Defines the trigger element to close the modal
+
+let closeRandom = document.querySelector(".random-close");
+
+// Defines opening functionality and relevant log message to confirm operation. Console log is used for debugging purpose.
+
+buttonRandom.onclick = function () {
+  console.log("Opening modal: randomModal");
+  closeModal();
+  randomModal.style.display = "block";
+};
+
+// Defines closing functionality and relevant log message to confirm operation. Console log is used for debugging purpose.
+
+closeRandom.onclick = function () {
+  console.log("Closing modal: randomModal");
+  randomModal.style.display = "none";
+};
+
+/*
+* Functioned defined with the purpose to close a modal when another is triggered.
+* Function pulls all modals into 1 variable.
+* It then iterates through them and sets their display property to none
+*/`
+
+
+
+Random generator, uses a piece of code for randomIndex that is taken from stackOverflow website and adapted to my code needs:
+`let randomIndex = Math.floor(Math.random() * options.length);`
 
 #### Other
 * Deployment instructions in GitHub copied from kera-cudmore different repo`s and following the article written by her on how to write a readme.
