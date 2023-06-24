@@ -212,6 +212,12 @@ header {
 
 /* General styling for area where user input is collected in order to support calculations and functions. */
 
+.hidden-label {
+    position: absolute !important;
+    color: transparent;
+    overflow: hidden;
+}
+
 #user-input-area {
     display: flex;
     justify-content: center;
