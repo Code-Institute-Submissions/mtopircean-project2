@@ -63,7 +63,6 @@ Although a simple tool, my hope is for it to target an extremly wide audience wi
 * Users are expected to integrate the application as as a standard part of their decission making process due to it`s simplicity and still informed way of determining it`s recommandations.
 
 ## Deployment and Local Development
-
 Deployment of the website was used with GitHub Pages support.
 Deployed website can be visited at the [link](https://mtopircean.github.io/project2/)
 
@@ -166,56 +165,92 @@ Font used was selected from Google Fonts:
 Logo was designed using Canva wesite.
 
 #### Features
-* GENERAL:
+1. GENERAL:
 Website contains:
-    * One main page which provides all of the relevant data for the user:
-        * A header section which contains a suggestive and centraly positioned logo; Under the logo 2 options are present that allow the user to to access the About and How to use information.
-        * Data input area: where user provides the relevant data that needs to be analyzed.
-        * A button area where all the relevant functions for the user can be accessed in a single location.
-        * 4 hidden modals that will return information related to:
-            * About content.
-            * How to use the website.
-            * Return a result recommandation when the CALCULATE ANSWER button is clicked.
-            * Return a random recommandation when GENERATE RANDOM SELECTION is clicked.
-    * A 404 page that allows the user to click on a return to home link.
+*One main page which provides all of the relevant data for the user:
+  * A header section which contains a suggestive and centraly positioned logo; Under the logo 2 options are present that allow the user to to access the About and How to use information.
+  * Data input area: where user provides the relevant data that needs to be analyzed.
+  * A button area where all the relevant functions for the user can be accessed in a single location.
+  * 4 hidden modals that will return information related to:
+    * About content.
+    * How to use the website.
+    * Return a result recommandation when the CALCULATE ANSWER button is clicked.
+    * Return a random recommandation when GENERATE RANDOM SELECTION is clicked.
+  * A 404 page that allows the user to click on a return to home link.
 
 Looking more into detils of this 2 pages:
-* MAIN PAGE: 
+2. MAIN PAGE: 
 Looking into more detail, following elements/areas can be found on the page:
-    * Header containing a large logo and relevant information on the website mission and how to use details
-    * A user input area which is focused on 2 main sections:
-        * A Criteria Section in which the user is required to provide their key criterias in their decission making process and score their importance.
-        * The Options section in which the user will be required to name the options they want to compare and score how the fulfill the different characteristics on a scale from 1 to 10.
-    *Buttons area which contains 4 elements:
-        * CALCULATE ANSWER: which provides the trigger for a calculation that will return a recommended answer.
-        * GENERATE RANDOM SELECTION: which provides the trigger to provide a recommandation based on a "coin-flip" type of logic.
-        * RESET OPTION VALUE: considering that the criteria importance remains the same, allows the user to reset to the initial placeholder the scoring selected for each of the drop-downs under the 3 Options the user is allowed to compare.
-        * Print as PDF: this button allows the user to not just print as PDF, but to open the print section of the browser in order to store either a hard or soft copy of the page and it`s recommandation. I`ve named it "Print as PDF" to recommend a more envioremental friendly option to the user, and at the end an option that will be easier to store and share.
-    * Modals: which are hidden elements connected to 4 areas:
-        * About
-        * How to use
-        * CALCULATE ANSWER
-        * RANDOM SELECTION
+  * Header containing a large logo and relevant information on the website mission and how to use details
+  * A user input area which is focused on 2 main sections:
+    * A Criteria Section in which the user is required to provide their key criterias in their decission making process and score their importance.
+    * The Options section in which the user will be required to name the options they want to compare and score how the fulfill the different characteristics on a scale from 1 to 10.
+  * Buttons area which contains 4 elements:
+    * CALCULATE ANSWER: which provides the trigger for a calculation that will return a recommended answer.
+    * GENERATE RANDOM SELECTION: which provides the trigger to provide a recommandation based on a "coin-flip" type of logic.
+    * RESET OPTION VALUE: considering that the criteria importance remains the same, allows the user to reset to the initial placeholder the scoring selected for each of the drop-downs under the 3 Options the user is allowed to compare.
+    * Print as PDF: this button allows the user to not just print as PDF, but to open the print section of the browser in order to store either a hard or soft copy of the page and it`s recommandation. I`ve named it "Print as PDF" to recommend a more envioremental friendly option to the user, and at the end an option that will be easier to store and share.
+  * Modals: which are hidden elements connected to 4 areas:
+    * About
+    * How to use
+    * CALCULATE ANSWER
+    * RANDOM SELECTION
 
-* 404 PAGE:
+3. 404 PAGE:
 Page designed in order to provide 404 customized message and experience.
 
-* JAVA SCRIPT CONNECTED FEATURES:
-    * Pourpose/Objective - all accessible from a single area:
+4. JAVA SCRIPT CONNECTED FEATURES:
+* Pourpose/Objective - all accessible from a single area:
     ![Alt text](/readme/other/buttons-area.jpg)
-        * Calculate function: 
-            * Provides the user with a mathematical/calculated approach to their decission making process.
-            * Based on the data provided, the user can calculate a minimum of two Options, third Option being optional, and in the case where not selected, when user generates the answer it will be prompted in the relevant modal that it is not taken into consideration as it has missing data.
-            * Calculation logic is based on a the average of a score for each individual criteria line, score calculated as a multiplication of the criteria importance and the score of the option for each criteria. Result is compared between each of the options compared, and the better one is returned as the recommandation.
-            * Recommandation then is returned part of a modal. In the event that the relevant fields are not complete, modal will inform the user when the relevant button is clicked.
-        * Random generation function: Will provide a "coin-flip" type of recommandation based on a basic algorithm. It will be able to generate independent of any data being provided in the user input area. It`s functionality is very basic and can be used as a pure random selector if needed.
-        * Reset option score values: it`s functionality is to allow the user to reset the score of their options with a single click of a button. It will not reset the value of the importance criteria as it is considered a key element that once set, should not change often
-        * Print function: it allows to open the browsers print window with a click of a button. It`s functionality is simple and straighforward.
+  * Calculate function: 
+      * Provides the user with a mathematical/calculated approach to their decission making process.
+      * If the required fields are not entered, user will be notified to do so when CALCULATE ANSWER is clicked.
+      ![Alt text](/readme/features/notification-data-not-entered.jpg)
+      * Based on the data provided, the user can calculate a minimum of two Options, third Option being optional, and in the case where not selected, when user generates the answer it will be prompted in the relevant modal that it is not taken into consideration as it has missing data.
 
-    * Website functionality and user support:
-    ![Alt text](/readme/other/modal-functionality.jpg)
-        * Modal window: where chosen as the prefered way to return a result in order not to overload main page and to be able to provide a large amount of data into a single area.
-        * Modal open and close: modals will open based on different triggers on the page. When another modal is opened, the first one will close, so at all time, you can`t have more then 1 modal open on the page.
+      All 3 options are selected with valid data entered:
+      ![Alt text](/readme/features/calculate-feature-three-options.jpg)
+
+      2 options are selected with valid data entered:
+      ![Alt text](/readme/features/calculate-feature-two-options.jpg)
+
+      * Calculation logic is based on a the average of a score for each individual criteria line, score calculated as a multiplication of the criteria importance and the score of the option for each criteria. Result is compared between each of the options compared, and the better one is returned as the recommandation.
+
+      2 options are selected with equal results:
+      (/readme/features/calculate-feature-two-options-equal.jpg)
+
+      2 options are selected with different results:
+      ![Alt text](/readme/features/calculate-feature-two-options.jpg)
+
+      3 options are selected with different results:
+      (/readme/features/calculate-feature-three-options.jpg)
+
+      3 options are selected with equal results:
+      (/readme/features/calculate-feature-three-options-equal.jpg)
+
+      * Recommandation then is returned part of a modal.
+  * Random generation function: Will provide a "coin-flip" type of recommandation based on a basic algorithm. It will be able to generate independent of any data being provided in the user input area. It`s functionality is very basic and can be used as a pure random selector if needed.
+  (/readme/features/random-feature.jpg)
+
+  * Reset option score values: it`s functionality is to allow the user to reset the score of their options with a single click of a button. It will not reset the value of the importance criteria as it is considered a key element that once set, should not change often
+
+  Before reset:
+  (/readme/features/reset-feature-values.jpg)
+
+  After reset:
+  (/readme/features/reset-feature-no-values.jpg)
+  * Print function: it allows to open the browsers print window with a click of a button. It`s functionality is simple and straighforward.
+
+* Website functionality and user support:
+
+    About modal:
+    ![Alt text](/readme/features/about-modal.jpg)
+
+    About modal:
+    ![Alt text]![Alt text](/readme/features/how-to-modal.jpg)
+
+  * Modal window: where chosen as the prefered way to return a result in order not to overload main page and to be able to provide a large amount of data into a single area.
+  * Modal open and close: modals will open based on different triggers on the page. When another modal is opened, the first one will close, so at all time, you can`t have more then 1 modal open on the page.
 
 #### Accessibility
 From an accessibility perspective, my goal was to create a clean website with data easy to read, positioned in a relevant manner for the user.
