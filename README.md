@@ -60,7 +60,7 @@ Although a simple tool, my hope is for it to target an extremly wide audience wi
 
 #### Frequent Visitors Target:
 * Unlimited target audience and usability, as it clearly targets a need applicable in all areas from professionals to home use, on all demographics.
-* Users are expected to integrate the application as as a standard part of their decission making process due to it`s simplicity and still informed way of determining it`s recommandations.
+* Users are expected to integrate the application as a standard part of their decission making process due to simplicity, but still an informed way of determining recommandations.
 
 ## Deployment and Local Development
 Deployment of the website was used with GitHub Pages support.
@@ -307,9 +307,11 @@ Corrections done where:
   * Changed color scheme in order to increase contrast.
   * Added labels and formated them in order to remove their visibility.
     An issue remains if you select all of the items in the page(drag over page elements or using CTRL+A) where the labels can be seen as present but hidden:
+    
     ![Alt text](/readme/testing/hidden-labels.jpg)
 
 Currently there are no errors and warnings reported using Wave:
+
 ![Alt text](/readme/testing/accessibility-testing.jpg)
 
 #### Lighthouse
@@ -327,30 +329,39 @@ Website was checked using the W3C Spellchecker.
 The only error found relates to using "Crt." instead of "Criteria" in order to provide more data into User Options scores drop-downs when resizing the webpage.
 Code was also checked using the Word autocorrect function.
 
-#### Local functionality tests
-All tests performed considered both desktop and mobile version.
-Link to full local functionality test: [TESTING.MD](https://github.com/mtopircean/project2/blob/main/TESTING.md)
+#### Java Script
+During the development of the website, a consistent amount of console.logs where used in order to test execution of all functions/code.
 
-#### Fixed bugs
+JShint was also used in order to validate if any warnings where raised.
+During testing, several warnings where raised and corrected. Most significant correction was: "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics."
+With support from Sean in CI, my code was improved and the warning eliminated.
 
-
-
-## Credits
-#### Code Used:
-
-* HTML and CSS similarities can be found to my first project submitted, but at a very basic and minor level.
-
-* Took inspiration in defining the structure bellow from LovaMath project and adapted it to my requirements. Bellow is my code with inspiration taken from LoveMath:
-
+**Initial code:**
 ```javascript
-`let buttons = document.getElementsByTagName("button");
-  for (let button of buttons) {
-    button.addEventListener("click", function () {
+let buttons = document.getElementsByTagName("button");
+for (let button of buttons) {
+  button.addEventListener("click", function () {
+    //Logs a message to the console log that a specific button was clicked, when it was clicked
+    console.log("Button clicked: " + this.getAttribute("id"));
+    if (this.getAttribute("id") === "calculate") {
+      calculateAnswer();
+    } else if (this.getAttribute("id") === "print") {
+      printPageAsPDF();
+    } else if (this.getAttribute("id") === "reset") {
+      resetUserArea();
+    } else if (this.getAttribute("id") === "random") {
+      generateRandom();
+    }
+  });
+}
+```
 
-      //Logs a message to the console log that a specific button was clicked, when it was clicked
-
-      console.log("Button clicked: " + this.getAttribute("id"));
-
+**Updated code:**
+```javascript
+`document.addEventListener("DOMContentLoaded", function () {
+  let buttons = [...document.getElementsByTagName("button")];
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function (event) {
       if (this.getAttribute("id") === "calculate") {
         calculateAnswer();
       } else if (this.getAttribute("id") === "print") {
@@ -361,7 +372,50 @@ Link to full local functionality test: [TESTING.MD](https://github.com/mtopircea
         generateRandom();
       }
     });
-  }
+  });
+});`
+```
+
+#### Local functionality tests
+All tests performed considered both desktop and mobile version.
+Link to full local functionality test: [TESTING.MD](https://github.com/mtopircean/project2/blob/main/TESTING.md)
+
+#### Fixed bugs
+During the development process, several bugs and errors where identified and fixed, with minor error still identified and active on the website.
+
+1. Errors fixed:
+* Design:
+
+* Functionality:
+
+2. Errors known and not fixed:
+* Design:
+
+* Functionality:
+
+## Credits
+#### Code Used:
+
+* HTML and CSS similarities can be found to my first project submitted, but at a very basic and minor level.
+
+* Took inspiration in defining the structure bellow from LovaMath project and adapted it to my requirements. Bellow is my code with inspiration taken from LoveMath:
+
+```javascript
+`document.addEventListener("DOMContentLoaded", function () {
+  let buttons = [...document.getElementsByTagName("button")];
+  buttons.forEach(function (button) {
+    button.addEventListener("click", function (event) {
+      if (this.getAttribute("id") === "calculate") {
+        calculateAnswer();
+      } else if (this.getAttribute("id") === "print") {
+        printPageAsPDF();
+      } else if (this.getAttribute("id") === "reset") {
+        resetUserArea();
+      } else if (this.getAttribute("id") === "random") {
+        generateRandom();
+      }
+    });
+  });
 });`
 ```
 
@@ -372,135 +426,61 @@ Link to full local functionality test: [TESTING.MD](https://github.com/mtopircea
 * Following section is created in order to capture the different modals opening in the page.
 * Majority of the functions will return a modal in order to capture their result or provide alerts.
 * It was established by taking inspiration in a code format found on w3schools and adapted to my code and application.
-* Decision was taken to remove the option to close modal when clicking outside of the box for the reason that we need to have
-the print option available for user to print the page. If this would have been enabled, modals would automatically close when clicking
+* Decision was taken to remove the option to close modal when clicking outside of the box. If this would have been enabled, modals would automatically close when clicking
 the print button.
+* Principle of functionality is to pull html relevant data, define the modal that contains the text, including the close element, define open and close triggers.
 */
-
 // About modal - opens the description of the page and tool created
-
-// Pulls into variables all relevant html areas for function operation
-
-// Defines the overall About modal which contains all the text including the close element
-
 let modalAbout = document.getElementById("header-about-modal");
-
-// Defines the trigger element to open the modal
-
 let modalTriggerAbout = document.getElementById("header-about");
-
-// Defines the trigger element to close the modal
-
 let modalCloseAbout = document.getElementById("modal-close-about");
 
-// Defines opening functionality and relevant log message to confirm operation. Console log is used for debugging purpose.
-
 modalTriggerAbout.onclick = function () {
-  console.log("Opening modal: modalAbout");
   closeModal();
   modalAbout.style.display = "block";
 };
-
-// Defines closing functionality and relevant log message to confirm operation. Console log is used for debugging purpose.
-
 modalCloseAbout.onclick = function () {
-  console.log("Closing modal: modalAbout");
   modalAbout.style.display = "none";
 };
 
 // How to modal
-
-// Defines the overall How to modal which contains all the text including the close element
-
 let modalHow = document.getElementById("header-how-modal");
-
-// Defines the trigger element to open the modal
-
 let modalTriggerHow = document.getElementById("header-how");
-
-// Defines the trigger element to close the modal
-
 let modalCloseHow = document.getElementById("modal-close-how");
 
-
-// Defines opening functionality and relevant log message to confirm operation. Console log is used for debugging purpose.
-
 modalTriggerHow.onclick = function () {
-  console.log("Opening modal: modalHow");
   closeModal();
   modalHow.style.display = "block";
 };
-
-// Defines closing functionality and relevant log message to confirm operation. Console log is used for debugging purpose.
-
 modalCloseHow.onclick = function () {
-  console.log("Closing modal: modalHow");
   modalHow.style.display = "none";
 };
 
 // Modal for calculateAnswer function
-
-// Defines the overall How to modal which contains all the text including the close element
-
 let submitModal = document.getElementById("submit-modal");
-
-// Defines the trigger element to open the modal
-
 let buttonSubmit = document.getElementById("calculate");
-
-// Defines the trigger element to close the modal
-
 let closeSubmit = document.querySelector(".submit-close");
 
-// Defines opening functionality and relevant log message to confirm operation. Console log is used for debugging purpose.
-
 buttonSubmit.onclick = function () {
-  console.log("Opening modal: submitModal");
   closeModal();
   submitModal.style.display = "block";
 };
-
-// Defines closing functionality and relevant log message to confirm operation. Console log is used for debugging purpose.
-
 closeSubmit.onclick = function () {
-  console.log("Closing modal: submitModal");
   submitModal.style.display = "none";
 };
 
-// // Modal for generateRandom function
-
-// Defines the overall How to modal which contains all the text including the close element
-
+//Modal for generateRandom function
 let randomModal = document.getElementById("random-modal");
-
-// Defines the trigger element to open the modal
-
 let buttonRandom = document.getElementById("random");
-
-// Defines the trigger element to close the modal
-
 let closeRandom = document.querySelector(".random-close");
 
-// Defines opening functionality and relevant log message to confirm operation. Console log is used for debugging purpose.
-
 buttonRandom.onclick = function () {
-  console.log("Opening modal: randomModal");
   closeModal();
   randomModal.style.display = "block";
 };
-
-// Defines closing functionality and relevant log message to confirm operation. Console log is used for debugging purpose.
-
 closeRandom.onclick = function () {
-  console.log("Closing modal: randomModal");
   randomModal.style.display = "none";
 };
-
-/*
-* Functioned defined with the purpose to close a modal when another is triggered.
-* Function pulls all modals into 1 variable.
-* It then iterates through them and sets their display property to none
-*/
 ```
 
 * Random generator, uses a piece of code for randomIndex that is taken from stackOverflow website and adapted to my code needs:
@@ -514,10 +494,11 @@ closeRandom.onclick = function () {
 * Inspiration on readme structure taken from kera-cudmore repo`s and following the article written by her on how to write a readme..
 * I want to also recognize Graeme Taylor - My Code Institute Mentor for providing guidance during the development process of this website.
 * Thank you also to the Tutor Team in Code Institute for spending the time with me to fix and understand different issues regarding: modals, resizing issues, and a very serios issue related to push error from gitpod to github.
-
+* Thanks to Sean from  the Support Team in CI for providing support in helping me improve the segment of code bellow in order to eliminate a warning from JShint:
+"Functions declared within loops referencing an outer scoped variable may lead to confusing semantics."
 
 ## About Author
-Marius Topircean is an aspiring software-developer who initiated it`s journey in coding with this first project.
+Marius Topircean is an aspiring software-developer on a journey to develop and learn his place into the developer community.
 
 My contact details are:
 
