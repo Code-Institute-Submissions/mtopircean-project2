@@ -59,6 +59,10 @@ function calculateAnswer() {
 
   //Pulls required data for function to operate.
 
+  let nameFirstOption = document.getElementById("option1").value;
+  let nameSecondOption = document.getElementById("option2").value;
+  let nameThirdOption = document.getElementById("option3").value;
+
   let inputFirstCriteriaName = document.getElementById("fcriteria").value;
   let inputSecondCriteriaName = document.getElementById("scriteria").value;
   let inputThirdCriteriaName = document.getElementById("tcriteria").value;
@@ -167,17 +171,17 @@ function calculateAnswer() {
   let recommendation = "";
 
   if (scoreOptionOne > scoreOptionTwo && scoreOptionOne > scoreOptionThree) {
-    recommendation = "Option A.";
+    recommendation = "Option A-" + nameFirstOption +".";
   } else if (scoreOptionTwo > scoreOptionOne && scoreOptionTwo > scoreOptionThree) {
-    recommendation = "Option B.";
+    recommendation = "Option B-" + nameSecondOption +".";
   } else if (scoreOptionThree > scoreOptionOne && scoreOptionThree > scoreOptionTwo) {
-    recommendation = "Option C.";
+    recommendation = "Option C-" +  nameThirdOption +".";
   } else if (scoreOptionOne === scoreOptionTwo && scoreOptionOne > scoreOptionThree) {
-    recommendation = "Options A and B have highest but equal scores.";
+    recommendation = "Option A-" + nameFirstOption + " " + "and" + " " + "Option B-"  +  nameSecondOption + " "  + "have highest but equal scores.";
   } else if (scoreOptionTwo === scoreOptionThree && scoreOptionTwo > scoreOptionOne) {
-    recommendation = "Options B and C have highest but equal scores.";
+    recommendation = "Option B-" +  nameSecondOption + " "  + "and" + " " + "Option C-"  + nameThirdOption + " "  + "have highest but equal scores.";
   } else if (scoreOptionOne === scoreOptionThree && scoreOptionOne > scoreOptionTwo) {
-    recommendation = "Options A and C have highest but equal scores.";
+    recommendation = "Option A-" + nameFirstOption + " "  + "and" + " " + "Option C-"  + nameThirdOption + + " " + "have highest but equal scores.";
   } else if (scoreOptionOne === scoreOptionTwo && scoreOptionOne === scoreOptionThree) {
     recommendation = "All options are equal. You can use the Generate Random button for lucky guess.";
   }
