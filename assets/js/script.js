@@ -194,8 +194,8 @@ function calculateAnswer() {
     dropdownCriteriaFour === "" || dropdownOptionThreeFour === "" ||
     dropdownCriteriaFive === "" || dropdownOptionThreeFive === ""
   )) {
-    resultArea.textContent = "Based on the information you have provided, the result is: " + recommendation + "\n"
-      + "You have not filled in all of the fields in Option C dropdown area which have caused for the result of this option not to be taken into consideration.";
+    resultArea.textContent = "Based on the information you have provided, the result is: " + recommendation +
+      "\n" + "You have not filled in all of the fields in Option C dropdown area which have caused for the result of this option not to be taken into consideration.";
   } else {
     resultArea.textContent = "Based on the information you have provided, the result is: " + recommendation;
   }
