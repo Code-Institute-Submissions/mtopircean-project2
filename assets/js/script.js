@@ -10,25 +10,26 @@ document.addEventListener("DOMContentLoaded", function () {
   // Took inspiration in defining the structure from LovaMath project 
 
 
-  let buttons = document.getElementsByTagName("button");
-  for (let button of buttons) {
-    button.addEventListener("click", function () {
+  let buttons = [...document.getElementsByTagName("button")];
 
-      //Logs a message to the console log that a specific button was clicked, when it was clicked
+  buttons.forEach(function (button) {
 
-      console.log("Button clicked: " + this.getAttribute("id"));
-
+    button.addEventListener("click", function (event) {
       if (this.getAttribute("id") === "calculate") {
+        console.log("calculate");
         calculateAnswer();
       } else if (this.getAttribute("id") === "print") {
+        console.log("print");
         printPageAsPDF();
       } else if (this.getAttribute("id") === "reset") {
+        console.log("reset");
         resetUserArea();
       } else if (this.getAttribute("id") === "random") {
+        console.log("random");
         generateRandom();
       }
     });
-  }
+  });
 });
 
 /*Pull all elements with the specific class mention in the first code line into a single variable
@@ -171,17 +172,17 @@ function calculateAnswer() {
   let recommendation = "";
 
   if (scoreOptionOne > scoreOptionTwo && scoreOptionOne > scoreOptionThree) {
-    recommendation = "Option A-" + nameFirstOption +".";
+    recommendation = "Option A-" + nameFirstOption + ".";
   } else if (scoreOptionTwo > scoreOptionOne && scoreOptionTwo > scoreOptionThree) {
-    recommendation = "Option B-" + nameSecondOption +".";
+    recommendation = "Option B-" + nameSecondOption + ".";
   } else if (scoreOptionThree > scoreOptionOne && scoreOptionThree > scoreOptionTwo) {
-    recommendation = "Option C-" +  nameThirdOption +".";
+    recommendation = "Option C-" + nameThirdOption + ".";
   } else if (scoreOptionOne === scoreOptionTwo && scoreOptionOne > scoreOptionThree) {
-    recommendation = "Option A-" + nameFirstOption + " " + "and" + " " + "Option B-"  +  nameSecondOption + " "  + "have highest but equal scores.";
+    recommendation = "Option A-" + nameFirstOption + " " + "and" + " " + "Option B-" + nameSecondOption + " " + "have highest but equal scores.";
   } else if (scoreOptionTwo === scoreOptionThree && scoreOptionTwo > scoreOptionOne) {
-    recommendation = "Option B-" +  nameSecondOption + " "  + "and" + " " + "Option C-"  + nameThirdOption + " "  + "have highest but equal scores.";
+    recommendation = "Option B-" + nameSecondOption + " " + "and" + " " + "Option C-" + nameThirdOption + " " + "have highest but equal scores.";
   } else if (scoreOptionOne === scoreOptionThree && scoreOptionOne > scoreOptionTwo) {
-    recommendation = "Option A-" + nameFirstOption + " " + "and" + " " + "Option C-"  + nameThirdOption + " " + "have highest but equal scores.";
+    recommendation = "Option A-" + nameFirstOption + " " + "and" + " " + "Option C-" + nameThirdOption + " " + "have highest but equal scores.";
   } else if (scoreOptionOne === scoreOptionTwo && scoreOptionOne === scoreOptionThree) {
     recommendation = "All options are equal. You can use the Generate Random button for lucky guess.";
   }
