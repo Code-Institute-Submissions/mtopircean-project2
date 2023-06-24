@@ -34,6 +34,7 @@ The idea originates in my own experience as a procuremenet professional and is s
     * [Accessibility Test](#accessibility-test)
     * [Lighthouse](#lighthouse)
     * [Spellcheck](#spellcheck)
+    * [JavaScript](#javascript)
     * [Local functionality tests](#local-functionality-tests)
     * [Fixed bugs](#fixed-bugs)
 * [Credits](#credits)
@@ -307,7 +308,7 @@ Corrections done where:
   * Changed color scheme in order to increase contrast.
   * Added labels and formated them in order to remove their visibility.
     An issue remains if you select all of the items in the page(drag over page elements or using CTRL+A) where the labels can be seen as present but hidden:
-    
+
     ![Alt text](/readme/testing/hidden-labels.jpg)
 
 Currently there are no errors and warnings reported using Wave:
@@ -329,7 +330,7 @@ Website was checked using the W3C Spellchecker.
 The only error found relates to using "Crt." instead of "Criteria" in order to provide more data into User Options scores drop-downs when resizing the webpage.
 Code was also checked using the Word autocorrect function.
 
-#### Java Script
+#### JavaScript
 During the development of the website, a consistent amount of console.logs where used in order to test execution of all functions/code.
 
 JShint was also used in order to validate if any warnings where raised.
