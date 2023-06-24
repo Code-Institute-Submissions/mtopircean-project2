@@ -288,17 +288,43 @@ and code behaviour.
 A formator was also used in order to clean and arrange code.
 
 #### HTML
+Tested all pages using W3C validator. Minimal errors identified in all pages, and corrections made, like for ex: duplications of containers(divs)
+Issues identified and corrected until bellow pass marks were reached:
+![Alt text](/readme/testing/index-html-test.jpg)
+![Alt text](/readme/testing/404-html-test.jpg)
+
 
 #### CSS
+Tested CSS code using W3C validation service. Minimal errors identified.
+Issues are fixed and corrected, the only item still open is the imported style sheet:
+![Alt text](/readme/testing/CSS-test.jpg)
+
 
 #### Accessibility Test
+Accessibility test was done using Wave Report generator.
+Issues identified where related to contrast and label missing on several input fields.
+Corrections done where:
+  * Changed color scheme in order to increase contrast.
+  * Added labels and formated them in order to remove their visibility.
+    An issue remains if you select all of the items in the page(drag over page elements or using CTRL+A) where the labels can be seen as present but hidden:
+    ![Alt text](/readme/testing/hidden-labels.jpg)
+
+Currently there are no errors and warnings reported using Wave:
+![Alt text](/readme/testing/accessibility-testing.jpg)
 
 #### Lighthouse
+Perfect result obtained when testing for desktop and near perfect on mobile.
+Testing was done in Incognito mode in Chrome in order to avoid browser extension interference.
+
+Result desktop:
+![Alt text](/readme/testing/lighthouse-desktop.jpg)
+
+Result mobile:
+![Alt text](/readme/testing/lighthouse-mobile.jpg)
 
 #### Spellcheck
 Website was checked using the W3C Spellchecker.
 The only error found relates to using "Crt." instead of "Criteria" in order to provide more data into User Options scores drop-downs when resizing the webpage.
-
 Code was also checked using the Word autocorrect function.
 
 #### Local functionality tests
