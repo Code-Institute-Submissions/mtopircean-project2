@@ -181,7 +181,7 @@ function calculateAnswer() {
   } else if (scoreOptionTwo === scoreOptionThree && scoreOptionTwo > scoreOptionOne) {
     recommendation = "Option B-" +  nameSecondOption + " "  + "and" + " " + "Option C-"  + nameThirdOption + " "  + "have highest but equal scores.";
   } else if (scoreOptionOne === scoreOptionThree && scoreOptionOne > scoreOptionTwo) {
-    recommendation = "Option A-" + nameFirstOption + " "  + "and" + " " + "Option C-"  + nameThirdOption + + " " + "have highest but equal scores.";
+    recommendation = "Option A-" + nameFirstOption + " " + "and" + " " + "Option C-"  + nameThirdOption + " " + "have highest but equal scores.";
   } else if (scoreOptionOne === scoreOptionTwo && scoreOptionOne === scoreOptionThree) {
     recommendation = "All options are equal. You can use the Generate Random button for lucky guess.";
   }
