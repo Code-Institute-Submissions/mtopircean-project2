@@ -200,7 +200,7 @@ Looking into more detail, following elements/areas can be found on the page:
 Page designed in order to provide 404 customized message and experience.
 
 4. JAVA SCRIPT CONNECTED FEATURES:
-* Pourpose/Objective - all accessible from a single area:
+* POURPOSE/OBJECTIVE - all accessible from a single area:
     ![Alt text](/readme/other/buttons-area.jpg)
   * Calculate function: 
       * Provides the user with a mathematical/calculated approach to their decission making process.
@@ -208,7 +208,7 @@ Page designed in order to provide 404 customized message and experience.
       ![Alt text](/readme/features/notification-data-not-entered.jpg)
       * Based on the data provided, the user can calculate a minimum of two Options, third Option being optional, and in the case where not selected, when user generates the answer it will be prompted in the relevant modal that it is not taken into consideration as it has missing data.
 
-      **All 3 options are selected with valid data entered:**
+      **3 options are selected with valid data entered:**
       ![Alt text](/readme/features/calculate-feature-three-options.jpg)
 
       **2 options are selected with valid data entered:**
@@ -241,7 +241,7 @@ Page designed in order to provide 404 customized message and experience.
   (/readme/features/reset-feature-no-values.jpg)
   * Print function: it allows to open the browsers print window with a click of a button. It`s functionality is simple and straighforward.
 
-* Website functionality and user support:
+* WEBSITE FUNCTIONALITY:
 
     **About modal:**
     ![Alt text](/readme/features/about-modal.jpg)
