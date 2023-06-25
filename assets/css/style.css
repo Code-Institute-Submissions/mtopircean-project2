@@ -303,6 +303,7 @@ h4 {
     color: #b10000;
     font-size: 1rem;
     text-transform: lowercase;
+    font-weight: lighter !important;
 }
 
 #optional {
