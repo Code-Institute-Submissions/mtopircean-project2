@@ -25,3 +25,12 @@
 | Homepage - User Options Scoring Area - Option A, B and C | Once a value is selected in the drop-down it remains fixed. | Passed| None|
 | Homepage - User Options Scoring Area - Option A, B | If one or more drop-downs are not selected, when Calculate Answer is clicked it will return a notification that data is not filled in and notifies the user to select data. | Passed| None|
 | Homepage - User Options Scoring Area - Option C | If one or more drop-downs are not selected, but either A or B have all their drop-downs selected, calculation will proceed and recommend either Option A or B as the result and notify the user that Option C is missing data and will not be considered. | Passed| None|
+| Homepage - User Options Scoring Area | Input area where user can name his options is visible, clickable and can store any type of data. | Passed| None|
+| Homepage - User Options Scoring Area | When simulating a Calculate Answer scenario, the name of the option is either filled in(if data is present) or left empty if the user does not want to name his option. | Passed| None|
+| Homepage - Buttons Area - Calculate Answer | Correctly visible with selected format and fonts. | Passed| None|
+| Homepage - Buttons Area - Calculate Answer | On hover action colors reverse(white becomes blue and blue becomes white) | Passed| None|
+| Homepage - Buttons Area - Calculate Answer | Buttons and text resize and reposition when resizing the page on different resolutions. | Passed| None|
+| Homepage - Buttons Area - Calculate Answer | Clicking the button opens it`s relevant modal. | Passed| None|
+| Homepage - Buttons Area - Calculate Answer | When the mandatory fields are not field in/selected, when button is clicked it returns a modal in which the used is requested to fill in the necesarry fields and re-click. | Passed| None|
+| Homepage - Buttons Area - Calculate Answer | When mandatory fields are field in/selected, when button clicked modal returns the recommandation with a note that Option C is not field in if any of the fileds related to this option are not field in. | Passed| None|
+| Homepage - Buttons Area - Calculate Answer | When mandatory fields are field in/selected, when button clicked modal returns the recommandation without a note on Option C if Option C have all relevant fields selected/filled in. | Passed| None|
