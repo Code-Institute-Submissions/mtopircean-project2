@@ -395,7 +395,7 @@ During the development process, several bugs and errors where identified and fix
   * Modals overlaping when opened:
   ISSUE: when implementing modals there wasn`t a setting that would force the open modal to close if another one was open, making them overlapp.
   FIX: following function was implemented to address the issue:
-  
+
   ```javascript
 function closeModal() {
   let modals = document.querySelectorAll(".about-modal, .how-modal, .s-modal, .r-modal");
@@ -432,7 +432,7 @@ function closeModal() {
   *Random does not pull Option name: although I don`t consider this as an error, I would consider it as an upgrade to the features of the website that will need to be implemented in the future.
 
   ISSUE:
-  (/readme/features/random-feature.jpg)
+  ![Alt text](/readme/features/random-feature.jpg)
 
   No other known errors or issues identified!
 
