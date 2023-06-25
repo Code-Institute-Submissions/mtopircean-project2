@@ -36,7 +36,7 @@ The idea originates in my own experience as a procuremenet professional and is s
     * [Spellcheck](#spellcheck)
     * [JavaScript](#javascript)
     * [Local functionality tests](#local-functionality-tests)
-    * [Fixed bugs](#fixed-bugs)
+    * [Fixed bugs](#fixed-bugs-and-current-errors)
 * [Credits](#credits)
     * [Code Used](#code-used)
     * [Other](#other)
@@ -247,11 +247,13 @@ Page designed in order to provide 404 customized message and experience.
     About modal:
     ![Alt text](/readme/features/about-modal.jpg)
 
-    About modal:
+    How to modal:
     ![Alt text]![Alt text](/readme/features/how-to-modal.jpg)
 
   * Modal window: where chosen as the prefered way to return a result in order not to overload main page and to be able to provide a large amount of data into a single area.
   * Modal open and close: modals will open based on different triggers on the page. When another modal is opened, the first one will close, so at all time, you can`t have more then 1 modal open on the page.
+  * How to modal is set in that when the text is no longer able to fit into the page, it will implement a scroll bar inside of the modal:
+  ![Alt text](/readme/features/scroll-modal.jpg)
 
 #### Accessibility
 From an accessibility perspective, my goal was to create a clean website with data easy to read, positioned in a relevant manner for the user.
@@ -384,37 +386,53 @@ Updated code:
 All tests performed considered both desktop and mobile version.
 Link to full local functionality test: [TESTING.MD](https://github.com/mtopircean/project2/blob/main/TESTING.md)
 
-#### Fixed bugs
+#### Fixed bugs and current errors
 During the development process, several bugs and errors where identified and fixed, with minor error still identified and active on the website.
 
 1. Errors fixed:
 * Design:
   * Modals overlaping when opened:
+  ISSUE: when implementing modals there wasn`t a setting that would force the open modal to close if another one was open, making them overlapp.
+  FIX: following function was implemented to address the issue:
+  ```javascript
+function closeModal() {
+  let modals = document.querySelectorAll(".about-modal, .how-modal, .s-modal, .r-modal");
+  for (let i = 0; i < modals.length; i++) {
+    modals[i].style.display = "none";
+  }
+}
+```
 
   * Modals not fitting smaller screens:
-
+  ISSUE: during design process when managing the resize for smaller screen sizes, modal where either not fitting in the page, showing partially or not displaying the content in full.
+  FIX: styling was implemented to set the modals in the middle of the page and an additional scroll was added to the How to Section which was affected by a high amount of content unable to display due to size.
+ ![Alt text](/readme/features/scroll-modal.jpg)
 
 * Functionality:
   * Page print opening a second time when closing the page:
-  ISSUE:
-  FIX: 
+  ISSUE: when clicking on the Print as PDF button and closing the page that opens, the page will reopen a second time.
+  FIX: with support from CI Tutor Team, it was identified that there was an onclick trigger attached to the button in addition to the event listener that was already present in the js page. Removing the onclink element solved the problem.
+
 
   * When Pring page as PDF was triggered, it closes modals:
-  ISSUE:
-  FIX: 
+  ISSUE: when clicking on the Print as PDF button, if a modal was open, it would close. This represented an issue as it would not allow the user to print the page with the result of the calculation process visible.
+  FIX: Modal was set in order to allow the user to close it by clicking outside of the modal content. This caused it to close every modal when clicking on Print as PDF. Functionlity of closing the modal when clicking outside of the modal was removed and the "x" closing sign inside the modal was increased in size.
 
-  * Canculate Answer function not returning a result:
-  ISSUE:
-  FIX:
+  * Calculate Answer function not returning a result:
+  ISSUE: when clicking on Calculate Answer no result was returned.
+  FIX: placed several console.log to identify if: function started to execute, if it finished executing and if it calculated the score of each of the Options. It was identified that Options where calculating a score of NaN. After consistent research, it was identified that the source of this was actually the value inside each of the select options in the drop-down was text and not value. Once corrected, the formula returned the required result:
+```html
+  <option value="1">1</option>
+```
 
 2. Errors known and not fixed:
-* Design:
-  * Blury text in How to Use modal:
-  ISSUE:
-
 * Functionality:
-  *Random does not pull Option name:
-  ISSUE
+  *Random does not pull Option name: although I don`t consider this as an error, I would consider it as an upgrade to the features of the website that will need to be implemented in the future.
+
+  ISSUE:
+  (/readme/features/random-feature.jpg)
+
+  No other known errors or issues identified!
 
 ## Credits
 #### Code Used:

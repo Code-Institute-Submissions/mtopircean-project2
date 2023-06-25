@@ -270,8 +270,10 @@ closeRandom.onclick = function () {
 */
 
 function closeModal() {
+  
   let modals = document.querySelectorAll(".about-modal, .how-modal, .s-modal, .r-modal");
   for (let i = 0; i < modals.length; i++) {
     modals[i].style.display = "none";
   }
+  
 }
