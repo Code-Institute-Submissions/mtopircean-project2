@@ -209,24 +209,24 @@ Page designed in order to provide 404 customized message and experience.
       ![Alt text](/readme/features/notification-data-not-entered.jpg)
       * Based on the data provided, the user can calculate a minimum of two Options, third Option being optional, and in the case where not selected, when user generates the answer it will be prompted in the relevant modal that it is not taken into consideration as it has missing data.
 
-      **3 options are selected with valid data entered:**
+      3 options are selected with valid data entered:
       ![Alt text](/readme/features/calculate-feature-three-options.jpg)
 
-      **2 options are selected with valid data entered:**
+      2 options are selected with valid data entered:
       ![Alt text](/readme/features/calculate-feature-two-options.jpg)
 
       * Calculation logic is based on a the average of a score for each individual criteria line, score calculated as a multiplication of the criteria importance and the score of the option for each criteria. Result is compared between each of the options compared, and the better one is returned as the recommandation.
 
-      **2 options are selected with equal results:**
+      2 options are selected with equal results:
       ![Alt text](/readme/features/calculate-feature-two-options-equal.jpg)
 
-      **2 options are selected with different results:**
+      2 options are selected with different results:
       ![Alt text](/readme/features/calculate-feature-two-options.jpg)
 
-      **3 options are selected with different results:**
+      3 options are selected with different results:
       (/readme/features/calculate-feature-three-options.jpg)
 
-      **3 options are selected with equal results:**
+      3 options are selected with equal results:
       (/readme/features/calculate-feature-three-options-equal.jpg)
 
       * Recommandation then is returned part of a modal.
@@ -235,19 +235,19 @@ Page designed in order to provide 404 customized message and experience.
 
   * Reset option score values: it`s functionality is to allow the user to reset the score of their options with a single click of a button. It will not reset the value of the importance criteria as it is considered a key element that once set, should not change often
 
-  **Before reset:**
+  Before reset:
   (/readme/features/reset-feature-values.jpg)
 
-  **After reset:**
+  After reset:
   (/readme/features/reset-feature-no-values.jpg)
   * Print function: it allows to open the browsers print window with a click of a button. It`s functionality is simple and straighforward.
 
 * WEBSITE FUNCTIONALITY:
 
-    **About modal:**
+    About modal:
     ![Alt text](/readme/features/about-modal.jpg)
 
-    **About modal:**
+    About modal:
     ![Alt text]![Alt text](/readme/features/how-to-modal.jpg)
 
   * Modal window: where chosen as the prefered way to return a result in order not to overload main page and to be able to provide a large amount of data into a single area.
@@ -337,7 +337,7 @@ JShint was also used in order to validate if any warnings where raised.
 During testing, several warnings where raised and corrected. Most significant correction was: "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics."
 With support from Sean in CI, my code was improved and the warning eliminated.
 
-**Initial code:**
+Initial code:
 ```javascript
 let buttons = document.getElementsByTagName("button");
 for (let button of buttons) {
@@ -357,7 +357,10 @@ for (let button of buttons) {
 }
 ```
 
-**Updated code:**
+JSHint analysis is bellow:
+![Alt text](/readme/testing/jshint-testing.jpg)
+
+Updated code:
 ```javascript
 `document.addEventListener("DOMContentLoaded", function () {
   let buttons = [...document.getElementsByTagName("button")];
