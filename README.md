@@ -360,6 +360,7 @@ for (let button of buttons) {
 ```
 
 JSHint analysis is bellow:
+
 ![Alt text](/readme/testing/jshint-testing.jpg)
 
 Updated code:
@@ -394,6 +395,7 @@ During the development process, several bugs and errors where identified and fix
   * Modals overlaping when opened:
   ISSUE: when implementing modals there wasn`t a setting that would force the open modal to close if another one was open, making them overlapp.
   FIX: following function was implemented to address the issue:
+  
   ```javascript
 function closeModal() {
   let modals = document.querySelectorAll(".about-modal, .how-modal, .s-modal, .r-modal");
