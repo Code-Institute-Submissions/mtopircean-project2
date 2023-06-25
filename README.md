@@ -389,13 +389,32 @@ During the development process, several bugs and errors where identified and fix
 
 1. Errors fixed:
 * Design:
+  * Modals overlaping when opened:
+
+  * Modals not fitting smaller screens:
+
 
 * Functionality:
+  * Page print opening a second time when closing the page:
+  ISSUE:
+  FIX: 
+
+  * When Pring page as PDF was triggered, it closes modals:
+  ISSUE:
+  FIX: 
+
+  * Canculate Answer function not returning a result:
+  ISSUE:
+  FIX:
 
 2. Errors known and not fixed:
 * Design:
+  * Blury text in How to Use modal:
+  ISSUE:
 
 * Functionality:
+  *Random does not pull Option name:
+  ISSUE
 
 ## Credits
 #### Code Used:
