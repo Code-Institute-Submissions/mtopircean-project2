@@ -1,12 +1,12 @@
 # The Selector
 
-The website was create as a support tool to help users on their last step in a decission making process.
+The website was create as a support tool to help users on their last step in a decision making process.
 
-It is a tool that pushes users to undestand how important certain elements are in their decission making process, how they can limit them to the essential and at the end, how they can filter their options in order to reach again, the essential.
+It is a tool that pushes users to understand how important certain elements are in their decision making process, how they can limit them to the essential and at the end, how they can filter their options in order to reach again, the essential.
 
-It then uses a calculation methodology to manipulate their data in order to be able too make an informed recommandation
+It then uses a calculation methodology to manipulate their data in order to be able too make an informed recommendation
 
-The idea originates in my own experience as a procuremenet professional and is something that I intend to use in order to support my decission making process.
+The idea originates in my own experience as a procurement professional and is something that I intend to use in order to support my decision making process.
 
 ## CONTENT
 * [Scope](#scope)
@@ -42,18 +42,18 @@ The idea originates in my own experience as a procuremenet professional and is s
     * [Other](#other)
 * [About Author](#about-author)
 ## Scope
-The website was created to satisfy one main requirement/objective, which is to support a decission making process.
-However, The Selector was developed in order to provide a wider area of flexibility for the user, from defining the characteristics they value, asigning them priorities, selecting between 2 and 3 options to offering them a wider range of possibility when scoring their items of interest.
+The website was created to satisfy one main requirement/objective, which is to support a decision making process.
+However, The Selector was developed in order to provide a wider area of flexibility for the user, from defining the characteristics they value, assigning them priorities, selecting between 2 and 3 options to offering them a wider range of possibility when scoring their items of interest.
 
-Although a simple tool, my hope is for it to target an extremly wide audience with it`s usability and unlimited application area.
+Although a simple tool, my hope is for it to target an extremley wide audience with it`s usability and unlimited application area.
 
 ##  User Experience
 
 #### First Time Visitor Target:
 * Provide an easy to understand interface with clear instructions on what the application does and how to use.
-* Offer a solution for a decission they need to make on a wide range of applications and domains, from home to professional use.
+* Offer a solution for a decision they need to make on a wide range of applications and domains, from home to professional use.
 * Have the capability to store their data by printing the page and potentially use them at a later stage, or attaching them as supporting documentation on a report.
-* Provide a fun way to either generate an informed and calculated decission or use a "coin flip" by using the generate random section.
+* Provide a fun way to either generate an informed and calculated decision or use a "coin flip" by using the generate random section.
 
 ####  Returning Visitor Target:
 * Application does not represent a one time use, but a tool that can be integrated in your activity as a professional, or at home in each users personal life.
@@ -61,7 +61,7 @@ Although a simple tool, my hope is for it to target an extremly wide audience wi
 
 #### Frequent Visitors Target:
 * Unlimited target audience and usability, as it clearly targets a need applicable in all areas from professionals to home use, on all demographics.
-* Users are expected to integrate the application as a standard part of their decission making process due to simplicity, but still an informed way of determining recommandations.
+* Users are expected to integrate the application as a standard part of their decision making process due to simplicity, but still an informed way of determining recommendations.
 
 ## Deployment and Local Development
 Deployment of the website was used with GitHub Pages support.
@@ -82,7 +82,7 @@ To deploy using GitHub pages:
 #### How to Fork
 To fork the repository:
 
-1. Log in (or sign up) to Github.
+1. Log in (or sign up) to GitHub.
 2. Go to the repository for this project, [mtopircean/project2](https://github.com/mtopircean/project2)
 3. Click the Fork button in the top right corner.
 
@@ -114,14 +114,14 @@ To clone the repository:
 2. Font Awesome: support with icon for About, How to... and 404 redirect to Home link and icon.
 3. Google Font: support with font style used for website text.
 4. Balsamiq: support with wireframe creation.
-7. Google DevTools: support with CSS styling, troubleshooting and responsive design development; support with testing function exection/js functionality.
+7. Google DevTools: support with CSS styling, troubleshooting and responsive design development; support with testing function execution/js functionality.
 8. Lighthouse: performance testing .
 9. W3C Spell Checker: webpage spelling checks.
 10. WAVE Web Accessibility Evaluation Tools: for accessibility evaluation.
 11. CSS Validation Service: for CSS code evaluation and troubleshooting.
 12. W3C Markup Validation Service: for HTML code evaluation and troubleshooting.
 13. JSHint JavaScript Validator: to verify and improve Java Script code.
-14. Coolors: to create palete of colors in README.
+14. Colours: to create pallete of colours in README.
 15. Amiresponsive: to create a snapshot of the page responsiveness on different screen variations
 
 ## Design
@@ -145,15 +145,15 @@ In order to support development, wireframes where created in Balsamiq.
 
 #### Theme
 When considering the website theme the general idea was to provide a robotic, calculator feeling for the user, to inspire the idea of a well documented and mathematical approach to their need.
-Intention was to also create an enviorement that would be easy to understand and use.
+Intention was to also create an environment that would be easy to understand and use.
 I`ve opted to try and limit the amount of information in the page with the use of different placeholders for the input areas and to move larger amount of information inside modals easy to access.
 
 #### Colour Selection
-Colors where selected in line with the theme, but also to offer a high level of accessibility and contrast.
+colours where selected in line with the theme, but also to offer a high level of accessibility and contrast.
 It has suffered several changes during the development process as I`ve wanted maintain clear and easy to read and print data.
-The choice was also due to the amount of options we I have in regards of functionality and the interest to create a separation, or a uniqe identifier.
+The choice was also due to the amount of options we I have in regards of functionality and the interest to create a separation, or a unique identifier.
 
-List of colors used:
+List of colours used:
 ![Alt text](/readme/other/colour-selection.jpg)
 
 
@@ -163,34 +163,34 @@ Font used was selected from Google Fonts:
 ![Alt text](/readme/other/font-style-used.jpg)
 
 #### Imagery
-Logo was designed using Canva wesite.
+Logo was designed using Canva website.
 
 #### Features
 1. GENERAL:
 Website contains:
 *One main page which provides all of the relevant data for the user:
-  * A header section which contains a suggestive and centraly positioned logo; Under the logo 2 options are present that allow the user to to access the About and How to use information.
-  * Data input area: where user provides the relevant data that needs to be analyzed.
+  * A header section which contains a suggestive and centrally positioned logo; Under the logo 2 options are present that allow the user to access the About and How to use information.
+  * Data input area: where user provides the relevant data that needs to be analysed.
   * A button area where all the relevant functions for the user can be accessed in a single location.
   * 4 hidden modals that will return information related to:
     * About content.
     * How to use the website.
-    * Return a result recommandation when the CALCULATE ANSWER button is clicked.
-    * Return a random recommandation when GENERATE RANDOM SELECTION is clicked.
+    * Return a result recommendation when the CALCULATE ANSWER button is clicked.
+    * Return a random recommendation when GENERATE RANDOM SELECTION is clicked.
   * A 404 page that allows the user to click on a return to home link.
 
-Looking more into detils of this 2 pages:
+Looking more into details of this 2 pages:
 2. MAIN PAGE: 
 Looking into more detail, following elements/areas can be found on the page:
   * Header containing a large logo and relevant information on the website mission and how to use details
   * A user input area which is focused on 2 main sections:
-    * A Criteria Section in which the user is required to provide their key criterias in their decission making process and score their importance.
-    * The Options section in which the user will be required to name the options they want to compare and score how the fulfill the different characteristics on a scale from 1 to 10.
+    * A Criteria Section in which the user is required to provide their key criteria in their decision making process and score their importance.
+    * The Options section in which the user will be required to name the options they want to compare and score how the fulfil the different characteristics on a scale from 1 to 10.
   * Buttons area which contains 4 elements:
     * CALCULATE ANSWER: which provides the trigger for a calculation that will return a recommended answer.
-    * GENERATE RANDOM SELECTION: which provides the trigger to provide a recommandation based on a "coin-flip" type of logic.
+    * GENERATE RANDOM SELECTION: which provides the trigger to provide a recommendation based on a "coin-flip" type of logic.
     * RESET OPTION VALUE: considering that the criteria importance remains the same, allows the user to reset to the initial placeholder the scoring selected for each of the drop-downs under the 3 Options the user is allowed to compare.
-    * Print as PDF: this button allows the user to not just print as PDF, but to open the print section of the browser in order to store either a hard or soft copy of the page and it`s recommandation. I`ve named it "Print as PDF" to recommend a more envioremental friendly option to the user, and at the end an option that will be easier to store and share.
+    * Print as PDF: this button allows the user to not just print as PDF, but to open the print section of the browser in order to store either a hard or soft copy of the page and it`s recommendation. I`ve named it "Print as PDF" to recommend a more environmental friendly option to the user, and at the end an option that will be easier to store and share.
   * Modals: which are hidden elements connected to 4 areas:
     * About
     * How to use
@@ -204,7 +204,7 @@ Page designed in order to provide 404 customized message and experience.
 * POURPOSE/OBJECTIVE - all accessible from a single area:
     ![Alt text](/readme/other/buttons-area.jpg)
   * Calculate function: 
-      * Provides the user with a mathematical/calculated approach to their decission making process.
+      * Provides the user with a mathematical/calculated approach to their decision making process.
       * If the required fields are not entered, user will be notified to do so when CALCULATE ANSWER is clicked.
       ![Alt text](/readme/features/notification-data-not-entered.jpg)
       * Based on the data provided, the user can calculate a minimum of two Options, third Option being optional, and in the case where not selected, when user generates the answer it will be prompted in the relevant modal that it is not taken into consideration as it has missing data.
@@ -215,7 +215,7 @@ Page designed in order to provide 404 customized message and experience.
       2 options are selected with valid data entered:
       ![Alt text](/readme/features/calculate-feature-two-options.jpg)
 
-      * Calculation logic is based on a the average of a score for each individual criteria line, score calculated as a multiplication of the criteria importance and the score of the option for each criteria. Result is compared between each of the options compared, and the better one is returned as the recommandation.
+      * Calculation logic is based on a the average of a score for each individual criteria line, score calculated as a multiplication of the criteria importance and the score of the option for each criteria. Result is compared between each of the options compared, and the better one is returned as the recommendation.
 
       2 options are selected with equal results:
       ![Alt text](/readme/features/calculate-feature-two-options-equal.jpg)
@@ -229,8 +229,8 @@ Page designed in order to provide 404 customized message and experience.
       3 options are selected with equal results:
       (/readme/features/calculate-feature-three-options-equal.jpg)
 
-      * Recommandation then is returned part of a modal.
-  * Random generation function: Will provide a "coin-flip" type of recommandation based on a basic algorithm. It will be able to generate independent of any data being provided in the user input area. It`s functionality is very basic and can be used as a pure random selector if needed.
+      * recommendation then is returned part of a modal.
+  * Random generation function: Will provide a "coin-flip" type of recommendation based on a basic algorithm. It will be able to generate independent of any data being provided in the user input area. It`s functionality is very basic and can be used as a pure random selector if needed.
   (/readme/features/random-feature.jpg)
 
   * Reset option score values: it`s functionality is to allow the user to reset the score of their options with a single click of a button. It will not reset the value of the importance criteria as it is considered a key element that once set, should not change often
@@ -240,7 +240,7 @@ Page designed in order to provide 404 customized message and experience.
 
   After reset:
   (/readme/features/reset-feature-no-values.jpg)
-  * Print function: it allows to open the browsers print window with a click of a button. It`s functionality is simple and straighforward.
+  * Print function: it allows to open the browsers print window with a click of a button. It`s functionality is simple and straightforward.
 
 * WEBSITE FUNCTIONALITY:
 
@@ -250,7 +250,7 @@ Page designed in order to provide 404 customized message and experience.
     How to modal:
     ![Alt text]![Alt text](/readme/features/how-to-modal.jpg)
 
-  * Modal window: where chosen as the prefered way to return a result in order not to overload main page and to be able to provide a large amount of data into a single area.
+  * Modal window: where chosen as the preferred way to return a result in order not to overload main page and to be able to provide a large amount of data into a single area.
   * Modal open and close: modals will open based on different triggers on the page. When another modal is opened, the first one will close, so at all time, you can`t have more then 1 modal open on the page.
   * How to modal is set in that when the text is no longer able to fit into the page, it will implement a scroll bar inside of the modal:
   ![Alt text](/readme/features/scroll-modal.jpg)
@@ -308,7 +308,7 @@ Accessibility test was done using Wave Report generator.
 Issues identified where related to contrast and label missing on several input fields.
 Corrections done where:
   * Changed color scheme in order to increase contrast.
-  * Added labels and formated them in order to remove their visibility.
+  * Added labels and formatted them in order to remove their visibility.
     An issue remains if you select all of the items in the page(drag over page elements or using CTRL+A) where the labels can be seen as present but hidden:
 
     ![Alt text](/readme/testing/hidden-labels.jpg)
@@ -393,7 +393,7 @@ During the development process, several bugs and errors where identified and fix
 1. Errors fixed:
 * Design:
   * Modals overlaping when opened:
-  ISSUE: when implementing modals there wasn`t a setting that would force the open modal to close if another one was open, making them overlapp.
+  ISSUE: when implementing modals there wasn`t a setting that would force the open modal to close if another one was open, making them overlap.
   FIX: following function was implemented to address the issue:
 
   ```javascript
@@ -413,12 +413,12 @@ function closeModal() {
 * Functionality:
   * Page print opening a second time when closing the page:
   ISSUE: when clicking on the Print as PDF button and closing the page that opens, the page will reopen a second time.
-  FIX: with support from CI Tutor Team, it was identified that there was an onclick trigger attached to the button in addition to the event listener that was already present in the js page. Removing the onclink element solved the problem.
+  FIX: with support from CI Tutor Team, it was identified that there was an onclick trigger attached to the button in addition to the event listener that was already present in the js page. Removing the onclick element solved the problem.
 
 
-  * When Pring page as PDF was triggered, it closes modals:
+  * When Print page as PDF was triggered, it closes modals:
   ISSUE: when clicking on the Print as PDF button, if a modal was open, it would close. This represented an issue as it would not allow the user to print the page with the result of the calculation process visible.
-  FIX: Modal was set in order to allow the user to close it by clicking outside of the modal content. This caused it to close every modal when clicking on Print as PDF. Functionlity of closing the modal when clicking outside of the modal was removed and the "x" closing sign inside the modal was increased in size.
+  FIX: Modal was set in order to allow the user to close it by clicking outside of the modal content. This caused it to close every modal when clicking on Print as PDF. Functionality of closing the modal when clicking outside of the modal was removed and the "x" closing sign inside the modal was increased in size.
 
   * Calculate Answer function not returning a result:
   ISSUE: when clicking on Calculate Answer no result was returned.
@@ -536,7 +536,7 @@ closeRandom.onclick = function () {
 * Deployment instructions in GitHub copied from kera-cudmore different repo`s and following the article written by her on how to write a readme.
 * Inspiration on readme structure taken from kera-cudmore repo`s and following the article written by her on how to write a readme..
 * I want to also recognize Graeme Taylor - My Code Institute Mentor for providing guidance during the development process of this website.
-* Thank you also to the Tutor Team in Code Institute for spending the time with me to fix and understand different issues regarding: modals, resizing issues, and a very serios issue related to push error from gitpod to github.
+* Thank you also to the Tutor Team in Code Institute for spending the time with me to fix and understand different issues regarding: modals, resizing issues, and a very serios issue related to push error from GitPod to GitHub.
 * Thanks to Sean from  the Support Team in CI for providing support in helping me improve the segment of code bellow in order to eliminate a warning from JShint:
 "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics."
 
@@ -551,6 +551,6 @@ Phone: +353857642212
 
 Slack: Marius Topircean
 
-Github: mtopircean  
+GitHub: mtopircean  
 
 Linkedin: [Marius Topircean](https://www.linkedin.com/in/marius-t-7b5592124)
