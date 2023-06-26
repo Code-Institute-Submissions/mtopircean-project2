@@ -429,12 +429,15 @@ function closeModal() {
 
 2. Errors known and not fixed:
 * Functionality:
-  *Random does not pull Option name: although I don`t consider this as an error, I would consider it as an upgrade to the features of the website that will need to be implemented in the future.
+  * Random does not pull Option name: although I don`t consider this as an error, I would consider it as an upgrade to the features of the website that will need to be implemented in the future.
 
   ISSUE:
   ![Alt text](/readme/features/random-feature.jpg)
 
   No other known errors or issues identified!
+
+  * Minor resizing issue due to challenges in automizing the resizing of the input area where users add the name of their options:
+  ![Alt text](/readme/testing/options-name-input.jpg)
 
 ## Credits
 #### Code Used:
