@@ -39,4 +39,13 @@
 | Homepage - Buttons Area - Generate Random Selection | Buttons and text resize and reposition when resizing the page on different resolutions. | Passed| None|
 | Homepage - Buttons Area - Generate Random Selection | Clicking the button opens it`s relevant modal. | Passed| None|
 | Homepage - Buttons Area - Generate Random Selection | When clicked, it returns a random recommandation. Although it can still repeat itself one recommandation after the other, clicking the button recommends a random answer. | Passed| None|
-| Homepage - Buttons Area - Generate Random Selection | When clicked without having the mandatory fields filled in, modal is still generated. | Passed| None|
+| Homepage - Buttons Area - Reset Option Values | Correctly visible with selected format and fonts. | Passed| None|
+| Homepage - Buttons Area - Reset Option Values | On hover action colors reverse(white becomes red and red becomes white) | Passed| None|
+| Homepage - Buttons Area - Reset Option Values | Buttons and text resize and reposition when resizing the page on different resolutions. | Passed| None|
+| Homepage - Buttons Area - Reset Option Values | When clicked, if there is data selected in the option scoring area, it resets to placeholder text. | Passed| None|
+| Homepage - Buttons Area - Reset Option Values | When clicked without having the mandatory fields filled in, if any of the option scoring is present, it still resets. | Passed| None|
+| Homepage - Buttons Area - Reset Option Values | When clicked if information is present in the criteria definition and criteria importance areas, those areas remain unaffected and maintain their data. | Passed| None|
+| Homepage - Buttons Area - Print as PDF | Correctly visible with selected format and fonts. | Passed| None|
+| Homepage - Buttons Area - Print as PDF | On hover action colors reverse(white becomes blue and blue becomes white while maintaining a special border color not altered) | Passed| None|
+| Homepage - Buttons Area - Print as PDF | When clicked it opens the browsers default print page area which can be used as normal. | Passed| None|
+| Homepage - Buttons Area - Print as PDF | When clicked it opens the browsers maintaining the current modal open for the user to be able to store it when printing. | Passed| None|
