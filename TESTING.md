@@ -34,3 +34,9 @@
 | Homepage - Buttons Area - Calculate Answer | When the mandatory fields are not field in/selected, when button is clicked it returns a modal in which the used is requested to fill in the necesarry fields and re-click. | Passed| None|
 | Homepage - Buttons Area - Calculate Answer | When mandatory fields are field in/selected, when button clicked modal returns the recommandation with a note that Option C is not field in if any of the fileds related to this option are not field in. | Passed| None|
 | Homepage - Buttons Area - Calculate Answer | When mandatory fields are field in/selected, when button clicked modal returns the recommandation without a note on Option C if Option C have all relevant fields selected/filled in. | Passed| None|
+| Homepage - Buttons Area - Generate Random Selection | Correctly visible with selected format and fonts. | Passed| None|
+| Homepage - Buttons Area - Generate Random Selection | On hover action colors reverse(white becomes black and black becomes white) | Passed| None|
+| Homepage - Buttons Area - Generate Random Selection | Buttons and text resize and reposition when resizing the page on different resolutions. | Passed| None|
+| Homepage - Buttons Area - Generate Random Selection | Clicking the button opens it`s relevant modal. | Passed| None|
+| Homepage - Buttons Area - Generate Random Selection | When clicked, it returns a random recommandation. Although it can still repeat itself one recommandation after the other, clicking the button recommends a random answer. | Passed| None|
+| Homepage - Buttons Area - Generate Random Selection | When clicked without having the mandatory fields filled in, modal is still generated. | Passed| None|
