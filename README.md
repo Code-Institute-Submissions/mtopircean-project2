@@ -1,12 +1,12 @@
 # The Selector
 
-The website was create as a support tool to help users on their last step in a decision making process.
+The website was create as a support tool to help users in the last step of their decision making process.
 
-It is a tool that pushes users to understand how important certain elements are in their decision making process, how they can limit them to the essential and at the end, how they can filter their options in order to reach again, the essential.
+It is a tool that pushes users to understand how important certain elements are in their decision making process, how they can limit them to the essential, and, how they can filter their options in order to reach again, the essential.
 
-It then uses a calculation methodology to manipulate their data in order to be able too make an informed recommendation
+It then uses a calculation methodology to manipulate their data in order to be able too make an informed recommendation.
 
-The idea originates in my own experience as a procurement professional and is something that I intend to use in order to support my decision making process.
+The idea originates from my own experience as a procurement professional and it is something that I intend to deploy within my organization and local team.
 
 ## CONTENT
 * [Scope](#scope)
@@ -41,27 +41,28 @@ The idea originates in my own experience as a procurement professional and is so
     * [Code Used](#code-used)
     * [Other](#other)
 * [About Author](#about-author)
-## Scope
-The website was created to satisfy one main requirement/objective, which is to support a decision making process.
-However, The Selector was developed in order to provide a wider area of flexibility for the user, from defining the characteristics they value, assigning them priorities, selecting between 2 and 3 options to offering them a wider range of possibility when scoring their items of interest.
 
-Although a simple tool, my hope is for it to target an extremley wide audience with it`s usability and unlimited application area.
+## Scope
+The website was created to satisfy one important requirement/objective, which is to support a decision making process.
+However, The Selector was developed in order to provide a wider area of flexibility for the user, from defining the characteristics they value, assigning them priorities, selecting between 2 and 3 options, to offering them a wider range of possibility when scoring their options of interest.
+
+Although a simple tool, my hope is for it to target a wide audience with it`s usability and variaty of areas of application.
 
 ##  User Experience
 
 #### First Time Visitor Target:
 * Provide an easy to understand interface with clear instructions on what the application does and how to use.
-* Offer a solution for a decision they need to make on a wide range of applications and domains, from home to professional use.
-* Have the capability to store their data by printing the page and potentially use them at a later stage, or attaching them as supporting documentation on a report.
-* Provide a fun way to either generate an informed and calculated decision or use a "coin flip" by using the generate random section.
+* Offers a solution for a decision they need to make on a wide range of applications and domains, from home to professional use.
+* Have the capability to store their data by printing the page and potentially use it at a later stage, or attaching it as supporting documentation on, for example, a report.
+* Provide a fun way to either generate an informed and calculated decision or use a "coin flip" process by using the Generate Random button.
 
 ####  Returning Visitor Target:
-* Application does not represent a one time use, but a tool that can be integrated in your activity as a professional, or at home in each users personal life.
+* Application does not satisfy a one time use, it represents a tool that can be integrated in your activity as a professional, or at home in each users personal life.
 * For professionals it can represent a standardized process and format that can be included in their reporting process.
 
 #### Frequent Visitors Target:
-* Unlimited target audience and usability, as it clearly targets a need applicable in all areas from professionals to home use, on all demographics.
-* Users are expected to integrate the application as a standard part of their decision making process due to simplicity, but still an informed way of determining recommendations.
+* Unlimited target audience and usability, as it clearly targets a need applicable in all areas, from professionals to home use, on a high level of demographics.
+* Users are expected to integrate the application as a standard part of their decision making process due to simplicity which does not eliminate an informed way of determining recommendations.
 
 ## Deployment and Local Development
 Deployment of the website was used with GitHub Pages support.
@@ -105,7 +106,7 @@ To clone the repository:
 
 
 #### IDE:
-1. GitHub: to deploy workspace, website and store database, but used to write also small pieces of code
+1. GitHub: to deploy workspace, website and store database, but used to write also small pieces of code.
 2. CodeAnywhere: support to write code and deploy via git to GitHub.
 3. GitPod: support to write majority of code and deploy via git to GitHub.
 
@@ -127,9 +128,9 @@ To clone the repository:
 ## Design
 The general design idea was to: 
 * Give a robotic, technology, calculator feeling to the user entering the page.
-* Provide all information into one page with clear instructions, mission, easy to understand and use.
+* Provide all information into one page with clear instructions, mission, a page easy to understand and use.
 * General direction is reflected in the logo and style selected.
-* Design focuses on flex technology and is created in a manner that allows easy resizing to different screen sizes.
+* Design focuses on flex technology and is created in a manner that allows easy resizing on different display dimensions.
 
 #### Wireframes
 In order to support development, wireframes where created in Balsamiq.
@@ -144,14 +145,14 @@ In order to support development, wireframes where created in Balsamiq.
 ![Alt text](/readme/wireframe/404-wf.jpg)
 
 #### Theme
-When considering the website theme the general idea was to provide a robotic, calculator feeling for the user, to inspire the idea of a well documented and mathematical approach to their need.
+When considering the website theme the general idea was to provide a robotic, calculator feeling for the user, to inspire the idea of a well documented and mathematical approach.
 Intention was to also create an environment that would be easy to understand and use.
-I`ve opted to try and limit the amount of information in the page with the use of different placeholders for the input areas and to move larger amount of information inside modals easy to access.
+I`ve tried to limit the amount of information in the page with the use of various placeholders for the input areas(vs. labels) and to move larger amount of information inside modals easy to access.
 
 #### Colour Selection
-colours where selected in line with the theme, but also to offer a high level of accessibility and contrast.
-It has suffered several changes during the development process as I`ve wanted maintain clear and easy to read and print data.
-The choice was also due to the amount of options we I have in regards of functionality and the interest to create a separation, or a unique identifier.
+Colours where selected in line with the theme, but also to offer a high level of accessibility and contrast.
+It has suffered several changes during the development process as I`ve tried to maintain data clear, easy to read and print.
+The choice was also due to the amount of features present on the website and the interest to create a separation, or a unique identifier to separate them visually.
 
 List of colours used:
 ![Alt text](/readme/other/colour-selection.jpg)
@@ -166,23 +167,23 @@ Font used was selected from Google Fonts:
 Logo was designed using Canva website.
 
 #### Features
-1. GENERAL:
+GENERAL:
 Website contains:
-*One main page which provides all of the relevant data for the user:
+* Main page which provides all of the relevant data for the user:
   * A header section which contains a suggestive and centrally positioned logo; Under the logo 2 options are present that allow the user to access the About and How to use information.
   * Data input area: where user provides the relevant data that needs to be analysed.
-  * A button area where all the relevant functions for the user can be accessed in a single location.
+  * A button area where all the relevant functions can be accessed by the user in a single location.
   * 4 hidden modals that will return information related to:
     * About content.
     * How to use the website.
     * Return a result recommendation when the CALCULATE ANSWER button is clicked.
     * Return a random recommendation when GENERATE RANDOM SELECTION is clicked.
-  * A 404 page that allows the user to click on a return to home link.
+  * A 404 page that allows the user to click on a "return to home link".
 
 Looking more into details of this 2 pages:
-2. MAIN PAGE: 
+1. MAIN PAGE: 
 Looking into more detail, following elements/areas can be found on the page:
-  * Header containing a large logo and relevant information on the website mission and how to use details
+  * Header containing a large logo and relevant information on the websites Mission/About and How to use details.
   * A user input area which is focused on 2 main sections:
     * A Criteria Section in which the user is required to provide their key criteria in their decision making process and score their importance.
     * The Options section in which the user will be required to name the options they want to compare and score how the fulfil the different characteristics on a scale from 1 to 10.
@@ -197,10 +198,10 @@ Looking into more detail, following elements/areas can be found on the page:
     * CALCULATE ANSWER
     * RANDOM SELECTION
 
-3. 404 PAGE:
+2. 404 PAGE:
 Page designed in order to provide 404 customized message and experience.
 
-4. JAVA SCRIPT CONNECTED FEATURES:
+3. JAVA SCRIPT CONNECTED FEATURES:
 * POURPOSE/OBJECTIVE - all accessible from a single area:
     ![Alt text](/readme/other/buttons-area.jpg)
   * Calculate function: 
