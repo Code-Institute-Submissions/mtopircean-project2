@@ -237,10 +237,12 @@ Page designed in order to provide 404 customized message and experience.
 
   * Reset option values: it`s functionality is to allow the user to reset the score of their options with a single click of a button. It will not reset the value of the importance criteria as it is considered a key element that once set, should not change often.
 
-  Before reset:
+   *Before reset:
+   
   ![Alt text](/readme/features/reset-feature-values.jpg)
 
-  After reset:
+   *After reset:
+
   ![Alt text](/readme/features/reset-feature-no-values.jpg)
   * Print function: it allows to open the browsers print window with a click of a button. It`s functionality is simple and straightforward.
 
