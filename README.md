@@ -46,7 +46,7 @@ The idea originates from my own experience as a procurement professional and it 
 The website was created to satisfy one important requirement/objective, which is to support a decision making process.
 However, The Selector was developed in order to provide a wider area of flexibility for the user, from defining the characteristics they value, assigning them priorities, selecting between 2 and 3 options, to offering them a wider range of possibility when scoring their options of interest.
 
-Although a simple tool, my hope is for it to target a wide audience with it`s usability and variaty of areas of application.
+Although a simple tool, my hope is for it to target a wide audience with it`s usability and variety of areas of application.
 
 ##  User Experience
 
@@ -122,7 +122,7 @@ To clone the repository:
 11. CSS Validation Service: for CSS code evaluation and troubleshooting.
 12. W3C Markup Validation Service: for HTML code evaluation and troubleshooting.
 13. JSHint JavaScript Validator: to verify and improve Java Script code.
-14. Colours: to create pallete of colours in README.
+14. Colours: to create palette of colours in README.
 15. Amiresponsive: to create a snapshot of the page responsiveness on different screen variations
 
 ## Design
@@ -186,7 +186,7 @@ Looking into more detail, following elements/areas can be found on the page:
   * Header containing a large logo and relevant information on the websites Mission/About and How to use details.
   * A user input area which is focused on 2 main sections:
     * A Criteria Section in which the user is required to provide their key criteria in their decision making process and score their importance.
-    * The Options section in which the user will be required to name the options they want to compare and score how they fulfil the different criterias.
+    * The Options section in which the user will be required to name the options they want to compare and score how they fulfil the different criteria.
   * Buttons area which contains 4 elements:
     * CALCULATE ANSWER: which provides the trigger for a calculation that will return a recommended option.
     * GENERATE RANDOM SELECTION: which provides the trigger for a recommendation based on a "coin-flip" type of logic.
@@ -290,7 +290,7 @@ General approach was to modify the different screen sizes with a step by step ap
 The website was tested for functionality and design using the following browsers: Mozilla, Chrome, Edge.
 There where also other external tools listed in the section Technologies that where used to ensure correct website 
 and code behaviour.
-A formator was also used in order to clean and arrange code.
+A formator was also used in order to clean and arrange the code.
 
 #### HTML
 Tested all pages using W3C validator. Minimal errors identified in all pages, and corrections made, like for ex: duplications of containers(divs)
@@ -301,19 +301,19 @@ Issues identified and corrected until bellow pass marks were reached:
 
 #### CSS
 Tested CSS code using W3C validation service. Minimal errors identified.
-Issues are fixed and corrected, the only item still open is the imported style sheet:
+Issues are fixed and corrected until bellow result was reached:
 ![Alt text](/readme/testing/CSS-test.jpg)
 
 
 #### Accessibility Test
 Accessibility test was done using Wave Report generator.
 Issues identified where related to contrast and label missing on several input fields.
-Corrections done where:
-  * Changed color scheme in order to increase contrast.
+Corrections done:
+  * Changed colour scheme in order to increase contrast.
   * Added labels and formatted them in order to remove their visibility.
     An issue remains if you select all of the items in the page(drag over page elements or using CTRL+A) where the labels can be seen as present but hidden:
 
-    ![Alt text](/readme/testing/hidden-labels.jpg)
+  ![Alt text](/readme/testing/hidden-labels.jpg)
 
 Currently there are no errors and warnings reported using Wave:
 
@@ -336,7 +336,6 @@ Code was also checked using the Word autocorrect function.
 
 #### JavaScript
 During the development of the website, a consistent amount of console.logs where used in order to test execution of all functions/code.
-
 JShint was also used in order to validate if any warnings where raised.
 During testing, several warnings where raised and corrected. Most significant correction was: "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics."
 With support from Sean in CI, my code was improved and the warning eliminated.
@@ -361,9 +360,6 @@ for (let button of buttons) {
 }
 ```
 
-JSHint analysis is bellow:
-
-![Alt text](/readme/testing/jshint-testing.jpg)
 
 Updated code:
 ```javascript
@@ -385,16 +381,20 @@ Updated code:
 });`
 ```
 
+JSHint analysis:
+
+![Alt text](/readme/testing/jshint-testing.jpg)
+
 #### Local functionality tests
-All tests performed considered both desktop and mobile version.
+All tests performed considering both desktop and mobile version.
 Link to full local functionality test: [TESTING.MD](https://github.com/mtopircean/project2/blob/main/TESTING.md)
 
 #### Fixed bugs and current errors
-During the development process, several bugs and errors where identified and fixed, with minor error still identified and active on the website.
+During the development process, several bugs and errors where identified and fixed, with two minor errors still identified and active on the website.
 
 1. Errors fixed:
-* Design:
-  * Modals overlaping when opened:
+DESIGN:
+* Modals overlaping when opened:
   ISSUE: when implementing modals there wasn`t a setting that would force the open modal to close if another one was open, making them overlap.
   FIX: following function was implemented to address the issue:
 
@@ -407,44 +407,44 @@ function closeModal() {
 }
 ```
 
-  * Modals not fitting smaller screens:
-  ISSUE: during design process when managing the resize for smaller screen sizes, modal where either not fitting in the page, showing partially or not displaying the content in full.
-  FIX: styling was implemented to set the modals in the middle of the page and an additional scroll was added to the How to Section which was affected by a high amount of content unable to display due to size.
+* Modals not fitting smaller screen sizes:
+  ISSUE: during design process when testing for smaller screen sizes, modal where either not fitting in the page, showing partially or not displaying the content in full.
+  FIX: styling was implemented to set the modals in the middle of the page and an additional scroll was added to the How to Section, which was mainly affected by a high amount of content unable to display due to modal size.
  ![Alt text](/readme/features/scroll-modal.jpg)
 
-* Functionality:
-  * Page print opening a second time when closing the page:
+FUNCTIONALITY:
+* Print page opening a second time when closing the page:
   ISSUE: when clicking on the Print as PDF button and closing the page that opens, the page will reopen a second time.
   FIX: with support from CI Tutor Team, it was identified that there was an onclick trigger attached to the button in addition to the event listener that was already present in the js page. Removing the onclick element solved the problem.
 
 
-  * When Print page as PDF was triggered, it closes modals:
+* When Print page as PDF was triggered, it closes modals:
   ISSUE: when clicking on the Print as PDF button, if a modal was open, it would close. This represented an issue as it would not allow the user to print the page with the result of the calculation process visible.
-  FIX: Modal was set in order to allow the user to close it by clicking outside of the modal content. This caused it to close every modal when clicking on Print as PDF. Functionality of closing the modal when clicking outside of the modal was removed and the "x" closing sign inside the modal was increased in size.
+  FIX: Modal was set in order to allow the user to close it by clicking outside of the modal content. This caused it to close every modal when clicking on Print as PDF. Functionality of closing the modal when clicking outside of the modal was removed and the "x" closing sign inside the modal was increased in size and left as the only option to close.
 
-  * Calculate Answer function not returning a result:
+* Calculate Answer function not returning a result:
   ISSUE: when clicking on Calculate Answer no result was returned.
-  FIX: placed several console.log to identify if: function started to execute, if it finished executing and if it calculated the score of each of the Options. It was identified that Options where calculating a score of NaN. After consistent research, it was identified that the source of this was actually the value inside each of the select options in the drop-down was text and not value. Once corrected, the formula returned the required result:
+  FIX: placed several console.log to identify if: function started to execute, if it finished executing and if it calculated the score of each of the Options. It was identified that Options where calculating a score of NaN. After consistent research, it was identified that the source of this was actually that the value inside each of the select options in the drop-down was text, and not value. Once corrected, the formula returned the required result:
 ```html
   <option value="1">1</option>
 ```
 
 2. Errors known and not fixed:
-* Functionality:
-  * Random does not pull Option name: although I don`t consider this as an error, I would consider it as an upgrade to the features of the website that will need to be implemented in the future.
+FUNCTIONALITY:
+* Random does not pull Option name: although I don`t consider this as an error, I would consider it as an upgrade to the features of the website that will need to be implemented in the future.
 
   ISSUE:
   ![Alt text](/readme/features/random-feature.jpg)
 
-  No other known errors or issues identified!
-
-  * Minor resizing issue due to challenges in automizing the resizing of the input area where users add the name of their options:
+* Minor resizing issue due to challenges in automizing the resizing of the input area where users add the name of their options:
   ![Alt text](/readme/testing/options-name-input.jpg)
+
+ No other known errors or issues identified!
 
 ## Credits
 #### Code Used:
 
-* HTML and CSS similarities can be found to my first project submitted, but at a very basic and minor level.
+* HTML and CSS similarities can be found to my first project, but at a very basic and minor level.
 
 * Took inspiration in defining the structure bellow from LovaMath project and adapted it to my requirements. Bellow is my code with inspiration taken from LoveMath:
 
@@ -470,14 +470,6 @@ function closeModal() {
 * Modal code written was established by taking inspiration in an example found on w3schools and adapted to my code and application. Bellow is my code with inspiration taken from this link:https://www.w3schools.com/howto/howto_css_modals.asp
 
 ```javascript
-/*
-* Following section is created in order to capture the different modals opening in the page.
-* Majority of the functions will return a modal in order to capture their result or provide alerts.
-* It was established by taking inspiration in a code format found on w3schools and adapted to my code and application.
-* Decision was taken to remove the option to close modal when clicking outside of the box. If this would have been enabled, modals would automatically close when clicking
-the print button.
-* Principle of functionality is to pull html relevant data, define the modal that contains the text, including the close element, define open and close triggers.
-*/
 // About modal - opens the description of the page and tool created
 let modalAbout = document.getElementById("header-about-modal");
 let modalTriggerAbout = document.getElementById("header-about");
@@ -558,4 +550,4 @@ Slack: Marius Topircean
 
 GitHub: mtopircean  
 
-Linkedin: [Marius Topircean](https://www.linkedin.com/in/marius-t-7b5592124)
+LinkedIn: [Marius Topircean](https://www.linkedin.com/in/marius-t-7b5592124)
