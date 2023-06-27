@@ -186,13 +186,13 @@ Looking into more detail, following elements/areas can be found on the page:
   * Header containing a large logo and relevant information on the websites Mission/About and How to use details.
   * A user input area which is focused on 2 main sections:
     * A Criteria Section in which the user is required to provide their key criteria in their decision making process and score their importance.
-    * The Options section in which the user will be required to name the options they want to compare and score how the fulfil the different characteristics on a scale from 1 to 10.
+    * The Options section in which the user will be required to name the options they want to compare and score how they fulfil the different criterias.
   * Buttons area which contains 4 elements:
-    * CALCULATE ANSWER: which provides the trigger for a calculation that will return a recommended answer.
-    * GENERATE RANDOM SELECTION: which provides the trigger to provide a recommendation based on a "coin-flip" type of logic.
-    * RESET OPTION VALUE: considering that the criteria importance remains the same, allows the user to reset to the initial placeholder the scoring selected for each of the drop-downs under the 3 Options the user is allowed to compare.
-    * Print as PDF: this button allows the user to not just print as PDF, but to open the print section of the browser in order to store either a hard or soft copy of the page and it`s recommendation. I`ve named it "Print as PDF" to recommend a more environmental friendly option to the user, and at the end an option that will be easier to store and share.
-  * Modals: which are hidden elements connected to 4 areas:
+    * CALCULATE ANSWER: which provides the trigger for a calculation that will return a recommended option.
+    * GENERATE RANDOM SELECTION: which provides the trigger for a recommendation based on a "coin-flip" type of logic.
+    * RESET OPTION VALUE: considering that the criteria importance remains the same, allows the user to reset to the initial placeholder the scoring selected for each of the drop-downs under the 3 Options the user decides to compare
+    * Print as PDF: this button allows the user to not just print as PDF, but to open the print section of the browser in order to generate and store either a hard or soft copy of the page and recommendation. I`ve named it "Print as PDF" to recommend a more environmental friendly option to the user, and at the end, an option that will be easier to store and share.
+  * Modals, which are hidden elements connected to 4 areas:
     * About
     * How to use
     * CALCULATE ANSWER
@@ -202,13 +202,13 @@ Looking into more detail, following elements/areas can be found on the page:
 Page designed in order to provide 404 customized message and experience.
 
 3. JAVA SCRIPT CONNECTED FEATURES:
-* POURPOSE/OBJECTIVE - all accessible from a single area:
+* POURPOSE/OBJECTIVE - all calculation features accessible from a single area:
     ![Alt text](/readme/other/buttons-area.jpg)
   * Calculate function: 
       * Provides the user with a mathematical/calculated approach to their decision making process.
-      * If the required fields are not entered, user will be notified to do so when CALCULATE ANSWER is clicked.
+      * If the required fields are not entered, user will be notified to do so and then reclick CALCULATE ANSWER.
       ![Alt text](/readme/features/notification-data-not-entered.jpg)
-      * Based on the data provided, the user can calculate a minimum of two Options, third Option being optional, and in the case where not selected, when user generates the answer it will be prompted in the relevant modal that it is not taken into consideration as it has missing data.
+      * Based on the data provided, the user can calculate a minimum of two Options, third Option being optional, and in the case where not selected, when user generates the answer it will be prompted in the relevant modal that OPTION C it is not taken into consideration as it has missing data.
 
       3 options are selected with valid data entered:
       ![Alt text](/readme/features/calculate-feature-three-options.jpg)
@@ -216,7 +216,7 @@ Page designed in order to provide 404 customized message and experience.
       2 options are selected with valid data entered:
       ![Alt text](/readme/features/calculate-feature-two-options.jpg)
 
-      * Calculation logic is based on a the average of a score for each individual criteria line, score calculated as a multiplication of the criteria importance and the score of the option for each criteria. Result is compared between each of the options compared, and the better one is returned as the recommendation.
+      * Calculation logic is based on a the average of a score for each individual criteria line, score calculated as a multiplication of the criteria importance and the score of the option for each criteria. Result is compared between each of the options, and the one with the best score is returned as the recommendation.
 
       2 options are selected with equal results:
       ![Alt text](/readme/features/calculate-feature-two-options-equal.jpg)
@@ -230,11 +230,12 @@ Page designed in order to provide 404 customized message and experience.
       3 options are selected with equal results:
       (/readme/features/calculate-feature-three-options-equal.jpg)
 
-      * recommendation then is returned part of a modal.
-  * Random generation function: Will provide a "coin-flip" type of recommendation based on a basic algorithm. It will be able to generate independent of any data being provided in the user input area. It`s functionality is very basic and can be used as a pure random selector if needed.
+      * Recommendation is returned part of a modal.
+
+  * Generate random selection function: Will provide a "coin-flip" type of recommendation based on a basic algorithm. It will be able to generate an answer independent of any data being provided in the user input area. It`s functionality is very basic and can be used as a pure random selector if needed.
   (/readme/features/random-feature.jpg)
 
-  * Reset option score values: it`s functionality is to allow the user to reset the score of their options with a single click of a button. It will not reset the value of the importance criteria as it is considered a key element that once set, should not change often
+  * Reset option values: it`s functionality is to allow the user to reset the score of their options with a single click of a button. It will not reset the value of the importance criteria as it is considered a key element that once set, should not change often.
 
   Before reset:
   (/readme/features/reset-feature-values.jpg)
@@ -251,9 +252,9 @@ Page designed in order to provide 404 customized message and experience.
     How to modal:
     ![Alt text]![Alt text](/readme/features/how-to-modal.jpg)
 
-  * Modal window: where chosen as the preferred way to return a result in order not to overload main page and to be able to provide a large amount of data into a single area.
+  * Modal window: was chosen as the preferred way to return a result in order not to overload the main page and to be able to provide a large amount of data into a single area.
   * Modal open and close: modals will open based on different triggers on the page. When another modal is opened, the first one will close, so at all time, you can`t have more then 1 modal open on the page.
-  * How to modal is set in that when the text is no longer able to fit into the page, it will implement a scroll bar inside of the modal:
+  * How to use modal is set in that when the text is no longer able to fit into the page, it will implement a scroll bar inside of the modal:
   ![Alt text](/readme/features/scroll-modal.jpg)
 
 #### Accessibility
@@ -261,8 +262,8 @@ From an accessibility perspective, my goal was to create a clean website with da
 I`ve achieved this by:
 * Writing semantic HTML
 * Correct selection of text size, font and style in order to contrast well with the other elements of the page.
-* Highly visible and relevant logo
-* Use of alt attribute connected to the logo
+* Highly visible and relevant logo.
+* Use of alt attribute connected to the logo.
 
 Another area I was mindful of, was that all of the consideration above where not lost when using the website in smaller screen sizes.
 
@@ -271,7 +272,7 @@ Another area I was mindful of, was that all of the consideration above where not
 ![Alt text](/readme/other/responsive-view.jpg)
 
 Several size options where used when developing the responsive design.
-Please see bellow a list and the main areas of impact when implemented. The main consideration is the use of flex and responsive technologies in order to support easier screen size optimization.
+Please see bellow a list, and the main areas which trigger changes in the layout based on the optimization process. A main consideration was the use of flex and responsive technologies in order to support easier screen size optimization.
 
 * under 1201px wide: mostly resizing of different elements but without major structural changes.
 * under 1031px wide: user options area moves under the criteria area. Additional styling and resizing done.
@@ -282,7 +283,7 @@ Please see bellow a list and the main areas of impact when implemented. The main
 * under 380px height: additional styling and resizing done on modals.
 * min resolution tested was for iPhone SE.
 
-General approach was to browse the different sizes with a step by step approach, and where needed, to operate the required changes.
+General approach was to modify the different screen sizes with a step by step approach, and where needed, to operate the required changes.
 
 
 ## Testing and Validation
