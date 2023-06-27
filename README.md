@@ -238,10 +238,10 @@ Page designed in order to provide 404 customized message and experience.
   * Reset option values: it`s functionality is to allow the user to reset the score of their options with a single click of a button. It will not reset the value of the importance criteria as it is considered a key element that once set, should not change often.
 
   Before reset:
-  (/readme/features/reset-feature-values.jpg)
+  ![Alt text](/readme/features/reset-feature-values.jpg)
 
   After reset:
-  (/readme/features/reset-feature-no-values.jpg)
+  ![Alt text](/readme/features/reset-feature-no-values.jpg)
   * Print function: it allows to open the browsers print window with a click of a button. It`s functionality is simple and straightforward.
 
 * WEBSITE FUNCTIONALITY:
@@ -250,7 +250,7 @@ Page designed in order to provide 404 customized message and experience.
     ![Alt text](/readme/features/about-modal.jpg)
 
     How to modal:
-    ![Alt text]![Alt text](/readme/features/how-to-modal.jpg)
+    ![Alt text](/readme/features/how-to-modal.jpg)
 
   * Modal window: was chosen as the preferred way to return a result in order not to overload the main page and to be able to provide a large amount of data into a single area.
   * Modal open and close: modals will open based on different triggers on the page. When another modal is opened, the first one will close, so at all time, you can`t have more then 1 modal open on the page.
@@ -398,7 +398,7 @@ DESIGN:
   ISSUE: when implementing modals there wasn`t a setting that would force the open modal to close if another one was open, making them overlap.
   FIX: following function was implemented to address the issue:
 
-  ```javascript
+```javascript
 function closeModal() {
   let modals = document.querySelectorAll(".about-modal, .how-modal, .s-modal, .r-modal");
   for (let i = 0; i < modals.length; i++) {
