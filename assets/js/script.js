@@ -96,7 +96,7 @@ function calculateAnswer() {
   ) {
     let resultArea = document.getElementById("result-area");
     resultArea.textContent = "Ups.... You forgot to fill in one of the mandatory fields. Please recheck again " +
-      "that you have filled in all boxes including the Criteria Name Definition and all Drop Down values, then click again on CALCULATE ANSWER";
+      "that you have filled in all mandatory areas including the Criteria Name Definition and all Drop Down values, then click again on CALCULATE ANSWER";
     return;
   }
 
