@@ -284,6 +284,7 @@ h4 {
 }
 
 /* Styling for combined criteria definition and importance div`s. */
+
 #criteria-w-importance {
     width: 90%;
     display: inline-flex;
@@ -292,7 +293,7 @@ h4 {
     flex-direction: row;
 }
 
-/* styling for user option area. */
+/* Styling for user option area. */
 
 #definition-scoring {
     text-align: center;
@@ -440,7 +441,7 @@ input::placeholder {
     content: "First line \A Second line"
 }
 
-/* styling for buttons and buttons area. */
+/* Styling for buttons and buttons area. */
 
 #buttons-area {
     display: flex;
@@ -564,7 +565,7 @@ input::placeholder {
     max-width: 99%;
 }
 
-/*Styling for 404 page. */
+/* Styling for 404 page. */
 
 #all-404 {
     display: flex;
@@ -588,7 +589,7 @@ input::placeholder {
     color: #14680E;
 }
 
-/* Display size optimization. */
+/* Display screen size optimization. */
 
 @media screen and (max-width: 1201px) {
 
