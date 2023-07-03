@@ -32,11 +32,12 @@ for (let dropdown of dropdowns) {
 /**
 * Function calculateAnswer is structured to perform the following steps:
 * - Pull the criteria data in order to validate that data is present in those fields.
-* - Pull the importance value for each criterion to determine data presence and use it in calculations.
+* - Pull the importance value for each criteri in order to determine data presence and use it in calculations.
 * - Pull the options scoring for each option the user wants to compare to validate data presence and use it in calculation.
-* - Return an alert message as part of a Modal if all mandatory fields are not filled in.
+* - Return an alert message as part of a Modal if all mandatory fields are not selected/filled in.
 * - Perform calculations to determine an average of all importance criteria values multiplied by each option's score.
-* - Compare the three options, with C being optional, and in case of missing values being filled in, taking the value of 0 in the comparison in order to make it irrelevant.
+* - Compare the three options, with C being optional, and in case of missing values being filled in for this option, 
+will take the value of 0 in the comparison in order to make it irrelevant.
 * - Return the result in a text format combining different elements of the function.
 */
 function calculateAnswer() {
@@ -98,6 +99,7 @@ function calculateAnswer() {
       "that you have filled in all boxes including the Criteria Name Definition and all Drop Down values, then click again on CALCULATE ANSWER";
     return;
   }
+
   // Calculates scores
   let scoreOptionOne =
     (dropdownCriteriaOne * dropdownOptionOneOne +
@@ -113,7 +115,8 @@ function calculateAnswer() {
       dropdownCriteriaFour * dropdownOptionTwoFour +
       dropdownCriteriaFive * dropdownOptionTwoFive) /
     5;
-  //Checks if Option 3 has any empty fields in order to either calculate or determine a 0 result and rule out of the analysis
+
+  //Checks if Option 3 has any empty fields in order to either calculate or determine a 0 result and rule it out of the analysis
   let scoreOptionThree;
   if (
     dropdownCriteriaOne === "" || dropdownOptionThreeOne === "" ||
@@ -133,6 +136,7 @@ function calculateAnswer() {
       5
     );
   }
+
   // Performs the relevant calculations in order to determine recommended option
   let resultArea = document.getElementById("result-area");
   let recommendation = "";
@@ -151,6 +155,7 @@ function calculateAnswer() {
   } else if (scoreOptionOne === scoreOptionTwo && scoreOptionOne === scoreOptionThree) {
     recommendation = "All options are equal. You can use the Generate Random button for lucky guess.";
   }
+
   //Verifies if Option C has missing fields and returns 2 levels of message in a modal, one based on empty fields in Option C and one based on Option C having full data populated. 
   if (scoreOptionThree === 0 && (
     dropdownCriteriaOne === "" || dropdownOptionThreeOne === "" ||
@@ -169,6 +174,7 @@ function calculateAnswer() {
 /* 
 * Function created to generate a random option recommendation based on a "coin-flip" principle.
 * It selects a random option from the available options and displays it in a modal.
+* Line 184 is taken from stackOverflow but it is a basic way of establishing a random value proposal.
 */
 function generateRandom() {
 
@@ -183,7 +189,7 @@ function generateRandom() {
 /*
 * Function to reset the scoring values of each option inputted by the user in the relevant drop-downs.
 * It will not reset the criteria importance score as it is considered as firm and most relevant for each option the user wants to compare.
-* It resets the drop-down options to their original placeholder text, which is set as an empty value.
+* It resets the drop-down options to their original placeholder text, which is considered as an empty value.
 */
 function resetUserArea() {
 
@@ -252,7 +258,7 @@ closeSubmit.onclick = function () {
   submitModal.style.display = "none";
 };
 
-//Modal for generateRandom function
+// Modal for generateRandom function
 let randomModal = document.getElementById("random-modal");
 let buttonRandom = document.getElementById("random");
 let closeRandom = document.querySelector(".random-close");
@@ -270,10 +276,10 @@ closeRandom.onclick = function () {
 */
 
 function closeModal() {
-  
+
   let modals = document.querySelectorAll(".about-modal, .how-modal, .s-modal, .r-modal");
   for (let i = 0; i < modals.length; i++) {
     modals[i].style.display = "none";
   }
-  
+
 }
