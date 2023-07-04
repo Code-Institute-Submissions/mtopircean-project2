@@ -394,7 +394,7 @@ Link to full local functionality test: [TESTING.MD](https://github.com/mtopircea
 #### Fixed bugs and current errors
 During the development process, several bugs and errors where identified and fixed, with two minor errors still identified and active on the website.
 
-1. Errors fixed:
+1. Errors fixed:  
 DESIGN:
 * Modals overlaping when opened:
   ISSUE: when implementing modals there wasn`t a setting that would force the open modal to close if another one was open, making them overlap.
@@ -431,7 +431,7 @@ FUNCTIONALITY:
   <option value="1">1</option>
 ```
 
-2. Errors known and not fixed:
+2. Errors known and not fixed:  
 FUNCTIONALITY:
 * Random does not pull Option name: although I don`t consider this as an error, I would consider it as an upgrade to the features of the website that will need to be implemented in the future.
 
