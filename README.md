@@ -432,6 +432,11 @@ FUNCTIONALITY:
 ```
 
 2. Errors known and not fixed:  
+DESIGN:
+* Firefox drop-down elements are aligned to the left, compared to the way they are displayed in other browsers(middle):
+![Alt text](/readme/other/dropdown-fireforx-bug.jpg.jpg)
+
+
 FUNCTIONALITY:
 * Random does not pull Option name: although I don`t consider this as an error, I would consider it as an upgrade to the features of the website that will need to be implemented in the future.
 
@@ -440,6 +445,11 @@ FUNCTIONALITY:
 
 * Minor resizing issue due to challenges in automizing the resizing of the input area where users add the name of their options:
   ![Alt text](/readme/testing/options-name-input.jpg)
+
+* Modals have an invisible buffer area that will not allow the user to click on another element until they will close the current modal, if the other element is positioned withing that buffer area. 
+This is not really an error, more of a way to eliminate the risk of the user to click on another element and accidently open another modal:
+
+![Alt text](/readme/other/modal-size-buffer.jpg)
 
  No other known errors or issues identified!
 
