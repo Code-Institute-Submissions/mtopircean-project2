@@ -411,7 +411,7 @@ function closeModal() {
 
 * Modals not fitting smaller screen sizes:
   ISSUE: during design process when testing for smaller screen sizes, modal where either not fitting in the page, showing partially or not displaying the content in full.
-  FIX: styling was implemented to set the modals in the middle of the page and an additional scroll was added to the How to Section, which was mainly affected by a high amount of content unable to display due to modal size.
+  FIX: styling was implemented to set the modals in the middle of the page and an additional scroll was added to the How to Section, which was mainly affected by a high amount of content unable to display due to modal size.  
  ![Alt text](/readme/features/scroll-modal.jpg)
 
 FUNCTIONALITY:
@@ -434,7 +434,7 @@ FUNCTIONALITY:
 2. Errors known and not fixed:  
 DESIGN:
 * Firefox drop-down elements are aligned to the left, compared to the way they are displayed in other browsers(middle):
-![Alt text](/readme/other/dropdown-fireforx-bug.jpg.jpg)
+![Alt text](/readme/other/dropdown-fireforx-bug.jpg)
 
 
 FUNCTIONALITY:
