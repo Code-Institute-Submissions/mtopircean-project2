@@ -225,15 +225,15 @@ Page designed in order to provide 404 customized message and experience.
       ![Alt text](/readme/features/calculate-feature-two-options.jpg)
 
       3 options are selected with different results:
-      (/readme/features/calculate-feature-three-options.jpg)
+      ![Alt text](/readme/features/calculate-feature-three-options.jpg)
 
       3 options are selected with equal results:
-      (/readme/features/calculate-feature-three-options-equal.jpg)
+      ![Alt text](/readme/features/calculate-feature-three-options-equal.jpg)
 
       * Recommendation is returned part of a modal.
 
   * Generate random selection function: Will provide a "coin-flip" type of recommendation based on a basic algorithm. It will be able to generate an answer independent of any data being provided in the user input area. It`s functionality is very basic and can be used as a pure random selector if needed.
-  (/readme/features/random-feature.jpg)
+  ![Alt text](/readme/features/random-feature.jpg)
 
   * Reset option values: it`s functionality is to allow the user to reset the score of their options with a single click of a button. It will not reset the value of the importance criteria as it is considered a key element that once set, should not change often.
 
@@ -304,7 +304,7 @@ Issues identified and corrected until bellow pass marks were reached:
 #### CSS
 Tested CSS code using W3C validation service. Minimal errors identified.
 Issues are fixed and corrected until bellow result was reached:
-![Alt text](/readme/testing/CSS-test.jpg)
+![Alt text](/readme/testing/css-test.jpg)
 
 
 #### Accessibility Test
